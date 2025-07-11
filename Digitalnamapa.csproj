@@ -17,8 +17,4 @@
     <None Remove="Views\Home\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\" />
-  </ItemGroup>
-
 </Project>

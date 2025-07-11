@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "F:\\Workspaces\\Digitalnamapa\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\digitalnamapa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:digitalnamapa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\wwwroot\\js\\mapa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:wwwroot\\js\\mapa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -50,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +70,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T11:06:29.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Digitalnamapa",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Digitalnamapa.csproj",
+              "RelativeDocumentMoniker": "Digitalnamapa.csproj",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Digitalnamapa.csproj",
+              "RelativeToolTip": "Digitalnamapa.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T09:17:45.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "map.css",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\map.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\map.css",
@@ -74,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Details.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\POI\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\POI\\Details.cshtml",
@@ -86,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "mapa.js",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\js\\mapa.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\mapa.js",
@@ -94,12 +127,11 @@
               "RelativeToolTip": "wwwroot\\js\\mapa.js",
               "ViewState": "AgIAAOEEAAAAAAAAAAAawPYEAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-28T07:30:12.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T07:30:12.459Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Map.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\POI\\Map.cshtml",
               "RelativeDocumentMoniker": "Views\\POI\\Map.cshtml",
@@ -111,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "site.css",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -123,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -135,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
@@ -147,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -159,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
@@ -171,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
