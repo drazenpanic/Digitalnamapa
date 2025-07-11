@@ -1,0 +1,41 @@
+@page
+@model Digitalnamapa.Pages.IndexModel
+@{
+    ViewData["Title"] = "Digitalna Mapa";
+}
+
+<div class="container-fluid d-flex flex-column h-100">
+    <!-- Map Wrapper with Padding -->
+    <div class="flex-grow-1 position-relative">
+        <div id="map" class="w-100 h-100"></div>
+        <button class="legend-toggle" id="legendToggle">≡</button>
+        <div class="legend">
+            <!-- Existing legend content -->
+        </div>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="position-absolute top-0 end-0 m-4 bg-light p-3 rounded shadow">
+        <h3 class="fs-5 mb-2">Filteri</h3>
+        <div class="d-flex flex-wrap gap-2">
+            <button class="btn filter-btn active" data-type="All">Sve</button>
+            <button class="btn filter-btn" data-type="Dešavanja">Dešavanja</button>
+            <button class="btn filter-btn" data-type="Food">Hrana</button>
+            <button class="btn filter-btn" data-type="WC">WC</button>
+            <button class="btn filter-btn" data-type="Kids">Dečja zona</button>
+            <button class="btn filter-btn" data-type="Other">Ostalo</button>
+        </div>
+    </div>
+
+    <!-- Location Button -->
+    <button id="locateMe" class="position-absolute bottom-0 end-0 m-4 btn btn-light rounded-circle shadow p-3">
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+    </button>
+</div>
+
+@section Scripts {
+    
+} 

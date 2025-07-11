@@ -1,0 +1,445 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Digitalnamapa.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Digitalnamapa.2hwdda3hve.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\map.css",
+      "PackagePath": "staticwebassets\\css\\map.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\22.png",
+      "PackagePath": "staticwebassets\\images\\22.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\33.png",
+      "PackagePath": "staticwebassets\\images\\33.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\ArhivSrema.png",
+      "PackagePath": "staticwebassets\\images\\ArhivSrema.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\ChatGPT Image Jun 12, 2025, 12_31_58 PM.png",
+      "PackagePath": "staticwebassets\\images\\ChatGPT Image Jun 12, 2025, 12_31_58 PM.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\ChatGPT Image Jun 12, 2025, 12_43_50 PM.png",
+      "PackagePath": "staticwebassets\\images\\ChatGPT Image Jun 12, 2025, 12_43_50 PM.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\ChatGPT Image Jun 7, 2025, 05_58_38 PM.png",
+      "PackagePath": "staticwebassets\\images\\ChatGPT Image Jun 7, 2025, 05_58_38 PM.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\TrgCireMilekica.png",
+      "PackagePath": "staticwebassets\\images\\TrgCireMilekica.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\bazilika.png",
+      "PackagePath": "staticwebassets\\images\\bazilika.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\biblioteka.png",
+      "PackagePath": "staticwebassets\\images\\biblioteka.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\biblioteka1.png",
+      "PackagePath": "staticwebassets\\images\\biblioteka1.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\df.png",
+      "PackagePath": "staticwebassets\\images\\df.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\galerija.png",
+      "PackagePath": "staticwebassets\\images\\galerija.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\galerija1.png",
+      "PackagePath": "staticwebassets\\images\\galerija1.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\hrana.png",
+      "PackagePath": "staticwebassets\\images\\hrana.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\kafanaMoskva.png",
+      "PackagePath": "staticwebassets\\images\\kafanaMoskva.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\kafanaMoskvaold.png",
+      "PackagePath": "staticwebassets\\images\\kafanaMoskvaold.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\kamp.png",
+      "PackagePath": "staticwebassets\\images\\kamp.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\kamp1.png",
+      "PackagePath": "staticwebassets\\images\\kamp1.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\kedarbar.png",
+      "PackagePath": "staticwebassets\\images\\kedarbar.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\lampioni.png",
+      "PackagePath": "staticwebassets\\images\\lampioni.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\lapidarijum.png",
+      "PackagePath": "staticwebassets\\images\\lapidarijum.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\lapidarijum2.png",
+      "PackagePath": "staticwebassets\\images\\lapidarijum2.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\letak.png",
+      "PackagePath": "staticwebassets\\images\\letak.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\mapa.jpg",
+      "PackagePath": "staticwebassets\\images\\mapa.jpg"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\mapaold.jpg",
+      "PackagePath": "staticwebassets\\images\\mapaold.jpg"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\muzejsrema.png",
+      "PackagePath": "staticwebassets\\images\\muzejsrema.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\muzejsrema1.png",
+      "PackagePath": "staticwebassets\\images\\muzejsrema1.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\palasadta.png",
+      "PackagePath": "staticwebassets\\images\\palasadta.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\palata.png",
+      "PackagePath": "staticwebassets\\images\\palata.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\palata3.png",
+      "PackagePath": "staticwebassets\\images\\palata3.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\park.png",
+      "PackagePath": "staticwebassets\\images\\park.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\parking.png",
+      "PackagePath": "staticwebassets\\images\\parking.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\parkold.png",
+      "PackagePath": "staticwebassets\\images\\parkold.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\pomoc.png",
+      "PackagePath": "staticwebassets\\images\\pomoc.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\pozoriste.png",
+      "PackagePath": "staticwebassets\\images\\pozoriste.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\rimskibazar.png",
+      "PackagePath": "staticwebassets\\images\\rimskibazar.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\turistickaorganizacija.png",
+      "PackagePath": "staticwebassets\\images\\turistickaorganizacija.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\turistickaorganizacija2.png",
+      "PackagePath": "staticwebassets\\images\\turistickaorganizacija2.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\voda.png",
+      "PackagePath": "staticwebassets\\images\\voda.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\wc.png",
+      "PackagePath": "staticwebassets\\images\\wc.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\zitnitrg.png",
+      "PackagePath": "staticwebassets\\images\\zitnitrg.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\images\\zitnitrgee.png",
+      "PackagePath": "staticwebassets\\images\\zitnitrgee.png"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\js\\mapa.js",
+      "PackagePath": "staticwebassets\\js\\mapa.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Digitalnamapa.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Digitalnamapa.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Digitalnamapa.props",
+      "PackagePath": "build\\Digitalnamapa.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Digitalnamapa.props",
+      "PackagePath": "buildMultiTargeting\\Digitalnamapa.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Digitalnamapa.props",
+      "PackagePath": "buildTransitive\\Digitalnamapa.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

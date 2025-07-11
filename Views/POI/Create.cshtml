@@ -1,0 +1,79 @@
+@model Digitalnamapa.Models.PointOfInterest
+
+@{
+    ViewData["Title"] = "Create Point of Interest";
+}
+
+<h1>Create Point of Interest</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Type" class="control-label"></label>
+                <select asp-for="Type" class="form-control" asp-items="Html.GetEnumSelectList<Digitalnamapa.Models.PointType>()"></select>
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Latitude" class="control-label"></label>
+                <input asp-for="Latitude" class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Longitude" class="control-label"></label>
+                <input asp-for="Longitude" class="form-control" />
+                <span asp-validation-for="Longitude" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Icon" class="control-label"></label>
+                <input asp-for="Icon" class="form-control" />
+                <span asp-validation-for="Icon" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="OpenTime" class="control-label"></label>
+                <input asp-for="OpenTime" class="form-control" type="time" />
+                <span asp-validation-for="OpenTime" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="CloseTime" class="control-label"></label>
+                <input asp-for="CloseTime" class="form-control" type="time" />
+                <span asp-validation-for="CloseTime" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input asp-for="IsActive" class="form-check-input" />
+                    <label asp-for="IsActive" class="form-check-label"></label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

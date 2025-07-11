@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Workspaces\\Digitalnamapa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\digitalnamapa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:digitalnamapa.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\wwwroot\\js\\mapa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:wwwroot\\js\\mapa.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\views\\poi\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:views\\poi\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\views\\poi\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:views\\poi\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\wwwroot\\css\\map.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:wwwroot\\css\\map.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Workspaces\\Digitalnamapa\\Pages\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Workspaces\\Digitalnamapa\\Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Views\\Home\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Workspaces\\Digitalnamapa\\Pages\\_ViewStart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\_ViewStart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Workspaces\\Digitalnamapa\\Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{18e1c256-ac83-3310-a9c0-01b5de508316}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Digitalnamapa",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Digitalnamapa.csproj",
+              "RelativeDocumentMoniker": "Digitalnamapa.csproj",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Digitalnamapa.csproj",
+              "RelativeToolTip": "Digitalnamapa.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T09:17:45.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "map.css",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\map.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\map.css",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\map.css",
+              "RelativeToolTip": "wwwroot\\css\\map.css",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-05T09:01:17.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\POI\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\POI\\Details.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Views\\POI\\Details.cshtml",
+              "RelativeToolTip": "Views\\POI\\Details.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAE8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T08:18:28.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mapa.js",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\js\\mapa.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\mapa.js",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\js\\mapa.js",
+              "RelativeToolTip": "wwwroot\\js\\mapa.js",
+              "ViewState": "AgIAAOEEAAAAAAAAAAAawPYEAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-28T07:30:12.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Map.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\POI\\Map.cshtml",
+              "RelativeDocumentMoniker": "Views\\POI\\Map.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Views\\POI\\Map.cshtml",
+              "RelativeToolTip": "Views\\POI\\Map.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAawDgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-13T11:35:10.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-12T18:20:51.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T17:18:40.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T17:18:23.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T17:11:37.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T17:11:16.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T17:06:17.58Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

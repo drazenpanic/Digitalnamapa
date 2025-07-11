@@ -1,0 +1,44 @@
+@model IEnumerable<Digitalnamapa.Models.PointOfInterest>
+
+@{
+    ViewData["Title"] = "Points of Interest";
+}
+
+<h1>Points of Interest</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                @if (!string.IsNullOrEmpty(item.Icon))
+                {
+                    <img src="@item.Icon" class="card-img-top" alt="@item.Name">
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Description</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            Type: @item.Type
+                            @if (item.OpenTime.HasValue && item.CloseTime.HasValue)
+                            {
+                                <br />
+                                <span>Hours: @item.OpenTime.Value.ToString(@"hh\:mm") - @item.CloseTime.Value.ToString(@"hh\:mm")</span>
+                            }
+                        </small>
+                    </p>
+                    <div class="btn-group">
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div> 

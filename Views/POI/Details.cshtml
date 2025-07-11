@@ -1,0 +1,310 @@
+@model Digitalnamapa.Models.PointOfInterest
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container-fluid p-0" style="background: #211B0D;">
+    <!-- Header sa naslovom i ikonom -->
+    <div class="poi-header" style="background: #211B0D; padding: 2rem 0; border-bottom: 2px solid #e0c97f;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                    <img src="@Model.Icon" alt="@Model.Name" style="width: 130px; height: 130px; object-fit: contain; border-radius: 15px; box-shadow: 0 4px 20px #bfa96a33; background: #fff8e1; padding: 8px; border: 2px solid #e0c97f;">
+                </div>
+                <div class="col-md-10">
+                    <h1 style="font-family: 'Cinzel', serif; font-weight: 700; font-size: 2.5rem; color: #DAA520; margin: 0; text-shadow: 2px 2px 4px #211B0D55; letter-spacing: 1px;">
+                        @Model.Name
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Glavni sadržaj -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Levi deo - Opis i događaji -->
+            <div class="col-lg-8">
+                <!-- Opis -->
+                <div class="poi-description" style="background: #f9f5e3; border-radius: 15px; padding: 2rem; margin-bottom: 2rem; border-left: 3px solid #e0c97f; color: #211B0D; box-shadow: 0 2px 10px #e0c97f22;">
+                    <h3 style="font-family: 'Cinzel', serif; font-weight: 600; color: #DAA520; margin-bottom: 1rem; letter-spacing: 1px;">
+                        O LOKACIJI
+                    </h3>
+                    <p style="font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.8; color: #211B0D; text-align: justify;">
+                        @Model.FullDescription
+                    </p>
+                </div>
+
+                <!-- Događaji - prikazuje se samo ako postoje -->
+                @if (Model.Events != null && Model.Events.Any())
+                {
+                    <div class="poi-events" style="background: #fff8e1; border-radius: 15px; padding: 2rem; margin-bottom: 2rem; border: 2px solid #e0c97f; box-shadow: 0 2px 10px #e0c97f22;">
+                        <h3 style="font-family: 'Cinzel', serif; font-weight: 600; color: #DAA520; margin-bottom: 1.5rem; letter-spacing: 1px;">
+                            <span style="color: #DAA520;">🎭</span> DEŠAVANJA
+                        </h3>
+                        @foreach (var evt in Model.Events)
+                        {
+                            <div class="event-item" style="background: #f9f5e3; border-radius: 10px; padding: 1.5rem; margin-bottom: 1rem; border-left: 3px solid #e0c97f; box-shadow: 0 2px 10px #e0c97f22; color: #211B0D;">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3">
+                                        <div class="event-date" style="text-align: center;">
+                                            <div style="font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.2rem; color: #DAA520;">
+                                                @evt.Date.ToString("dd.MM")
+                                            </div>
+                                            <div style="font-size: 0.9rem; color: #bfa96a;">
+                                                @evt.Date.ToString("yyyy")
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="event-time" style="text-align: center;">
+                                            <span style="font-family: 'Cinzel', serif; font-weight: 600; color: #211B0D; font-size: 1.1rem;">
+                                                @evt.Time
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="event-details">
+                                            <h5 style="font-family: 'Cinzel', serif; font-weight: 700; color: #DAA520; margin-bottom: 0.5rem; letter-spacing: 0.5px;">
+                                                @evt.Title.ToUpper()
+                                            </h5>
+                                            <p style="font-family: 'Times New Roman', serif; color: #bfa96a; margin: 0;">
+                                                @evt.Description
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+            <!-- Desni deo - Mapa -->
+            <div class="col-lg-4">
+                <div class="poi-map-container" style="background: #f9f5e3; border-radius: 15px; padding: 1.5rem; box-shadow: 0 4px 20px #e0c97f22; border: 2px solid #e0c97f;">
+                    <h4 style="font-family: 'Cinzel', serif; font-weight: 600; color: #DAA520; margin-bottom: 1rem; text-align: center; letter-spacing: 1px;">
+                        <span style="color: #DAA520;">📍</span> LOKACIJA
+                    </h4>
+                    <div id="leafletMap" style="width: 100%; height: 400px; border-radius: 10px; overflow: hidden;"></div>
+                    <div class="map-info mt-3" style="text-align: center;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=@(Model.Latitude.ToString(System.Globalization.CultureInfo.InvariantCulture)),@(Model.Longitude.ToString(System.Globalization.CultureInfo.InvariantCulture))"
+                           target="_blank"
+                           class="btn btn-outline-dark"
+                           style="font-family: 'Cinzel', serif; font-weight: 600; border-color: #e0c97f; color: #211B0D; background: #fff8e1;">
+                            Otvori u Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Dugme Nazad -->
+<div class="text-center my-4">
+    <button onclick="window.history.back()" class="nazad-btn" style="font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.1em; color: #e0c97f; background: #111; border: 2px solid #e0c97f; border-radius: 8px; padding: 10px 36px; margin-top: 2rem; box-shadow: 0 2px 8px #bfa96a33; transition: all 0.3s ease; cursor: pointer; position: relative; overflow: hidden;">
+        <span class="arrow-left">&#8592;</span>
+        <span class="btn-text">Nazad..</span>
+        <span class="arrow-right">&#8594;</span>
+    </button>
+</div>
+
+@section Scripts {
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    // Inicijalizacija Leaflet mape
+    const map = L.map('leafletMap').setView([
+        @((Model.Latitude.ToString(System.Globalization.CultureInfo.InvariantCulture))),
+        @((Model.Longitude.ToString(System.Globalization.CultureInfo.InvariantCulture)))
+    ], 16);
+    
+    // Dodavanje OpenStreetMap tile layer-a
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    
+    // POI marker sa custom ikonom
+    const poiIcon = L.icon({
+        iconUrl: '@Model.Icon',
+        iconSize: [40, 40],
+        iconAnchor: [20, 40],
+        popupAnchor: [0, -40]
+    });
+    
+    const poiMarker = L.marker([
+        @((Model.Latitude.ToString(System.Globalization.CultureInfo.InvariantCulture))),
+        @((Model.Longitude.ToString(System.Globalization.CultureInfo.InvariantCulture)))
+    ], { icon: poiIcon }).addTo(map);
+    
+    // Popup za POI
+    poiMarker.bindPopup(`
+        <div style="font-family: 'Times New Roman', serif; padding: 10px; max-width: 200px;">
+            <h5 style="font-family: 'Cinzel', serif; font-weight: 600; margin-bottom: 5px; color: #DAA520;">
+                @Model.Name
+            </h5>
+            <p style="margin: 0; font-size: 0.9rem; color: #bfa96a;">
+                @Model.Description
+            </p>
+        </div>
+    `);
+    
+    // Korisnička lokacija
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const userLocation = [position.coords.latitude, position.coords.longitude];
+                
+                // Korisnički marker (plavi krug)
+                const userIcon = L.divIcon({
+                    className: 'user-location-marker',
+                    html: '<div style="background: #4285f4; border: 3px solid white; border-radius: 50%; width: 20px; height: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>',
+                    iconSize: [20, 20],
+                    iconAnchor: [10, 10]
+                });
+                
+                const userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map);
+                
+                // Krug tačnosti
+                if (position.coords.accuracy) {
+                    L.circle(userLocation, {
+                        radius: position.coords.accuracy,
+                        color: '#4285f4',
+                        fillColor: '#4285f4',
+                        fillOpacity: 0.1,
+                        weight: 1
+                    }).addTo(map);
+                }
+                
+                // Popup za korisnika
+                userMarker.bindPopup(`
+                    <div style="font-family: 'Times New Roman', serif; padding: 10px;">
+                        <h6 style="font-family: 'Cinzel', serif; font-weight: 600; margin-bottom: 5px; color: #DAA520;">
+                            Vaša lokacija
+                        </h6>
+                        <p style="margin: 0; font-size: 0.9rem; color: #bfa96a;">
+                            Tačnost: ${position.coords.accuracy ? Math.round(position.coords.accuracy) + 'm' : 'Nepoznato'}
+                        </p>
+                    </div>
+                `);
+            },
+            (error) => {
+                console.log("Greška pri dobijanju lokacije:", error);
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 10000,
+                maximumAge: 60000
+            }
+        );
+    }
+});
+</script>
+}
+
+<style>
+.poi-header {
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    background-blend-mode: multiply;
+}
+
+/* Zlatna boja za sve naslove i podnaslove */
+.poi-header h1,
+.poi-description h3,
+.poi-events h3,
+.poi-map-container h4,
+.event-details h5,
+.leaflet-popup-content h5,
+.leaflet-popup-content h6 {
+     color: #DAA520 !important;
+}
+
+.event-item:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 16px #e0c97f55;
+}
+
+/* Nazad dugme hover efekti */
+.nazad-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.nazad-btn .arrow-left {
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    color: #e0c97f;
+}
+
+.nazad-btn .arrow-right {
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    font-size: 1.2em;
+    color: #e0c97f;
+}
+
+.nazad-btn .btn-text {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.nazad-btn:hover {
+    background: #e0c97f !important;
+    color: #111 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px #bfa96a66, 0 0 0 3px #e0c97f33;
+    border-color: #e0c97f;
+}
+
+.nazad-btn:hover .arrow-left {
+    left: 10px;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.nazad-btn:hover .arrow-right {
+    right: 10px;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.nazad-btn:hover .btn-text {
+    transform: scale(1.05);
+    font-weight: 800;
+}
+
+.nazad-btn:active {
+    transform: translateY(0px);
+    box-shadow: 0 2px 10px #bfa96a44;
+}
+
+.btn-outline-dark:hover {
+    background-color: #e0c97f;
+    border-color: #e0c97f;
+    color: #211B0D;
+}
+
+@@media (max-width: 768px) {
+    .poi-header h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .poi-header img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* CSS za korisnički marker */
+.user-location-marker {
+    background: transparent;
+    border: none;
+}
+</style> 
