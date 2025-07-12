@@ -2,14 +2,14 @@
     ViewData["Title"] = "Digitalna Mapa";
 }
 
-<h1 class="text-center mb-4" style="font-family: 'Cinzel', serif; font-weight: 700;">
+<h1 class="text-center mb-2" style="font-family: 'Cinzel', serif; font-weight: 700; font-size: 1.8rem;">
     Dobrodošli na Lux Aurelius<br>
-    <span style="font-family: 'Times New Roman', serif; font-weight: 400;">festum culturae romanae</span><br>
-    Sirmium MMXXV
+    <span style="font-family: 'Times New Roman', serif; font-weight: 400; font-size: 1.2rem;">festum culturae romanae</span><br>
+    <span style="font-size: 1.4rem;">Sirmium MMXXV</span>
 </h1>
     
 <!-- Filter controls -->
-<div class="d-flex justify-content-center mb-3 flex-wrap">
+<div class="d-flex justify-content-center mb-2 flex-wrap">
     <button type="button" class="btn btn-primary m-1 filter-btn active" data-type="All">Sve</button>
     <button type="button" class="btn btn-outline-primary m-1 filter-btn" data-type="Dešavanja">Dešavanja</button>
     <button type="button" class="btn btn-outline-primary m-1 filter-btn" data-type="Servisi">Servisi</button>
@@ -18,90 +18,90 @@
 <!-- Vraćeno unutar .container div-a, ali sada je ovaj container uklonjen iz Map.cshtml -->
 <div id="map" class="w-100 h-100"></div>
 <div class="legend">
-    <div class="legend-title text-center mb-3">LEGENDA</div>
-    <div class="d-flex justify-content-center gap-4 flex-wrap">
-        <div class="legend-palata legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/palata.png" alt="Carska palata" style="width: 40px; height: 40px;">
-            <div class="mt-1">Carska palata</div>
+    <div class="legend-title text-center mb-2" style="font-size: 1.1rem;">LEGENDA</div>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <div class="legend-palata legend-item d-inline-block text-center" style="cursor:pointer; min-width: 70px;">
+            <img src="/images/palata.png" alt="Carska palata" style="width: 35px; height: 35px;">
+            <div class="mt-1" style="font-size: 0.85rem;">Carska palata</div>
         </div>
-        <div class="legend-park legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/park.png" alt="Gradski park" style="width: 40px; height: 40px;">
+        <div class="legend-park legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/park.png" alt="Gradski park">
             <div class="mt-1">Gradski park</div>
         </div>
-        <div class="legend-muzej legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/muzejsrema.png" alt="Muzej Srema" style="width: 40px; height: 40px;">
+        <div class="legend-muzej legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/muzejsrema.png" alt="Muzej Srema">
             <div class="mt-1">Muzej Srema</div>
         </div>
-        <div class="legend-lapidarijum legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/lapidarijum.png" alt="Lapidarijum" style="width: 40px; height: 40px;">
+        <div class="legend-lapidarijum legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/lapidarijum.png" alt="Lapidarijum">
             <div class="mt-1">Lapidarijum</div>
         </div>
-        <div class="legend-biblioteka legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/biblioteka.png" alt="Gradska Biblioteka" style="width: 40px; height: 40px;">
+        <div class="legend-biblioteka legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/biblioteka.png" alt="Gradska Biblioteka">
             <div class="mt-1">Biblioteka</div>
         </div>
-        <div class="legend-zitnitrg legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/zitnitrg.png" alt="Žitni Trg" style="width: 40px; height: 40px;">
+        <div class="legend-zitnitrg legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/zitnitrg.png" alt="Žitni Trg">
             <div class="mt-1">Žitni Trg</div>
         </div>
-        <div class="legend-pozoriste legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/pozoriste.png" alt="Gradsko Pozorište" style="width: 40px; height: 40px;">
+        <div class="legend-pozoriste legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/pozoriste.png" alt="Gradsko Pozorište">
             <div class="mt-1">Pozorište</div>
         </div>
-        <div class="legend-galerija legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/galerija.png" alt="Gradska Galerija" style="width: 40px; height: 40px;">
+        <div class="legend-galerija legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/galerija.png" alt="Gradska Galerija">
             <div class="mt-1">Galerija</div>
         </div>
-        <div class="legend-moskva legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/kafanamoskva.png" alt="Kafana Moskva" style="width: 40px; height: 40px;">
+        <div class="legend-moskva legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/kafanamoskva.png" alt="Kafana Moskva">
             <div class="mt-1">Kafana Moskva</div>
         </div>
-        <div class="legend-arhiv-srema legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/arhivsrema.png" alt="Arhiv Srema" style="width: 40px; height: 40px;">
+        <div class="legend-arhiv-srema legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/arhivsrema.png" alt="Arhiv Srema">
             <div class="mt-1">Arhiv Srema</div>
         </div>
-        <div class="legend-kamp legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/kamp.png" alt="Rimski Legionarski Kamp" style="width: 40px; height: 40px;">
+        <div class="legend-kamp legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/kamp.png" alt="Rimski Legionarski Kamp">
             <div class="mt-1">Rimski Kamp</div>
         </div>
-        <div class="legend-bazilika legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/bazilika.png" alt="Bazilika Svetog Stefana" style="width: 40px; height: 40px;">
+        <div class="legend-bazilika legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/bazilika.png" alt="Bazilika Svetog Stefana">
             <div class="mt-1">Bazilika</div>
         </div>
-        <div class="legend-turisticka legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/turistickaorganizacija.png" alt="Turistička Organizacija" style="width: 40px; height: 40px;">
+        <div class="legend-turisticka legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/turistickaorganizacija.png" alt="Turistička Organizacija">
             <div class="mt-1">Turistička Org.</div>
         </div>
-        <div class="legend-toalet legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/wc.png" alt="Toalet" style="width: 40px; height: 40px;">
+        <div class="legend-toalet legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/wc.png" alt="Toalet">
             <div class="mt-1">Toalet</div>
         </div>
-        <div class="legend-voda legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/voda.png" alt="Voda" style="width: 40px; height: 40px;">
+        <div class="legend-voda legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/voda.png" alt="Voda">
             <div class="mt-1">Voda</div>
         </div>
-        <div class="legend-pomoc legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/pomoc.png" alt="Prva Pomoć" style="width: 40px; height: 40px;">
+        <div class="legend-pomoc legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/pomoc.png" alt="Prva Pomoć">
             <div class="mt-1">Prva Pomoć</div>
         </div>
-        <div class="legend-hrana legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/hrana.png" alt="Hrana" style="width: 40px; height: 40px;">
+        <div class="legend-hrana legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/hrana.png" alt="Hrana">
             <div class="mt-1">Hrana</div>
         </div>
-        <div class="legend-bazar legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/rimskibazar.png" alt="Rimski Bazar" style="width: 40px; height: 40px;">
+        <div class="legend-bazar legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/rimskibazar.png" alt="Rimski Bazar">
             <div class="mt-1">Rimski Bazar</div>
         </div>
-        <div class="legend-lampioni legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/lampioni.png" alt="Savski kej" style="width: 40px; height: 40px;">
+        <div class="legend-lampioni legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/lampioni.png" alt="Savski kej">
             <div class="mt-1">Savski kej</div>
         </div>
-        <div class="legend-parking legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/parking.png" alt="Parking" style="width: 40px; height: 40px;">
+        <div class="legend-parking legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/parking.png" alt="Parking">
             <div class="mt-1">Parking</div>
         </div>
-        <div class="legend-kedarbar legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/kedarbar.png" alt="Kedar Bar" style="width: 40px; height: 40px;">
+        <div class="legend-kedarbar legend-item d-inline-block text-center" style="cursor:pointer;">
+            <img src="/images/kedarbar.png" alt="Kedar Bar">
             <div class="mt-1">Kedar Bar</div>
         </div>
     </div>
@@ -110,9 +110,9 @@
 <style>
     #map {
         width: 100%;
-        height: 65vh;
-        min-height: 350px;
-        max-height: 700px;
+        height: 75vh;
+        min-height: 400px;
+        max-height: 800px;
         margin-bottom: 0;
         border-radius: 10px;
         border: 1px solid #444;
@@ -133,13 +133,58 @@
         margin: 0 auto;
     }
     .legend-item div {
-        font-size: 0.9em;
+        font-size: 0.85rem;
         color: #DAA520;
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
+    }
+    
+    .legend-item img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    
+    .legend-item {
+        min-width: 70px !important;
+    }
+    
+    /* Responsive optimizacije */
+    @@media (max-width: 768px) {
+        #map {
+            height: 70vh;
+            min-height: 300px;
+        }
+        
+        h1 {
+            font-size: 1.4rem !important;
+        }
+        
+        h1 span {
+            font-size: 1rem !important;
+        }
+        
+        .legend-title {
+            font-size: 1rem !important;
+        }
+        
+        .legend-item div {
+            font-size: 0.8rem !important;
+        }
+        
+        .legend-item img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+    
+    @@media (min-width: 1200px) {
+        #map {
+            height: 78vh;
+            max-height: 900px;
+        }
     }
 </style>
 

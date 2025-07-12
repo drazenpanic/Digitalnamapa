@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digitalnamapa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d404bf8615a12bbb1ac0e821ba44f58c33257087")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55e53bab961f2553cc321e3909e779ed3a1afd94")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digitalnamapa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digitalnamapa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
