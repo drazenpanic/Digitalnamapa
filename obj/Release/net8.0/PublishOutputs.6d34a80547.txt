@@ -1,7 +1,0 @@
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.exe
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\appsettings.json
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.dll
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.deps.json
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.runtimeconfig.json
-C:\Users\draze\source\repos\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.pdb

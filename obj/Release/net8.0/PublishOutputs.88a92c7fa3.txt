@@ -1,7 +1,0 @@
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.exe
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\appsettings.json
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.dll
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.deps.json
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.runtimeconfig.json
-F:\Workspaces\Digitalnamapa\obj\Release\net8.0\PubTmp\Out\Digitalnamapa.pdb
