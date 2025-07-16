@@ -48,6 +48,12 @@
   <data name="Legend_Lapidarium" xml:space="preserve">
     <value>Lapidarijum</value>
   </data>
+  <data name="Legend_Atelje" xml:space="preserve">
+    <value>Atelje</value>
+  </data>
+  <data name="Location_Atelje" xml:space="preserve">
+    <value>Atelje</value>
+  </data>
   <data name="Legend_Library" xml:space="preserve">
     <value>Biblioteka</value>
   </data>
@@ -263,6 +269,18 @@
   </data>
   <data name="Popup_Lapidarium_Description" xml:space="preserve">
     <value>Lapidarijum Muzeja Srema prikazuje rimske kamene spomenike, sarkofage, žrtvenike i skulpture iz antičkog Sirmijuma. Jedinstven arheološki doživljaj u dvorištu muzeja.</value>
+  </data>
+  <data name="Popup_Atelje_Title" xml:space="preserve">
+    <value>Atelje</value>
+  </data>
+  <data name="Popup_Atelje_Description" xml:space="preserve">
+    <value>Umetničko-istraživačka izložba. Beata Kuhto i Ivan Efimov. Podrška Arcus Sirmium.</value>
+  </data>
+  <data name="Event_AteljeWorkshop" xml:space="preserve">
+    <value>U kojoj boji je bio Rimski Sirmium?</value>
+  </data>
+  <data name="Event_AteljeWorkshopTime" xml:space="preserve">
+    <value>Vreme radionice od 10h-11h i od 16h-17h</value>
   </data>
   <data name="Popup_Library_Title" xml:space="preserve">
     <value>Biblioteka "Gligorije Vozarević"</value>

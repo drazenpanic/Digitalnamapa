@@ -48,6 +48,12 @@
   <data name="Legend_Lapidarium" xml:space="preserve">
     <value>Lapidarium</value>
   </data>
+  <data name="Legend_Atelje" xml:space="preserve">
+    <value>Atelier</value>
+  </data>
+  <data name="Location_Atelje" xml:space="preserve">
+    <value>Atelier</value>
+  </data>
   <data name="Legend_Library" xml:space="preserve">
     <value>Library</value>
   </data>
@@ -275,6 +281,18 @@
   </data>
   <data name="Popup_Lapidarium_Description" xml:space="preserve">
     <value>The Lapidarium of the Srem Museum displays Roman stone monuments, sarcophagi, altars, and sculptures from ancient Sirmium. A unique archaeological experience in the museum courtyard.</value>
+  </data>
+  <data name="Popup_Atelje_Title" xml:space="preserve">
+    <value>Atelier</value>
+  </data>
+  <data name="Popup_Atelje_Description" xml:space="preserve">
+    <value>Artistic research exhibition. Beata Kuhto and Ivan Efimov. Support from Arcus Sirmium.</value>
+  </data>
+  <data name="Event_AteljeWorkshop" xml:space="preserve">
+    <value>What color was Roman Sirmium?</value>
+  </data>
+  <data name="Event_AteljeWorkshopTime" xml:space="preserve">
+    <value>Workshop time from 10h-11h and from 16h-17h</value>
   </data>
   <data name="Popup_Library_Title" xml:space="preserve">
     <value>Gligorije Vozarević Library</value>

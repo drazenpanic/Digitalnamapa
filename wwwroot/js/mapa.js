@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         park: L.icon({ iconUrl: '/images/park.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
         muzejsrema: L.icon({ iconUrl: '/images/muzejsrema.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
         lapidarijum: L.icon({ iconUrl: '/images/lapidarijum.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
+        atelje: L.icon({ iconUrl: '/images/atelje.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
         biblioteka: L.icon({ iconUrl: '/images/biblioteka.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
         zitnitrg: L.icon({ iconUrl: '/images/zitnitrg.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
         pozoriste: L.icon({ iconUrl: '/images/pozoriste.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] }),
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 2, name: "Gradski park", description: "Centralni park grada.", y: 400, x: 500, type: "Dešavanja", iconKey: "park", isActive: true, latitude: 44.9770, longitude: 19.6110, details: "Mesto okupljanja i rekreacije.", events: [] },
         { id: 3, name: "Muzej Srema", description: "Muzej sa bogatom istorijom regiona.", y: 300, x: 600, type: "Dešavanja", iconKey: "muzejsrema", isActive: true, latitude: 44.9760, longitude: 19.6120, details: "Izložbe i stalna postavka.", events: [] },
         { id: 4, name: "Lapidarijum", description: "Zbirka kamenih spomenika.", y: 350, x: 700, type: "Dešavanja", iconKey: "lapidarijum", isActive: true, latitude: 44.9750, longitude: 19.6130, details: "Antički kameni artefakti.", events: [] },
+        { id: 5, name: "Atelje", description: "Umetničko-istraživačka izložba. Beata Kuhto i Ivan Efimov. Podrška Arcus Sirmium.", y: 679, x: 421, type: "Dešavanja", iconKey: "atelje", isActive: true, latitude: 44.96747443960462, longitude: 19.60618380441317, details: "U kojoj boji je bio Rimski Sirmium? Vreme radionice od 10h-11h i od 16h-17h.", events: [] },
         { id: 6, name: "Gradska Biblioteka", description: "Biblioteka sa bogatim fondom.", y: 500, x: 900, type: "Dešavanja", iconKey: "biblioteka", isActive: true, latitude: 44.9730, longitude: 19.6150, details: "Čitaonica i programi.", events: [] },
         { id: 7, name: "Žitni Trg", description: "Trg sa istorijskim značajem.", y: 550, x: 1000, type: "Dešavanja", iconKey: "zitnitrg", isActive: true, latitude: 44.9720, longitude: 19.6160, details: "Tradicija i kultura.", events: [] },
         { id: 8, name: "Gradsko Pozorište", description: "Pozorište sa raznovrsnim repertoarom.", y: 600, x: 1100, type: "Dešavanja", iconKey: "pozoriste", isActive: true, latitude: 44.9710, longitude: 19.6170, details: "Predstave i gostovanja.", events: [] },
@@ -828,6 +830,33 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
     `);
 
+    // --- DODAVANJE ATELJEA ---
+    const ateljeIcon = L.icon({
+        iconUrl: '/images/atelje.png',
+        iconSize: [50, 50],
+        iconAnchor: [30, 30],
+        popupAnchor: [0, -30]
+    });
+
+    const ateljeMarker = L.marker([679, 421], { icon: ateljeIcon }).addTo(window.map);
+    ateljeMarker.pointType = "Dešavanja";
+    window.markers.push(ateljeMarker);
+
+    ateljeMarker.bindPopup(`
+        <div style=\"font-family:'Times New Roman',serif;\">
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Atelje_Title'] : 'Atelje'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Atelje_Description'] : 'Umetničko-istraživačka izložba. Beata Kuhto i Ivan Efimov. Podrška Arcus Sirmium.'}</p>
+            <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_AteljeWorkshop'] : 'U kojoj boji je bio Rimski Sirmium?'}</span> <span style=\"color:#8B6914;\">(02.08.2025)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_AteljeWorkshopTime'] : 'Vreme radionice od 10h-11h i od 16h-17h'}</span>
+            </div>
+            <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.967687768821456,19.604694912914173\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+            </div>
+        </div>
+    `);
+
     // --- DODAVANJE BIBLIOTEKE ---
     const bibliotekaIcon = L.icon({
         iconUrl: '/images/biblioteka.png',
@@ -861,6 +890,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!lapidarijumMarker) return;
         window.map.setView([648, 656], window.map.getZoom(), { animate: true });
         lapidarijumMarker.openPopup();
+    });
+
+    document.querySelector('.legend-atelje')?.addEventListener('click', function() {
+        if (!ateljeMarker) return;
+        window.map.setView([679, 421], window.map.getZoom(), { animate: true });
+        ateljeMarker.openPopup();
     });
 
     document.querySelector('.legend-biblioteka')?.addEventListener('click', function() {
