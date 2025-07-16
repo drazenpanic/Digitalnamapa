@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Map_Welcome" xml:space="preserve">
+    <value>Dobrodošli na Lux Aurelius</value>
+  </data>
+  <data name="Map_FestivalSubtitle" xml:space="preserve">
+    <value>festum culturae romanae</value>
+  </data>
+  <data name="Map_Year" xml:space="preserve">
+    <value>Sirmium MMXXV</value>
+  </data>
+  <data name="Map_FilterAll" xml:space="preserve">
+    <value>Sve</value>
+  </data>
+  <data name="Map_FilterEvents" xml:space="preserve">
+    <value>Dešavanja</value>
+  </data>
+  <data name="Map_FilterServices" xml:space="preserve">
+    <value>Servisi</value>
+  </data>
+  <data name="Map_Legend" xml:space="preserve">
+    <value>LEGENDA</value>
+  </data>
+</root> 

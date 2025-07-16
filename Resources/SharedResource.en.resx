@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Digital Festival Map</value>
+  </data>
+  <data name="Navigation_Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="Navigation_Program" xml:space="preserve">
+    <value>Festival Program</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="BackToMap" xml:space="preserve">
+    <value>Back to Map</value>
+  </data>
+  <data name="Map_Welcome" xml:space="preserve">
+    <value>Welcome to Lux Aurelius</value>
+  </data>
+  <data name="Map_FestivalSubtitle" xml:space="preserve">
+    <value>festum culturae romanae</value>
+  </data>
+  <data name="Map_Year" xml:space="preserve">
+    <value>Sirmium MMXXV</value>
+  </data>
+  <data name="Map_FilterAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Map_FilterEvents" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="Map_FilterServices" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="Map_Legend" xml:space="preserve">
+    <value>LEGEND</value>
+  </data>
+  <data name="Legend_ImperialPalace" xml:space="preserve">
+    <value>Imperial Palace</value>
+  </data>
+  <data name="Legend_CityPark" xml:space="preserve">
+    <value>City Park</value>
+  </data>
+  <data name="Legend_SremMuseum" xml:space="preserve">
+    <value>Srem Museum</value>
+  </data>
+  <data name="Legend_Lapidarium" xml:space="preserve">
+    <value>Lapidarium</value>
+  </data>
+  <data name="Legend_Library" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="Legend_GrainSquare" xml:space="preserve">
+    <value>Grain Square</value>
+  </data>
+  <data name="Legend_Theater" xml:space="preserve">
+    <value>Theater</value>
+  </data>
+  <data name="Legend_Gallery" xml:space="preserve">
+    <value>Gallery</value>
+  </data>
+  <data name="Legend_MoscowTavern" xml:space="preserve">
+    <value>Moscow Tavern</value>
+  </data>
+  <data name="Legend_SremArchive" xml:space="preserve">
+    <value>Srem Archive</value>
+  </data>
+  <data name="Legend_RomanCamp" xml:space="preserve">
+    <value>Roman Camp</value>
+  </data>
+  <data name="Legend_Basilica" xml:space="preserve">
+    <value>Basilica</value>
+  </data>
+  <data name="Legend_TouristOrg" xml:space="preserve">
+    <value>Tourist Org.</value>
+  </data>
+  <data name="Legend_Toilet" xml:space="preserve">
+    <value>Toilet</value>
+  </data>
+  <data name="Legend_Water" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="Legend_FirstAid" xml:space="preserve">
+    <value>First Aid</value>
+  </data>
+  <data name="Legend_Food" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="Legend_RomanBazaar" xml:space="preserve">
+    <value>Roman Bazaar</value>
+  </data>
+  <data name="Legend_SavaQuay" xml:space="preserve">
+    <value>Sava Quay</value>
+  </data>
+  <data name="Legend_Parking" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="Legend_CedarBar" xml:space="preserve">
+    <value>Cedar Bar</value>
+  </data>
+  <data name="Program_Title" xml:space="preserve">
+    <value>Festival Program</value>
+  </data>
+  <data name="Program_Header" xml:space="preserve">
+    <value>Lux Aurelius Festival Program</value>
+  </data>
+  <data name="Program_Subtitle" xml:space="preserve">
+    <value>Sremska Mitrovica, August 01-02, 2025</value>
+  </data>
+  <data name="Program_Time" xml:space="preserve">
+    <value>Time:</value>
+  </data>
+  <data name="Program_DuringFestival" xml:space="preserve">
+    <value>during the festival</value>
+  </data>
+  <data name="Program_OpenForVisitors" xml:space="preserve">
+    <value>Open for visitors</value>
+  </data>
+  <data name="Program_OpenForVisitorsDesc" xml:space="preserve">
+    <value>The institution is open to all visitors during the festival.</value>
+  </data>
+  <data name="Program_OpenForVisitorsDuring" xml:space="preserve">
+    <value>The institution is open during the festival for all visitors</value>
+  </data>
+  <data name="Program_OpenForVisitorsShort" xml:space="preserve">
+    <value>Open for visitors</value>
+  </data>
+  <data name="Event_Parade" xml:space="preserve">
+    <value>Festival participants parade</value>
+  </data>
+  <data name="Event_ParadeDesc" xml:space="preserve">
+    <value>Festival participants parade starts from the Imperial Palace to Grain Square.</value>
+  </data>
+  <data name="Event_ChildrenWorkshops" xml:space="preserve">
+    <value>Children's workshops</value>
+  </data>
+  <data name="Event_ExperimentalArchaeology" xml:space="preserve">
+    <value>Experimental archaeology</value>
+  </data>
+  <data name="Event_RomanBazaar" xml:space="preserve">
+    <value>Roman bazaar</value>
+  </data>
+  <data name="Event_PhotoCorner" xml:space="preserve">
+    <value>Photo corner</value>
+  </data>
+  <data name="Event_DigitalInteraction" xml:space="preserve">
+    <value>Digital interaction - Conversation with Roman emperors of Sirmium</value>
+  </data>
+  <data name="Event_ChildrenWorkshopsShort" xml:space="preserve">
+    <value>Children's workshops</value>
+  </data>
+  <data name="Event_FestivalParade" xml:space="preserve">
+    <value>Lux Aurelius Festival participants parade</value>
+  </data>
+  <data name="Event_SirmiumLuxVerbi" xml:space="preserve">
+    <value>Sirmium Lux Verbi - oratory revue</value>
+  </data>
+  <data name="Event_FestivalOpening" xml:space="preserve">
+    <value>Lux Aurelius Festival opening program</value>
+  </data>
+  <data name="Event_FestivalClosing" xml:space="preserve">
+    <value>Lux Aurelius Festival closing program</value>
+  </data>
+  <data name="Event_RomanPubQuiz" xml:space="preserve">
+    <value>Roman pub quiz</value>
+  </data>
+  <data name="Event_RomanGames" xml:space="preserve">
+    <value>Roman games</value>
+  </data>
+  <data name="Event_RomanGamesDesc" xml:space="preserve">
+    <value>Roman games and reconstruction of legionaries' daily life</value>
+  </data>
+  <data name="Event_PhotoExhibition" xml:space="preserve">
+    <value>Tourist Organization terrace - "Mitrovica through the lens" photo exhibition</value>
+  </data>
+  <data name="Event_HandmadeProducts" xml:space="preserve">
+    <value>Sale of unique handmade products</value>
+  </data>
+  <data name="Event_LanternRelease" xml:space="preserve">
+    <value>Lux Aurelius Festival closing program</value>
+  </data>
+  <data name="Event_LanternReleaseDesc" xml:space="preserve">
+    <value>At the end of the festival, we symbolically release lanterns down the Sava River</value>
+  </data>
+  <data name="Location_ImperialPalace" xml:space="preserve">
+    <value>Imperial Palace</value>
+  </data>
+  <data name="Location_CityPark" xml:space="preserve">
+    <value>City Park - Stone Flower</value>
+  </data>
+  <data name="Location_SremMuseum" xml:space="preserve">
+    <value>Srem Museum</value>
+  </data>
+  <data name="Location_Lapidarium" xml:space="preserve">
+    <value>Srem Museum Lapidarium</value>
+  </data>
+  <data name="Location_Library" xml:space="preserve">
+    <value>Library "Gligorije Vozarević"</value>
+  </data>
+  <data name="Location_GrainSquare" xml:space="preserve">
+    <value>Grain Square</value>
+  </data>
+  <data name="Location_Gallery" xml:space="preserve">
+    <value>Gallery "Lazar Vozarević"</value>
+  </data>
+  <data name="Location_MoscowTavern" xml:space="preserve">
+    <value>Moscow Tavern</value>
+  </data>
+  <data name="Location_RomanCamp" xml:space="preserve">
+    <value>Roman Legionary Camp</value>
+  </data>
+  <data name="Location_Basilica" xml:space="preserve">
+    <value>St. Demetrius Basilica</value>
+  </data>
+  <data name="Location_TouristCenter" xml:space="preserve">
+    <value>Tourist Information Center</value>
+  </data>
+  <data name="Location_RomanBazaar" xml:space="preserve">
+    <value>Roman Bazaar</value>
+  </data>
+  <data name="Location_SavaQuay" xml:space="preserve">
+    <value>Sava Quay</value>
+  </data>
+  <data name="Location_CedarBar" xml:space="preserve">
+    <value>Cedar Bar</value>
+  </data>
+  <data name="Location_HistoricalArchive" xml:space="preserve">
+    <value>Historical Archive of Srem</value>
+  </data>
+  <data name="Popup_ImperialPalace_Description" xml:space="preserve">
+    <value>The Imperial Palace in Sremska Mitrovica, known as the Imperial Palace of Sirmium, is one of the most significant archaeological sites in Serbia, a symbol of the power of the former Roman Empire.</value>
+  </data>
+  <data name="Popup_Event" xml:space="preserve">
+    <value>Event:</value>
+  </data>
+  <data name="Popup_Events" xml:space="preserve">
+    <value>Events:</value>
+  </data>
+  <data name="Popup_OpenInGoogleMaps" xml:space="preserve">
+    <value>Open in Google Maps</value>
+  </data>
+  <data name="Popup_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Popup_ImperialPalace_Title" xml:space="preserve">
+    <value>Imperial Palace</value>
+  </data>
+  <data name="Popup_CityPark_Title" xml:space="preserve">
+    <value>City Park - Stone Flower</value>
+  </data>
+  <data name="Popup_CityPark_Description" xml:space="preserve">
+    <value>The "Stone Flower" fountain in the City Park of Sremska Mitrovica is one of the most recognizable landmarks of the city, combining art, history and deep emotional symbolism.</value>
+  </data>
+  <data name="Event_ChildrenWorkshops" xml:space="preserve">
+    <value>Children's workshops</value>
+  </data>
+  <data name="Event_ExperimentalArchaeology" xml:space="preserve">
+    <value>Experimental archaeology</value>
+  </data>
+  <data name="Event_RomanBazaar" xml:space="preserve">
+    <value>Roman bazaar</value>
+  </data>
+  <data name="Event_PhotoCorner" xml:space="preserve">
+    <value>Photo corner</value>
+  </data>
+  <data name="Popup_SremMuseum_Title" xml:space="preserve">
+    <value>Srem Museum</value>
+  </data>
+  <data name="Popup_SremMuseum_Description" xml:space="preserve">
+    <value>One of the most significant cultural institutions in the region, founded in 1946. It preserves and exhibits archaeological finds from ancient Sirmium and the wider Srem area.</value>
+  </data>
+  <data name="Popup_Lapidarium_Title" xml:space="preserve">
+    <value>Lapidarium - Srem Museum</value>
+  </data>
+  <data name="Popup_Lapidarium_Description" xml:space="preserve">
+    <value>The Lapidarium of the Srem Museum displays Roman stone monuments, sarcophagi, altars, and sculptures from ancient Sirmium. A unique archaeological experience in the museum courtyard.</value>
+  </data>
+  <data name="Popup_Library_Title" xml:space="preserve">
+    <value>Gligorije Vozarević Library</value>
+  </data>
+  <data name="Popup_Library_Description" xml:space="preserve">
+    <value>One of the oldest and most important cultural institutions in Srem, founded in 1866. It houses over 140,000 books and organizes numerous cultural events.</value>
+  </data>
+  <data name="Event_DigitalInteraction" xml:space="preserve">
+    <value>Digital interaction - Conversation with Roman emperors of Sirmium</value>
+  </data>
+  <data name="Event_ChildrenWorkshopsShort" xml:space="preserve">
+    <value>Children's workshops</value>
+  </data>
+  <data name="Popup_GrainSquare_Title" xml:space="preserve">
+    <value>Grain Square</value>
+  </data>
+  <data name="Popup_GrainSquare_Description" xml:space="preserve">
+    <value>Part of the craft-trade zone of Sirmium. Excavations have revealed workshops, including glass furnaces, confirming local glass production during late antiquity.</value>
+  </data>
+  <data name="Event_FestivalParade" xml:space="preserve">
+    <value>Lux Aurelius Festival participants parade</value>
+  </data>
+  <data name="Event_SirmiumLuxVerbi" xml:space="preserve">
+    <value>Sirmium Lux Verbi - oratory revue</value>
+  </data>
+  <data name="Event_FestivalOpening" xml:space="preserve">
+    <value>Lux Aurelius Festival opening program</value>
+  </data>
+  <data name="Event_FestivalClosing" xml:space="preserve">
+    <value>Lux Aurelius Festival closing program</value>
+  </data>
+  <data name="Popup_Theater_Title" xml:space="preserve">
+    <value>Theater "Dobrica Milutinović"</value>
+  </data>
+  <data name="Popup_Theater_Description" xml:space="preserve">
+    <value>The Theater "Dobrica Milutinović" in Sremska Mitrovica is the only professional theater institution in Srem, with a tradition dating back to the 19th century.</value>
+  </data>
+  <data name="Popup_Gallery_Title" xml:space="preserve">
+    <value>Gallery "Lazar Vozarević"</value>
+  </data>
+  <data name="Popup_Gallery_Description" xml:space="preserve">
+    <value>The "Lazar Vozarević" Gallery, founded in 1973, is dedicated to one of the most important postwar Serbian painters. It houses a memorial collection and hosts contemporary art exhibitions.</value>
+  </data>
+  <data name="Event_OpenForVisitors" xml:space="preserve">
+    <value>Open for visitors</value>
+  </data>
+  <data name="Event_OpenForVisitorsDesc" xml:space="preserve">
+    <value>The institution is open to all visitors during the festival.</value>
+  </data>
+  <data name="Popup_MoscowTavern_Title" xml:space="preserve">
+    <value>Moscow Tavern</value>
+  </data>
+  <data name="Popup_MoscowTavern_Description" xml:space="preserve">
+    <value>Moscow Tavern offers authentic Russian cuisine prepared with love and care, along with homemade liqueurs that perfectly round out the experience. The warm atmosphere, hospitable hosts and more than affordable prices make this place the right choice for enjoying Russian tradition and taste.</value>
+  </data>
+  <data name="Popup_HistoricalArchive_Title" xml:space="preserve">
+    <value>Historical Archive of Srem</value>
+  </data>
+  <data name="Popup_HistoricalArchive_Description" xml:space="preserve">
+    <value>The Historical Archive of Srem in Sremska Mitrovica represents the central archival institution for Srem District, founded in 1946.</value>
+  </data>
+  <data name="Popup_RomanCamp_Title" xml:space="preserve">
+    <value>Roman Legionary Camp</value>
+  </data>
+  <data name="Popup_RomanCamp_Description" xml:space="preserve">
+    <value>Roman military camp during the time of Sirmium, organized according to strict hierarchy and disciplined structure, with soldiers arranged in rows of tents forming streets and squares within the fortified camp.</value>
+  </data>
+  <data name="Event_RomanGamesDesc" xml:space="preserve">
+    <value>Roman games and reconstruction of legionaries' daily life</value>
+  </data>
+  <data name="Popup_Basilica_Title" xml:space="preserve">
+    <value>St. Demetrius Basilica</value>
+  </data>
+  <data name="Popup_Basilica_Description" xml:space="preserve">
+    <value>One of the most significant early Christian archaeological sites in the territory of ancient Sirmium. Built between 426-441 AD, it represents a three-nave Greek-type building.</value>
+  </data>
+  <data name="Event_OpenForVisitorsDuring" xml:space="preserve">
+    <value>The institution is open during the festival for all visitors</value>
+  </data>
+  <data name="Popup_KedarBar_Event" xml:space="preserve">
+    <value>Roman pub quiz</value>
+  </data>
+  <data name="Popup_KedarBar_EventTime" xml:space="preserve">
+    <value>(01.08, 21h)</value>
+  </data>
+  <data name="Popup_Toilet_Title" xml:space="preserve">
+    <value>Public Toilet</value>
+  </data>
+  <data name="Popup_Toilet_Description" xml:space="preserve">
+    <value>Facilities are available for both participants and festival visitors.</value>
+  </data>
+  <data name="Popup_Water_Title" xml:space="preserve">
+    <value>Drinking Water</value>
+  </data>
+  <data name="Popup_Water_Description" xml:space="preserve">
+    <value>Water tank with drinking water</value>
+  </data>
+  <data name="Popup_FirstAid_Title" xml:space="preserve">
+    <value>First Aid</value>
+  </data>
+  <data name="Popup_FirstAid_Description" xml:space="preserve">
+    <value>Van for providing first aid in emergency cases.</value>
+  </data>
+  <data name="Popup_Food_Title" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="Popup_Food_Description" xml:space="preserve">
+    <value>Food location for participants.</value>
+  </data>
+  <data name="Popup_Parking_Title" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="Popup_Parking_Description" xml:space="preserve">
+    <value>Public parking for festival participants and visitors</value>
+  </data>
+  <data name="Popup_RomanBazaar_Title" xml:space="preserve">
+    <value>Roman Bazaar</value>
+  </data>
+  <data name="Popup_RomanBazaar_Description" xml:space="preserve">
+    <value>The Roman Bazaar brings to life the spirit of imperial Sirmium through authentic displays of ancient crafts, costumes, and scents of antiquity.</value>
+  </data>
+  <data name="Popup_RomanBazaar_Event" xml:space="preserve">
+    <value>Sale of unique handmade products</value>
+  </data>
+  <data name="Popup_RomanBazaar_EventTime" xml:space="preserve">
+    <value>(02.08.2025, 10h-19h)</value>
+  </data>
+  <data name="Popup_Lampioni_Title" xml:space="preserve">
+    <value>Sava Quay</value>
+  </data>
+  <data name="Popup_Lampioni_Description" xml:space="preserve">
+    <value>The embankment in Sremska Mitrovica, also known as Sava Quay, represents a key defensive structure along the Sava River that protects the city from floods.</value>
+  </data>
+  <data name="Popup_Lampioni_Event" xml:space="preserve">
+    <value>Lux Aurelius Festival Closing Program</value>
+  </data>
+  <data name="Popup_Lampioni_EventTime" xml:space="preserve">
+    <value>(21:30)</value>
+  </data>
+  <data name="Popup_Lampioni_EventDesc" xml:space="preserve">
+    <value>At the end of the festival, we symbolically release lanterns down the Sava River</value>
+  </data>
+  <data name="Popup_KedarBar_Title" xml:space="preserve">
+    <value>Kedar Bar</value>
+  </data>
+  <data name="Popup_KedarBar_Description" xml:space="preserve">
+    <value>A cozy café located on the slopes of ancient Roman excavations, on Žitni Square in Sremska Mitrovica</value>
+  </data>
+  <data name="Popup_TouristInfo_Title" xml:space="preserve">
+    <value>Tourist Information Center</value>
+  </data>
+  <data name="Popup_TouristInfo_Description" xml:space="preserve">
+    <value>The Tourist Information Center of Sremska Mitrovica is located in the City Park, at Masarikova 2A, and represents a central place for all visitors who want to discover the rich history, culture, and natural beauty of this city and its surroundings.</value>
+  </data>
+  <data name="Popup_TouristInfo_Event" xml:space="preserve">
+    <value>Tourist Organization Terrace - Photo exhibition "Mitrovica through the lens"</value>
+  </data>
+  <data name="Popup_TouristInfo_EventTime" xml:space="preserve">
+    <value>(02.08.2025, 10-19h)</value>
+  </data>
+  <data name="Popup_GoogleMaps" xml:space="preserve">
+    <value>Open in Google Maps</value>
+  </data>
+  <data name="Details_AboutLocation" xml:space="preserve">
+    <value>ABOUT THE LOCATION</value>
+  </data>
+  <data name="Details_Events" xml:space="preserve">
+    <value>EVENTS</value>
+  </data>
+  <data name="Details_Location" xml:space="preserve">
+    <value>LOCATION</value>
+  </data>
+  <data name="Details_YourLocation" xml:space="preserve">
+    <value>Your location</value>
+  </data>
+  <data name="Details_Accuracy" xml:space="preserve">
+    <value>Accuracy</value>
+  </data>
+  <data name="Details_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Details_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Details_ImperialPalace_FullDescription" xml:space="preserve">
+    <value>The Imperial Palace in Sremska Mitrovica, known as the Imperial Palace of Sirmium, is one of the most significant archaeological sites in Serbia, a symbol of the power of the former Roman Empire. It is located on the territory of the former Roman city of Sirmium, which in late antiquity was one of the four capitals of the Roman Empire. Sirmium was the seat of several emperors, including Galerius, Maximian, and Constantine I. The palace was built at the end of the 3rd or beginning of the 4th century, in the southeastern part of the city along the Sava River. Archaeological excavations have revealed luxurious mosaics, frescoes, and hypocaust - an underfloor heating system. Materials used in construction came from Egypt, Asia Minor, Greece, and Italy, which speaks of the luxury of the imperial court. The site today includes a Visitor Center with panels, models, and conserved palace remains. The palace is located at Pivarska 2, Sremska Mitrovica, and information can be obtained at numbers +381 22 618 817 and +381 22 621 568. The official website is carskapalata.rs. The Imperial Palace of Sirmium is an unmissable place for all lovers of Roman history and culture.</value>
+  </data>
+  <data name="Details_CityPark_FullDescription" xml:space="preserve">
+    <value>The "Stone Flower" fountain in the City Park of Sremska Mitrovica is one of the most recognizable landmarks of the city, combining art, history, and deep emotional symbolism. It was built in 1948 according to the design of Irina Nepokojčicka, a Russian emigrant and the first female architect in Sremska Mitrovica. The fountain is located on the site of the former "imperial linden tree", planted in 1879 in honor of Emperor Franz Joseph and Empress Elisabeth. It has the shape of a stylized flower with curved petals from which water continuously flows, symbolizing eternal sorrow. According to legend, Irina dreamed of a flower from which a white dove flew out, revealing to her the story of a princess from Sirmium - a symbol of sorrow and longing. Inspired by this dream, Irina created the fountain as a combination of personal and collective sorrow for the homeland and lost times. Irina Nepokojčicka was born in 1909 in Russia, studied architecture in Zagreb, and from 1937 lived and worked in Sremska Mitrovica. Besides the fountain, she worked on the construction of schools, roads, and the reconstruction of the Church of Archdeacon Stephen. She passed away just five months after the completion of the fountain and was buried in the Orthodox Cemetery in Mitrovica. The "Stone Flower" fountain today is a place of gathering, rest, and remembrance - an artistic and spiritual symbol of the city.</value>
+  </data>
+  <data name="Details_SremMuseum_FullDescription" xml:space="preserve">
+    <value>The Srem Museum in Sremska Mitrovica represents one of the most valuable archaeological exhibitions in Serbia, located in the museum courtyard at Trg Svetog Stefana 15. The museum building, a gift from the Bajić family, has been preserving and exhibiting archaeological finds from the territory of ancient Sirmium and the wider Srem area since 1946. The Lapidarium displays Roman stone monuments such as sarcophagi, altars, tombstones, and sculptures with mythological motifs. Special attention is drawn to the altar of Titus Cominius Severus, one of the oldest pieces of evidence of Roman presence in this region. A unique sundial from around 100 AD and marble sculptures of the goddess Diana and Hercules further enrich the permanent exhibition. Mosaics from the magnificent reception rooms date from the beginning of the 4th century and testify to the luxury of the imperial residence. The Lapidarium's architecture is designed in a neoclassical style with Doric columns, achieving harmony with the city's historical identity. It is open to visitors every weekday from 08:00 to 15:00 and on weekends from 09:00 to 17:00. The exhibition offers a precious insight into the daily life, art, and beliefs of Roman Sirmium. The Srem Museum Lapidarium invites all lovers of history and archaeology to feel the spirit of the ancient city through authentic exhibits.</value>
+  </data>
+  <data name="Details_Gallery_FullDescription" xml:space="preserve">
+    <value>The "Lazar Vozarević" Gallery, founded in 1973 in honor of one of the most important postwar Serbian painters, is located in a renovated 19th-century building in City Park. The gallery consists of a memorial section with over 60 original works by Vozarević and a contemporary section for current art exhibitions. It has organized more than 160 exhibitions in the city and over 20 in the country and abroad. Vozarević was a member of the "Group of Eleven" and the "December Group," and his works are held in many world collections, including the Rockefeller collection. The gallery is a key cultural institution in the city and hosts events such as the "Sremska Mitrovica Salon." Address: Gradski park 4. For more information, visit lazarvozarevic.com.</value>
+  </data>
+  <data name="Popup_Theatre_Title" xml:space="preserve">
+    <value>Dobrica Milutinović Theatre</value>
+  </data>
+  <data name="Popup_Theatre_Description" xml:space="preserve">
+    <value>The only professional theatre in Srem, with a tradition dating back to the 19th century. Located in the historic Serbian Home building, it hosts plays for all generations.</value>
+  </data>
+  <data name="Details_Theatre_FullDescription" xml:space="preserve">
+    <value>The "Dobrica Milutinović" Theatre in Sremska Mitrovica is the only professional theatre in Srem, with a tradition dating back to the 19th century. It is housed in the Serbian Home building from 1895, a protected cultural monument with elements of Neo-Renaissance and Neo-Baroque. The first theatre life in the city was recorded in 1842, while the professional theatre was established in 1944 and has borne its current name since 1974, in honor of the actor Dobrica Milutinović. In recent years, the theatre has been completely renovated and modernized, retaining its authentic appearance but gaining modern technical equipment. The repertoire includes plays for children and adults, and the institution also has Drama and Youth studios. On the occasion of its 80th anniversary in 2025, numerous gala performances were held. The theatre awards the "Dobrica Milutinović" Plaque for outstanding artistic contributions. Address: Trg Ćire Milekića 2. For more information, visit their Facebook page or call +381 (0)22 615 115.</value>
+  </data>
+  <data name="Details_Library_FullDescription" xml:space="preserve">
+    <value>The "Gligorije Vozarević" Library in Sremska Mitrovica is one of the oldest and most important cultural institutions in Srem, founded on February 4, 1866, as the Serbian Civic Reading Room. Today, it bears the name of Gligorije Vozarević, the first Serbian bookseller and publisher, born in the village of Ležimir. Since 1895, the library has been located in the Serbian Home building and has survived a fire in 1914 that destroyed much of its collection. After World War II, it was restored in 1946 as the "Prosveta" National Library and Reading Room. Today, it serves as the main library for the entire Srem district, covering more than 50 school and public libraries. The total collection exceeds 140,000 books, divided into departments for adults, children, youth, professional literature, and a local history collection. The library organizes numerous cultural programs, literary evenings, workshops, and exhibitions. Every year, on February 4, the Library Day is celebrated with awards for the most active users. Address: Trg Ćire Milekića 3. Contact: +381 (0)22 621 130, direktor@bgvsm.org.rs. More info: bgvsm.org.rs.</value>
+  </data>
+  <data name="Popup_Archive_Title" xml:space="preserve">
+    <value>Srem Historical Archive</value>
+  </data>
+  <data name="Popup_Archive_Description" xml:space="preserve">
+    <value>The central archival institution for Srem District, founded in 1946. It preserves around 1,340 archival funds and collections spanning from the 17th century to the present.</value>
+  </data>
+  <data name="Details_Archive_FullDescription" xml:space="preserve">
+    <value>The Srem Historical Archive in Sremska Mitrovica represents the central archival institution for Srem District, founded in 1946. It is housed in the Main Guard building, constructed in the late 18th century for the Military Frontier, which is now protected as a cultural monument. The archive preserves around 1,340 archival funds and collections, covering approximately 7,000 linear meters of material from the 17th century to the present. Particularly significant are the church registry books (Roman Catholic, Orthodox, Greek Catholic, and Jewish) from the period 1732-1900, which are frequently used by genealogists. The archive has jurisdiction over the city of Sremska Mitrovica and the municipalities of Stara Pazova, Inđija, Irig, Šid, Ruma, and Pećinci. It provides professional supervision over 920 active registries, including state bodies, local government, institutions, cooperatives, and enterprises. The archive is organized into departments for general affairs, material protection, arrangement, use, and research. Working hours are Monday to Friday from 07:00 to 15:00, while research work is conducted Tuesday, Wednesday, and Thursday from 08:00 to 11:00 with prior notice. Address: Vuka Karadžića 4. Contact: info@arhivsrem.org.rs. More information: www.arhivsrem.org.rs.</value>
+  </data>
+  <data name="Popup_SavaQuay_Title" xml:space="preserve">
+    <value>Sava Quay</value>
+  </data>
+  <data name="Popup_SavaQuay_Description" xml:space="preserve">
+    <value>A key defensive structure along the Sava River that protects the city from floods. It's also a popular promenade area with benches, greenery, and cycling paths.</value>
+  </data>
+  <data name="Details_SavaQuay_FullDescription" xml:space="preserve">
+    <value>The embankment in Sremska Mitrovica, also known as Sava Quay, represents a key defensive structure along the Sava River that protects the city from floods. It was built along the Sava coast and provides a safe zone between the river and the central urban areas. In addition to its flood protection function, the embankment is also a popular promenade area that attracts many citizens and visitors. Sava Quay is equipped with benches, greenery, and cycling paths, and often serves as a gathering place and recreation area. During the summer months, this area becomes lively thanks to numerous cultural and sports events. The embankment is also part of the Danube-Sava water basin system and has strategic importance in preserving the natural balance and safety in the region. This part of the city also offers an exceptional view of the Sava River, bridges, and the city panorama. Along Sava Quay, festivals, lantern releases, and artistic performances are often organized. The embankment is a favorite place for walkers, runners, and families with children. As a combination of functionality and beauty, the embankment in Sremska Mitrovica represents a symbol of the city's connection with the river.</value>
+  </data>
+  <data name="Details_GrainSquare_FullDescription" xml:space="preserve">
+    <value>Grain Square was part of the craft-trade zone of Sirmium. Excavations have revealed workshops, including glass furnaces, which confirm local glass production during late antiquity. Remains of shops and warehouses have also been found, as well as parts of streets with covered pedestrian paths (porticos) and a sewerage system. The archaeological findings testify to the economic vitality and craftsmanship of Roman Sirmium. The square was a center of trade and production, where various goods were manufactured and exchanged. The discovery of glass furnaces is particularly significant as it shows that Sirmium had its own glass production, which was a luxury industry in Roman times. The remains of shops and warehouses indicate a well-organized commercial district. The covered pedestrian paths (porticos) provided protection from weather conditions and created a pleasant environment for shopping and socializing. The sewerage system shows the high level of urban planning and infrastructure in Roman Sirmium. Today, Grain Square is an important archaeological site that provides insight into the daily life and economy of the ancient city.</value>
+  </data>
+  <data name="Details_Basilica_FullDescription" xml:space="preserve">
+    <value>The Basilica of St. Demetrius in Sremska Mitrovica is one of the most significant early Christian archaeological sites in the territory of ancient Sirmium. Built between 426 and 441 AD, during the time of Prefect Leontius, the basilica represented a three-nave Greek-type building with a central nave and side aisles ending in a transept. Its architecture testifies to the high level of organization of the Christian community in Sirmium during the 5th century. During excavations, 25 graves were found within and around the basilica, confirming its role as a place of worship and burial. Parts of floor mosaics with geometric and floral motifs, characteristic of the art of that period, were also discovered. The basilica was built at a time when Sirmium was one of the four main cities of the Roman Empire and an important episcopal seat. The first known bishop of Sirmium, St. Irenaeus, suffered martyrdom in 304 AD, which further emphasizes the importance of this site. The remains of the basilica are conserved and displayed in an underground archaeological space, located in the city center, near the present Catholic cathedral. The site is accessible to visitors, and more information can be obtained at the Srem Museum. The Basilica of St. Demetrius remains a lasting monument to early Christian faith and the spiritual life of imperial Sirmium.</value>
+  </data>
+  <data name="Details_RomanCamp_FullDescription" xml:space="preserve">
+    <value>The Roman military camp during the time of Sirmium was organized according to strict hierarchy and disciplined structure, with soldiers arranged in rows of tents (tentoria) that formed streets and squares within the fortified camp. Each unit had its own place, and centurions and higher-ranking officers stayed in larger and more organized tents closer to the command center (principia). Soldiers spent their days in training, maintaining equipment, cooking, writing letters, and craft work such as making arrows, repairing weapons, and building fortifications. The rest of the time they used for rest, social games like tabulae or dice games, as well as prayers to warrior gods. Although always ready for battle, their daily life was a mixture of strict discipline, practical duties, and moments of social closeness within the legion. The camp was a microcosm of Roman military life, reflecting the organization and efficiency that made the Roman army one of the most formidable forces in history.</value>
+  </data>
+  <data name="Details_RomanBazaar_FullDescription" xml:space="preserve">
+    <value>The Roman Bazaar brings to life the spirit of imperial Sirmium through authentic displays of ancient crafts, costumes, and scents of antiquity. Craftsmen and artists showcase the skills of Roman blacksmiths, potters, weavers, and glassmakers, taking us back to the time when Sirmium was the capital of the empire. The bazaar is a meeting place of past and present, education and entertainment for all generations. Visitors can experience history at their fingertips, try Roman food, and take home memories made with traditional techniques. We invite you to visit the Roman Bazaar and become part of this unique story that connects culture, tradition, and heritage. The bazaar offers a unique opportunity to see how Roman craftsmen worked, what tools they used, and how they created everyday objects that were both functional and beautiful. Visitors can participate in workshops, watch demonstrations of ancient techniques, and purchase authentic replicas of Roman artifacts. The atmosphere is enhanced by period music, traditional costumes, and the aromas of ancient spices and herbs.</value>
+  </data>
+  <data name="Popup_TouristCenter_Title" xml:space="preserve">
+    <value>Tourist Information Center</value>
+  </data>
+  <data name="Popup_TouristCenter_Description" xml:space="preserve">
+    <value>Located in City Park at Masarikova 2A, it serves as a central place for all visitors who want to discover the rich history, culture, and natural beauty of this city and its surroundings.</value>
+  </data>
+  <data name="Details_TouristCenter_FullDescription" xml:space="preserve">
+    <value>The Tourist Information Center of Sremska Mitrovica is located in City Park at Masarikova 2A and serves as a central place for all visitors who want to discover the rich history, culture, and natural beauty of this city and its surroundings. It was opened in late 2021 as a joint project of the City of Sremska Mitrovica and the Ministry of Trade, Tourism, and Telecommunications, with the aim of unifying the tourist offer of Sremska Mitrovica, Srem, and Northern Mačva in one place. At the Info Center, visitors can get detailed information about local attractions, including archaeological sites of ancient Sirmium, the Special Nature Reserve Zasavica, and the natural beauty of Fruška Gora. The center offers promotional materials such as tourist maps, flyers, and brochures, as well as contacts for licensed tourist guides. A special attraction are VR glasses that enable virtual walks through the city's historical sites. The Info Center's working hours are Monday to Friday from 07:00 to 17:00, and Saturday from 09:00 to 15:00. The facility also includes a souvenir shop with local products and a renovated public toilet adapted for people with disabilities and parents with small children. For additional information, you can visit the official website of the Tourist Organization of the City of Sremska Mitrovica: tosmomi.rs.</value>
+  </data>
+  <data name="Event_TouristCenterExhibition" xml:space="preserve">
+    <value>Tourist Organization Terrace - Photography Exhibition 'Mitrovica Through the Lens'</value>
+  </data>
+</root> 

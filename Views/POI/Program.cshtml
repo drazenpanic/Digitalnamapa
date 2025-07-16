@@ -1,5 +1,9 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @{
-    ViewData["Title"] = "Program Festivala";
+    ViewData["Title"] = Localizer["Program_Title"];
 }
 
 <div class="container-fluid">
@@ -7,10 +11,10 @@
         <div class="col-12">
             <div class="program-header text-center mb-4">
                 <h1 class="display-4" style="font-family: 'Cinzel', serif; font-weight: 700; color: #DAA520; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
-                    Program Festivala Lux Aurelius
+                    @Localizer["Program_Header"]
                 </h1>
                 <p class="lead" style="font-family: 'Times New Roman', serif; color: silver; font-style: italic; font-weight: 600;">
-                    Sremska Mitrovica, 01-02. avgust 2025.
+                    @Localizer["Program_Subtitle"]
                 </p>
             </div>
         </div>
@@ -23,14 +27,16 @@
                 <!-- Carska Palata -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/palata.png" alt="Carska Palata" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">1. Carska Palata</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 1 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/palata.png" alt="Carska Palata" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">1. @Localizer["Location_ImperialPalace"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Defile učesnika festivala</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 01.08. i 02.08. 2025. u 20:00h</p>
-                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">Defile učesnika festivala kreće od Carske palate do Žitnog trga.</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_Parade"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 01.08. i 02.08. 2025. u 20:00h</p>
+                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">@Localizer["Event_ParadeDesc"]</p>
                         </div>
                     </div>
                 </div>
@@ -38,25 +44,27 @@
                 <!-- Gradski Park -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/park.png" alt="Gradski Park" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">2. Gradski Park - Kameni cvet</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 2 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/park.png" alt="Gradski Park" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">2. @Localizer["Location_CityPark"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Radionice za decu</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025, 10:00-14:00</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_ChildrenWorkshops"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025, 10:00-14:00</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Eksperimentalna arheologija</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025, 10:00-19:00</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_ExperimentalArchaeology"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025, 10:00-19:00</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Rimski bazar</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025, 10:00-19:00</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_RomanBazaar"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025, 10:00-19:00</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Foto kutak</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025, 10:00-19:00</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_PhotoCorner"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025, 12h-19h</p>
                         </div>
                     </div>
                 </div>
@@ -64,13 +72,15 @@
                 <!-- Muzej Srema -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/muzejsrema.png" alt="Muzej Srema" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">3. Muzej Srema</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 3 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/muzejsrema.png" alt="Muzej Srema" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">3. @Localizer["Location_SremMuseum"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Eksperimentalna arheologija</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025 10h-19h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_ExperimentalArchaeology"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025 10h-19h</p>
                         </div>
                     </div>
                 </div>
@@ -78,13 +88,15 @@
                 <!-- Lapidarijum -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/lapidarijum.png" alt="Lapidarijum" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">4. Muzej Srema Lapidarijum</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 4 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/lapidarijum.png" alt="Lapidarijum" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">4. @Localizer["Location_Lapidarium"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
                             <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Eksperimentalna arheologija</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025 10h-19h</p>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025 10h-19h</p>
                         </div>
                     </div>
                 </div>
@@ -92,17 +104,19 @@
                 <!-- Biblioteka -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/biblioteka.png" alt="Biblioteka" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">5. Biblioteka "Gligorije Vozarević"</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 6 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/biblioteka.png" alt="Biblioteka" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">5. @Localizer["Location_Library"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Digitalna interakcija - Razgovor sa rimskim carevima Sirmiuma</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025, 10h-19h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_DigitalInteraction"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025, 10h-19h</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Decije radionice</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025 - 10h-14h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_ChildrenWorkshopsShort"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025 - 10h-14h</p>
                         </div>
                     </div>
                 </div>
@@ -110,25 +124,27 @@
                 <!-- Žitni Trg -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/zitnitrg.png" alt="Žitni Trg" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">6. Žitni Trg</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 7 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/zitnitrg.png" alt="Žitni Trg" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">6. @Localizer["Location_GrainSquare"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Defile učesnika Festivala Lux Aurelius</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 01.08.2025 20:00h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_FestivalParade"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 01.08.2025 20:00h</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Sirmium Lux Verbi - revija besednistva</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 01.08.2025 20:30h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_SirmiumLuxVerbi"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 01.08.2025 20:30h</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Program otvaranja festivala Lux Aurelius</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 01.08.2025 21:00h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_FestivalOpening"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 01.08.2025 21:00h</p>
                         </div>
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Program zatvaranja Festivala Lux Aurelius</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025 21:30h</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_FestivalClosing"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025 21:30h</p>
                         </div>
                     </div>
                 </div>
@@ -136,14 +152,16 @@
                 <!-- Galerija -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/galerija.png" alt="Galerija" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">7. Galerija "Lazar Vozarević"</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 9 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/galerija.png" alt="Galerija" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">7. @Localizer["Location_Gallery"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Otvorena za posetioce</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> tokom festivala</p>
-                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">Ustanova je otvorena za sve posetioce tokom festivala.</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Program_OpenForVisitors"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> @Localizer["Program_DuringFestival"]</p>
+                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">@Localizer["Program_OpenForVisitorsDesc"]</p>
                         </div>
                     </div>
                 </div>
@@ -152,12 +170,12 @@
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
                         <img src="/images/kafanamoskva.png" alt="Kafana Moskva" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">8. Kafana Moskva</h2>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">8. @Localizer["Location_MoscowTavern"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Rimski pub kviz</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 01.08. u 21:30</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_RomanPubQuiz"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 01.08. u 21:30</p>
                         </div>
                     </div>
                 </div>
@@ -165,14 +183,16 @@
                 <!-- Rimski Kamp -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/kamp.png" alt="Rimski Kamp" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
-                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">9. Rimski Legionarski Kamp</h2>
+                        <a href="@Url.Action("Details", "POI", new { id = 12 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/kamp.png" alt="Rimski Kamp" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
+                        <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">9. @Localizer["Location_RomanCamp"]</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Rimske igre</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> 02.08.2025, 10h-14h</p>
-                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">Rimske igre i rekonstrukcija svakodnevnog života legionara</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Event_RomanGames"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> 02.08.2025, 10h-14h</p>
+                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">@Localizer["Event_RomanGamesDesc"]</p>
                         </div>
                     </div>
                 </div>
@@ -180,14 +200,16 @@
                 <!-- Bazilika -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/bazilika.png" alt="Bazilika" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
+                        <a href="@Url.Action("Details", "POI", new { id = 13 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/bazilika.png" alt="Bazilika" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
                         <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">10. Bazilika Svetog Dimitrija</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
                             <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Otvorena za posetioce</h4>
                             <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> tokom festivala</p>
-                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">Ustanova je otvorena u toku festivala za sve posetioce</p>
+                            <p style="font-family: 'Times New Roman', serif; color: #333; margin: 5px 0 0 0;">@Localizer["Program_OpenForVisitorsDuring"]</p>
                         </div>
                     </div>
                 </div>
@@ -195,7 +217,9 @@
                 <!-- Turistička Organizacija -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/turistickaorganizacija.png" alt="Turistička Organizacija" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
+                        <a href="@Url.Action("Details", "POI", new { id = 17 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/turistickaorganizacija.png" alt="Turistička Organizacija" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
                         <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">11. Turistički informativni centar</h2>
                     </div>
                     <div class="events-list">
@@ -209,7 +233,9 @@
                 <!-- Rimski Bazar -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/rimskibazar.png" alt="Rimski Bazar" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
+                        <a href="@Url.Action("Details", "POI", new { id = 16 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/rimskibazar.png" alt="Rimski Bazar" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
                         <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">12. Rimski Bazar</h2>
                     </div>
                     <div class="events-list">
@@ -223,7 +249,9 @@
                 <!-- Savski kej -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/lampioni.png" alt="Savski kej" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
+                        <a href="@Url.Action("Details", "POI", new { id = 15 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/lampioni.png" alt="Savski kej" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
                         <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">13. Savski kej</h2>
                     </div>
                     <div class="events-list">
@@ -252,13 +280,15 @@
                 <!-- Istorijski arhiv Srema -->
                 <div class="location-section mb-4">
                     <div class="location-header" style="display: flex; align-items: center; margin-bottom: 15px;">
-                        <img src="/images/arhivsrema.png" alt="Istorijski arhiv Srema" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa;">
+                        <a href="@Url.Action("Details", "POI", new { id = 11 })" style="text-decoration: none; display: flex; align-items: center;">
+                            <img src="/images/arhivsrema.png" alt="Istorijski arhiv Srema" style="width: 50px; height: 50px; margin-right: 15px; border-radius: 50%; box-shadow: 0 2px 8px #aaa; transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;">
+                        </a>
                         <h2 style="font-family: 'Cinzel', serif; font-weight: 700; color: #211B0D; margin: 0;">15. Istorijski arhiv Srema</h2>
                     </div>
                     <div class="events-list">
                         <div class="event-item" style="background: rgba(255,255,255,0.7); padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8B6914;">
-                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">Otvoreno za posetioce</h4>
-                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>Vreme:</strong> tokom festivala</p>
+                            <h4 style="font-family: 'Cinzel', serif; font-weight: 700; color: #8B6914; margin-bottom: 5px;">@Localizer["Program_OpenForVisitorsShort"]</h4>
+                            <p style="font-family: 'Times New Roman', serif; color: #666; margin: 0;"><strong>@Localizer["Program_Time"]</strong> @Localizer["Program_DuringFestival"]</p>
                         </div>
                     </div>
                 </div>
@@ -285,7 +315,7 @@
                 margin-top: 20px;
                 box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             ">
-                <span style="margin-right: 8px;">←</span> Nazad na mapu
+                <span style="margin-right: 8px;">←</span> @Localizer["BackToMap"]
             </a>
         </div>
     </div>
@@ -309,5 +339,11 @@
     .location-header:hover {
         transform: scale(1.02);
         transition: transform 0.3s ease;
+    }
+
+    /* Hover efekti za ikonice sa linkovima */
+    .location-header a img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(218, 165, 32, 0.4);
     }
 </style> 

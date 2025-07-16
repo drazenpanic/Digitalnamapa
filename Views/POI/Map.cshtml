@@ -1,108 +1,112 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> Localizer
+
 @{
     ViewData["Title"] = "Digitalna Mapa";
 }
 
 <h1 class="text-center mb-4" style="font-family: 'Cinzel', serif; font-weight: 700;">
-    Dobrodošli na Lux Aurelius<br>
-    <span style="font-family: 'Times New Roman', serif; font-weight: 400;">festum culturae romanae</span><br>
-    Sirmium MMXXV
+    @Localizer["Map_Welcome"]<br>
+    <span style="font-family: 'Times New Roman', serif; font-weight: 400;">@Localizer["Map_FestivalSubtitle"]</span><br>
+    @Localizer["Map_Year"]
 </h1>
     
 <!-- Filter controls -->
 <div class="d-flex justify-content-center mb-3 flex-wrap">
-    <button type="button" class="btn btn-primary m-1 filter-btn active" data-type="All">Sve</button>
-    <button type="button" class="btn btn-outline-primary m-1 filter-btn" data-type="Dešavanja">Dešavanja</button>
-    <button type="button" class="btn btn-outline-primary m-1 filter-btn" data-type="Servisi">Servisi</button>
+    <button type="button" class="btn btn-primary m-1 filter-btn active" data-type="All">@Localizer["Map_FilterAll"]</button>
+    <button type="button" class="btn btn-outline-primary m-1 filter-btn" data-type="Dešavanja">@Localizer["Map_FilterEvents"]</button>
+    <button type="button" class="btn btn-outline-primary m-1 filter-btn" data-type="Servisi">@Localizer["Map_FilterServices"]</button>
 </div>
 
 <!-- Vraćeno unutar .container div-a, ali sada je ovaj container uklonjen iz Map.cshtml -->
 <div id="map" class="w-100 h-100"></div>
 <div class="legend">
-    <div class="legend-title text-center mb-3">LEGENDA</div>
+    <div class="legend-title text-center mb-3">@Localizer["Map_Legend"]</div>
     <div class="d-flex justify-content-center gap-4 flex-wrap">
         <div class="legend-palata legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/palata.png" alt="Carska palata" style="width: 40px; height: 40px;">
-            <div class="mt-1">Carska palata</div>
+            <img src="/images/palata.png" alt="@Localizer["Legend_ImperialPalace"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_ImperialPalace"]</div>
         </div>
         <div class="legend-park legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/park.png" alt="Gradski park" style="width: 40px; height: 40px;">
-            <div class="mt-1">Gradski park</div>
+            <img src="/images/park.png" alt="@Localizer["Legend_CityPark"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_CityPark"]</div>
         </div>
         <div class="legend-muzej legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/muzejsrema.png" alt="Muzej Srema" style="width: 40px; height: 40px;">
-            <div class="mt-1">Muzej Srema</div>
+            <img src="/images/muzejsrema.png" alt="@Localizer["Legend_SremMuseum"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_SremMuseum"]</div>
         </div>
         <div class="legend-lapidarijum legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/lapidarijum.png" alt="Lapidarijum" style="width: 40px; height: 40px;">
-            <div class="mt-1">Lapidarijum</div>
+            <img src="/images/lapidarijum.png" alt="@Localizer["Legend_Lapidarium"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Lapidarium"]</div>
         </div>
         <div class="legend-biblioteka legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/biblioteka.png" alt="Gradska Biblioteka" style="width: 40px; height: 40px;">
-            <div class="mt-1">Biblioteka</div>
+            <img src="/images/biblioteka.png" alt="@Localizer["Legend_Library"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Library"]</div>
         </div>
         <div class="legend-zitnitrg legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/zitnitrg.png" alt="Žitni Trg" style="width: 40px; height: 40px;">
-            <div class="mt-1">Žitni Trg</div>
+            <img src="/images/zitnitrg.png" alt="@Localizer["Legend_GrainSquare"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_GrainSquare"]</div>
         </div>
         <div class="legend-pozoriste legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/pozoriste.png" alt="Gradsko Pozorište" style="width: 40px; height: 40px;">
-            <div class="mt-1">Pozorište</div>
+            <img src="/images/pozoriste.png" alt="@Localizer["Legend_Theater"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Theater"]</div>
         </div>
         <div class="legend-galerija legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/galerija.png" alt="Gradska Galerija" style="width: 40px; height: 40px;">
-            <div class="mt-1">Galerija</div>
+            <img src="/images/galerija.png" alt="@Localizer["Legend_Gallery"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Gallery"]</div>
         </div>
         <div class="legend-moskva legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/kafanamoskva.png" alt="Kafana Moskva" style="width: 40px; height: 40px;">
-            <div class="mt-1">Kafana Moskva</div>
+            <img src="/images/kafanamoskva.png" alt="@Localizer["Legend_MoscowTavern"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_MoscowTavern"]</div>
         </div>
         <div class="legend-arhiv-srema legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/arhivsrema.png" alt="Arhiv Srema" style="width: 40px; height: 40px;">
-            <div class="mt-1">Arhiv Srema</div>
+            <img src="/images/arhivsrema.png" alt="@Localizer["Legend_SremArchive"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_SremArchive"]</div>
         </div>
         <div class="legend-kamp legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/kamp.png" alt="Rimski Legionarski Kamp" style="width: 40px; height: 40px;">
-            <div class="mt-1">Rimski Kamp</div>
+            <img src="/images/kamp.png" alt="@Localizer["Legend_RomanCamp"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_RomanCamp"]</div>
         </div>
         <div class="legend-bazilika legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/bazilika.png" alt="Bazilika Svetog Stefana" style="width: 40px; height: 40px;">
-            <div class="mt-1">Bazilika</div>
+            <img src="/images/bazilika.png" alt="@Localizer["Legend_Basilica"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Basilica"]</div>
         </div>
         <div class="legend-turisticka legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/turistickaorganizacija.png" alt="Turistička Organizacija" style="width: 40px; height: 40px;">
-            <div class="mt-1">Turistička Org.</div>
+            <img src="/images/turistickaorganizacija.png" alt="@Localizer["Legend_TouristOrg"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_TouristOrg"]</div>
         </div>
         <div class="legend-toalet legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/wc.png" alt="Toalet" style="width: 40px; height: 40px;">
-            <div class="mt-1">Toalet</div>
+            <img src="/images/wc.png" alt="@Localizer["Legend_Toilet"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Toilet"]</div>
         </div>
         <div class="legend-voda legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/voda.png" alt="Voda" style="width: 40px; height: 40px;">
-            <div class="mt-1">Voda</div>
+            <img src="/images/voda.png" alt="@Localizer["Legend_Water"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Water"]</div>
         </div>
         <div class="legend-pomoc legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/pomoc.png" alt="Prva Pomoć" style="width: 40px; height: 40px;">
-            <div class="mt-1">Prva Pomoć</div>
+            <img src="/images/pomoc.png" alt="@Localizer["Legend_FirstAid"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_FirstAid"]</div>
         </div>
         <div class="legend-hrana legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/hrana.png" alt="Hrana" style="width: 40px; height: 40px;">
-            <div class="mt-1">Hrana</div>
+            <img src="/images/hrana.png" alt="@Localizer["Legend_Food"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Food"]</div>
         </div>
         <div class="legend-bazar legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/rimskibazar.png" alt="Rimski Bazar" style="width: 40px; height: 40px;">
-            <div class="mt-1">Rimski Bazar</div>
+            <img src="/images/rimskibazar.png" alt="@Localizer["Legend_RomanBazaar"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_RomanBazaar"]</div>
         </div>
         <div class="legend-lampioni legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/lampioni.png" alt="Savski kej" style="width: 40px; height: 40px;">
-            <div class="mt-1">Savski kej</div>
+            <img src="/images/lampioni.png" alt="@Localizer["Legend_SavaQuay"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_SavaQuay"]</div>
         </div>
         <div class="legend-parking legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/parking.png" alt="Parking" style="width: 40px; height: 40px;">
-            <div class="mt-1">Parking</div>
+            <img src="/images/parking.png" alt="@Localizer["Legend_Parking"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_Parking"]</div>
         </div>
         <div class="legend-kedarbar legend-item d-inline-block text-center" style="cursor:pointer; min-width: 80px;">
-            <img src="/images/kedarbar.png" alt="Kedar Bar" style="width: 40px; height: 40px;">
-            <div class="mt-1">Kedar Bar</div>
+            <img src="/images/kedarbar.png" alt="@Localizer["Legend_CedarBar"]" style="width: 40px; height: 40px;">
+            <div class="mt-1">@Localizer["Legend_CedarBar"]</div>
         </div>
     </div>
 </div>
@@ -145,6 +149,82 @@
 
 @section Scripts {
     <script>
+        // Localization data - make it globally available
+        window.localizationData = {
+            'Popup_ImperialPalace_Title': '@Localizer["Popup_ImperialPalace_Title"]',
+            'Popup_ImperialPalace_Description': '@Localizer["Popup_ImperialPalace_Description"]',
+            'Popup_CityPark_Title': '@Localizer["Popup_CityPark_Title"]',
+            'Popup_CityPark_Description': '@Localizer["Popup_CityPark_Description"]',
+            'Popup_Event': '@Localizer["Popup_Event"]',
+            'Popup_Events': '@Localizer["Popup_Events"]',
+            'Popup_OpenInGoogleMaps': '@Localizer["Popup_OpenInGoogleMaps"]',
+            'Popup_Details': '@Localizer["Popup_Details"]',
+            'Event_Parade': '@Localizer["Event_Parade"]',
+            'Event_ParadeDesc': '@Localizer["Event_ParadeDesc"]',
+            'Event_ChildrenWorkshops': '@Localizer["Event_ChildrenWorkshops"]',
+            'Event_ExperimentalArchaeology': '@Localizer["Event_ExperimentalArchaeology"]',
+            'Event_RomanBazaar': '@Localizer["Event_RomanBazaar"]',
+            'Event_PhotoCorner': '@Localizer["Event_PhotoCorner"]',
+            'Popup_SremMuseum_Title': '@Localizer["Popup_SremMuseum_Title"]',
+            'Popup_SremMuseum_Description': '@Localizer["Popup_SremMuseum_Description"]',
+            'Popup_Lapidarium_Title': '@Localizer["Popup_Lapidarium_Title"]',
+            'Popup_Lapidarium_Description': '@Localizer["Popup_Lapidarium_Description"]',
+            'Popup_Library_Title': '@Localizer["Popup_Library_Title"]',
+            'Popup_Library_Description': '@Localizer["Popup_Library_Description"]',
+            'Event_DigitalInteraction': '@Localizer["Event_DigitalInteraction"]',
+            'Event_ChildrenWorkshopsShort': '@Localizer["Event_ChildrenWorkshopsShort"]',
+            'Popup_GrainSquare_Title': '@Localizer["Popup_GrainSquare_Title"]',
+            'Popup_GrainSquare_Description': '@Localizer["Popup_GrainSquare_Description"]',
+            'Event_FestivalParade': '@Localizer["Event_FestivalParade"]',
+            'Event_SirmiumLuxVerbi': '@Localizer["Event_SirmiumLuxVerbi"]',
+            'Event_FestivalOpening': '@Localizer["Event_FestivalOpening"]',
+            'Event_FestivalClosing': '@Localizer["Event_FestivalClosing"]',
+            'Popup_Theater_Title': '@Localizer["Popup_Theater_Title"]',
+            'Popup_Theater_Description': '@Localizer["Popup_Theater_Description"]',
+            'Popup_Gallery_Title': '@Localizer["Popup_Gallery_Title"]',
+            'Popup_Gallery_Description': '@Localizer["Popup_Gallery_Description"]',
+            'Event_OpenForVisitors': '@Localizer["Event_OpenForVisitors"]',
+            'Event_OpenForVisitorsDesc': '@Localizer["Event_OpenForVisitorsDesc"]',
+            'Popup_MoscowTavern_Title': '@Localizer["Popup_MoscowTavern_Title"]',
+            'Popup_MoscowTavern_Description': '@Localizer["Popup_MoscowTavern_Description"]',
+            'Popup_HistoricalArchive_Title': '@Localizer["Popup_HistoricalArchive_Title"]',
+            'Popup_HistoricalArchive_Description': '@Localizer["Popup_HistoricalArchive_Description"]',
+            'Popup_RomanCamp_Title': '@Localizer["Popup_RomanCamp_Title"]',
+            'Popup_RomanCamp_Description': '@Localizer["Popup_RomanCamp_Description"]',
+            'Event_RomanGamesDesc': '@Localizer["Event_RomanGamesDesc"]',
+            'Popup_Basilica_Title': '@Localizer["Popup_Basilica_Title"]',
+            'Popup_Basilica_Description': '@Localizer["Popup_Basilica_Description"]',
+            'Event_OpenForVisitorsDuring': '@Localizer["Event_OpenForVisitorsDuring"]',
+            'Popup_GoogleMaps': '@Localizer["Popup_GoogleMaps"]',
+            'Popup_Toilet_Title': '@Localizer["Popup_Toilet_Title"]',
+            'Popup_Toilet_Description': '@Localizer["Popup_Toilet_Description"]',
+            'Popup_Water_Title': '@Localizer["Popup_Water_Title"]',
+            'Popup_Water_Description': '@Localizer["Popup_Water_Description"]',
+            'Popup_FirstAid_Title': '@Localizer["Popup_FirstAid_Title"]',
+            'Popup_FirstAid_Description': '@Localizer["Popup_FirstAid_Description"]',
+            'Popup_Food_Title': '@Localizer["Popup_Food_Title"]',
+            'Popup_Food_Description': '@Localizer["Popup_Food_Description"]',
+            'Popup_Parking_Title': '@Localizer["Popup_Parking_Title"]',
+            'Popup_Parking_Description': '@Localizer["Popup_Parking_Description"]',
+            'Popup_RomanBazaar_Title': '@Localizer["Popup_RomanBazaar_Title"]',
+            'Popup_RomanBazaar_Description': '@Localizer["Popup_RomanBazaar_Description"]',
+            'Popup_RomanBazaar_Event': '@Localizer["Popup_RomanBazaar_Event"]',
+            'Popup_RomanBazaar_EventTime': '@Localizer["Popup_RomanBazaar_EventTime"]',
+            'Popup_Lampioni_Title': '@Localizer["Popup_Lampioni_Title"]',
+            'Popup_Lampioni_Description': '@Localizer["Popup_Lampioni_Description"]',
+            'Popup_Lampioni_Event': '@Localizer["Popup_Lampioni_Event"]',
+            'Popup_Lampioni_EventTime': '@Localizer["Popup_Lampioni_EventTime"]',
+            'Popup_Lampioni_EventDesc': '@Localizer["Popup_Lampioni_EventDesc"]',
+            'Popup_KedarBar_Title': '@Localizer["Popup_KedarBar_Title"]',
+            'Popup_KedarBar_Description': '@Localizer["Popup_KedarBar_Description"]',
+            'Popup_KedarBar_Event': '@Localizer["Popup_KedarBar_Event"]',
+            'Popup_KedarBar_EventTime': '@Localizer["Popup_KedarBar_EventTime"]',
+            'Popup_TouristInfo_Title': '@Localizer["Popup_TouristInfo_Title"]',
+            'Popup_TouristInfo_Description': '@Localizer["Popup_TouristInfo_Description"]',
+            'Popup_TouristInfo_Event': '@Localizer["Popup_TouristInfo_Event"]',
+            'Popup_TouristInfo_EventTime': '@Localizer["Popup_TouristInfo_EventTime"]'
+        };
+
         // Definiranje granica slike (visina x širina u pikselima)
         var imageBounds = [[0, 0], [1200, 1800]]; // [y1, x1], [y2, x2]
 

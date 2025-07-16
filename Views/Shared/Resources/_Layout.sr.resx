@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Digitalna Mapa Festivala</value>
+  </data>
+  <data name="Navigation_Map" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="Navigation_Program" xml:space="preserve">
+    <value>Program Festivala</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="BackToMap" xml:space="preserve">
+    <value>Nazad na mapu</value>
+  </data>
+</root> 

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>Digitalna Mapa Festivala</value>
+  </data>
+  <data name="Navigation_Map" xml:space="preserve">
+    <value>Mapa</value>
+  </data>
+  <data name="Navigation_Program" xml:space="preserve">
+    <value>Program Festivala</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="BackToMap" xml:space="preserve">
+    <value>Nazad na mapu</value>
+  </data>
+  <data name="Map_Welcome" xml:space="preserve">
+    <value>Dobrodošli na Lux Aurelius</value>
+  </data>
+  <data name="Map_FestivalSubtitle" xml:space="preserve">
+    <value>festum culturae romanae</value>
+  </data>
+  <data name="Map_Year" xml:space="preserve">
+    <value>Sirmium MMXXV</value>
+  </data>
+  <data name="Map_FilterAll" xml:space="preserve">
+    <value>Sve</value>
+  </data>
+  <data name="Map_FilterEvents" xml:space="preserve">
+    <value>Dešavanja</value>
+  </data>
+  <data name="Map_FilterServices" xml:space="preserve">
+    <value>Servisi</value>
+  </data>
+  <data name="Map_Legend" xml:space="preserve">
+    <value>LEGENDA</value>
+  </data>
+  <data name="Legend_ImperialPalace" xml:space="preserve">
+    <value>Carska palata</value>
+  </data>
+  <data name="Legend_CityPark" xml:space="preserve">
+    <value>Gradski park</value>
+  </data>
+  <data name="Legend_SremMuseum" xml:space="preserve">
+    <value>Muzej Srema</value>
+  </data>
+  <data name="Legend_Lapidarium" xml:space="preserve">
+    <value>Lapidarijum</value>
+  </data>
+  <data name="Legend_Library" xml:space="preserve">
+    <value>Biblioteka</value>
+  </data>
+  <data name="Legend_GrainSquare" xml:space="preserve">
+    <value>Žitni Trg</value>
+  </data>
+  <data name="Legend_Theater" xml:space="preserve">
+    <value>Pozorište</value>
+  </data>
+  <data name="Legend_Gallery" xml:space="preserve">
+    <value>Galerija</value>
+  </data>
+  <data name="Legend_MoscowTavern" xml:space="preserve">
+    <value>Kafana Moskva</value>
+  </data>
+  <data name="Legend_SremArchive" xml:space="preserve">
+    <value>Arhiv Srema</value>
+  </data>
+  <data name="Legend_RomanCamp" xml:space="preserve">
+    <value>Rimski Kamp</value>
+  </data>
+  <data name="Legend_Basilica" xml:space="preserve">
+    <value>Bazilika</value>
+  </data>
+  <data name="Legend_TouristOrg" xml:space="preserve">
+    <value>Turistička Org.</value>
+  </data>
+  <data name="Legend_Toilet" xml:space="preserve">
+    <value>Toalet</value>
+  </data>
+  <data name="Legend_Water" xml:space="preserve">
+    <value>Voda</value>
+  </data>
+  <data name="Legend_FirstAid" xml:space="preserve">
+    <value>Prva Pomoć</value>
+  </data>
+  <data name="Legend_Food" xml:space="preserve">
+    <value>Hrana</value>
+  </data>
+  <data name="Legend_RomanBazaar" xml:space="preserve">
+    <value>Rimski Bazar</value>
+  </data>
+  <data name="Legend_SavaQuay" xml:space="preserve">
+    <value>Savski kej</value>
+  </data>
+  <data name="Legend_Parking" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="Legend_CedarBar" xml:space="preserve">
+    <value>Kedar Bar</value>
+  </data>
+  <data name="Program_Title" xml:space="preserve">
+    <value>Program Festivala</value>
+  </data>
+  <data name="Program_Header" xml:space="preserve">
+    <value>Program Festivala Lux Aurelius</value>
+  </data>
+  <data name="Program_Subtitle" xml:space="preserve">
+    <value>Sremska Mitrovica, 01-02. avgust 2025.</value>
+  </data>
+  <data name="Program_Time" xml:space="preserve">
+    <value>Vreme:</value>
+  </data>
+  <data name="Program_DuringFestival" xml:space="preserve">
+    <value>tokom festivala</value>
+  </data>
+  <data name="Program_OpenForVisitors" xml:space="preserve">
+    <value>Otvorena za posetioce</value>
+  </data>
+  <data name="Program_OpenForVisitorsDesc" xml:space="preserve">
+    <value>Ustanova je otvorena za sve posetioce tokom festivala.</value>
+  </data>
+  <data name="Program_OpenForVisitorsDuring" xml:space="preserve">
+    <value>Ustanova je otvorena u toku festivala za sve posetioce</value>
+  </data>
+  <data name="Program_OpenForVisitorsShort" xml:space="preserve">
+    <value>Otvoreno za posetioce</value>
+  </data>
+  <data name="Event_Parade" xml:space="preserve">
+    <value>Defile učesnika festivala</value>
+  </data>
+  <data name="Event_ParadeDesc" xml:space="preserve">
+    <value>Defile učesnika festivala kreće od Carske palate do Žitnog trga.</value>
+  </data>
+  <data name="Event_ChildrenWorkshops" xml:space="preserve">
+    <value>Radionice za decu</value>
+  </data>
+  <data name="Event_ExperimentalArchaeology" xml:space="preserve">
+    <value>Eksperimentalna arheologija</value>
+  </data>
+  <data name="Event_RomanBazaar" xml:space="preserve">
+    <value>Rimski bazar</value>
+  </data>
+  <data name="Event_PhotoCorner" xml:space="preserve">
+    <value>Foto kutak</value>
+  </data>
+  <data name="Event_DigitalInteraction" xml:space="preserve">
+    <value>Digitalna interakcija - Razgovor sa rimskim carevima Sirmiuma</value>
+  </data>
+  <data name="Event_ChildrenWorkshopsShort" xml:space="preserve">
+    <value>Decije radionice</value>
+  </data>
+  <data name="Event_FestivalParade" xml:space="preserve">
+    <value>Defile učesnika Festivala Lux Aurelius</value>
+  </data>
+  <data name="Event_SirmiumLuxVerbi" xml:space="preserve">
+    <value>Sirmium Lux Verbi - revija besednistva</value>
+  </data>
+  <data name="Event_FestivalOpening" xml:space="preserve">
+    <value>Program otvaranja festivala Lux Aurelius</value>
+  </data>
+  <data name="Event_FestivalClosing" xml:space="preserve">
+    <value>Program zatvaranja Festivala Lux Aurelius</value>
+  </data>
+  <data name="Event_RomanPubQuiz" xml:space="preserve">
+    <value>Rimski pub kviz</value>
+  </data>
+  <data name="Event_RomanGames" xml:space="preserve">
+    <value>Rimske igre</value>
+  </data>
+  <data name="Event_RomanGamesDesc" xml:space="preserve">
+    <value>Rimske igre i rekonstrukcija svakodnevnog života legionara</value>
+  </data>
+  <data name="Event_PhotoExhibition" xml:space="preserve">
+    <value>Terasa Turističke organizacije - izložba Fotografija "Mitrovica kroz objektiv"</value>
+  </data>
+  <data name="Event_HandmadeProducts" xml:space="preserve">
+    <value>Prodaja unikatnih ručno rađenih proizvoda</value>
+  </data>
+  <data name="Event_LanternRelease" xml:space="preserve">
+    <value>Program zatvaranja Festivala Lux Aurelius</value>
+  </data>
+  <data name="Event_LanternReleaseDesc" xml:space="preserve">
+    <value>Na završnici festivala, simbolično puštamo lampione niz reku Savu</value>
+  </data>
+  <data name="Location_ImperialPalace" xml:space="preserve">
+    <value>Carska Palata</value>
+  </data>
+  <data name="Location_CityPark" xml:space="preserve">
+    <value>Gradski Park - Kameni cvet</value>
+  </data>
+  <data name="Location_SremMuseum" xml:space="preserve">
+    <value>Muzej Srema</value>
+  </data>
+  <data name="Location_Lapidarium" xml:space="preserve">
+    <value>Muzej Srema Lapidarijum</value>
+  </data>
+  <data name="Location_Library" xml:space="preserve">
+    <value>Biblioteka "Gligorije Vozarević"</value>
+  </data>
+  <data name="Location_GrainSquare" xml:space="preserve">
+    <value>Žitni Trg</value>
+  </data>
+  <data name="Location_Gallery" xml:space="preserve">
+    <value>Galerija "Lazar Vozarević"</value>
+  </data>
+  <data name="Location_MoscowTavern" xml:space="preserve">
+    <value>Kafana Moskva</value>
+  </data>
+  <data name="Location_RomanCamp" xml:space="preserve">
+    <value>Rimski Legionarski Kamp</value>
+  </data>
+  <data name="Location_Basilica" xml:space="preserve">
+    <value>Bazilika Svetog Dimitrija</value>
+  </data>
+  <data name="Location_TouristCenter" xml:space="preserve">
+    <value>Turistički informativni centar</value>
+  </data>
+  <data name="Location_RomanBazaar" xml:space="preserve">
+    <value>Rimski Bazar</value>
+  </data>
+  <data name="Location_SavaQuay" xml:space="preserve">
+    <value>Savski kej</value>
+  </data>
+  <data name="Location_CedarBar" xml:space="preserve">
+    <value>Kedar Bar</value>
+  </data>
+  <data name="Location_HistoricalArchive" xml:space="preserve">
+    <value>Istorijski arhiv Srema</value>
+  </data>
+  <data name="Popup_ImperialPalace_Description" xml:space="preserve">
+    <value>Carska palata u Sremskoj Mitrovici, poznata kao Imperijalna palata Sirmijuma, jedno je od najznačajnijih arheoloških nalazišta u Srbiji, simbol moci nekadasnjeg Rimskog carstva.</value>
+  </data>
+  <data name="Popup_Event" xml:space="preserve">
+    <value>Dešavanje:</value>
+  </data>
+  <data name="Popup_Events" xml:space="preserve">
+    <value>Dešavanja:</value>
+  </data>
+  <data name="Popup_OpenInGoogleMaps" xml:space="preserve">
+    <value>Otvori u Google mapama</value>
+  </data>
+  <data name="Popup_Details" xml:space="preserve">
+    <value>Detalji</value>
+  </data>
+  <data name="Popup_ImperialPalace_Title" xml:space="preserve">
+    <value>Carska Palata</value>
+  </data>
+  <data name="Popup_CityPark_Title" xml:space="preserve">
+    <value>Gradski Park - Kameni cvet</value>
+  </data>
+  <data name="Popup_CityPark_Description" xml:space="preserve">
+    <value>Fontana „Kameni cvet" u Gradskom parku Sremske Mitrovice jedno je od najprepoznatljivijih obeležja grada, koje spaja umetnost, istoriju i duboku emotivnu simboliku.</value>
+  </data>
+  <data name="Popup_SremMuseum_Title" xml:space="preserve">
+    <value>Muzej Srema</value>
+  </data>
+  <data name="Popup_SremMuseum_Description" xml:space="preserve">
+    <value>Jedna od najznačajnijih kulturnih institucija u regionu, osnovana 1946. godine. Čuva i izlaže arheološke nalaze iz antičkog Sirmijuma i šireg prostora Srema.</value>
+  </data>
+  <data name="Popup_Lapidarium_Title" xml:space="preserve">
+    <value>Lapidarijum - Muzej Srema</value>
+  </data>
+  <data name="Popup_Lapidarium_Description" xml:space="preserve">
+    <value>Lapidarijum Muzeja Srema prikazuje rimske kamene spomenike, sarkofage, žrtvenike i skulpture iz antičkog Sirmijuma. Jedinstven arheološki doživljaj u dvorištu muzeja.</value>
+  </data>
+  <data name="Popup_Library_Title" xml:space="preserve">
+    <value>Biblioteka "Gligorije Vozarević"</value>
+  </data>
+  <data name="Popup_Library_Description" xml:space="preserve">
+    <value>Jedna od najstarijih i najznačajnijih kulturnih ustanova u Sremu, osnovana 1866. godine. Čuva preko 140.000 knjiga i organizuje brojne kulturne programe.</value>
+  </data>
+  <data name="Popup_GrainSquare_Title" xml:space="preserve">
+    <value>Žitni trg</value>
+  </data>
+  <data name="Popup_GrainSquare_Description" xml:space="preserve">
+    <value>Deo zanatsko-trgovačke zone Sirmijuma. Iskopavanja su otkrila radionice, uključujući staklarske peći, što potvrđuje lokalnu proizvodnju stakla tokom kasne antike.</value>
+  </data>
+  <data name="Popup_Theater_Title" xml:space="preserve">
+    <value>Pozorište "Dobrica Milutinović"</value>
+  </data>
+  <data name="Popup_Theater_Description" xml:space="preserve">
+    <value>Jedino profesionalno pozorište u Sremu, sa tradicijom koja seže u 19. vek. Smešteno u istorijskoj zgradi Srpskog doma, nudi predstave za sve generacije.</value>
+  </data>
+  <data name="Popup_Gallery_Title" xml:space="preserve">
+    <value>Galerija "Lazar Vozarević"</value>
+  </data>
+  <data name="Popup_Gallery_Description" xml:space="preserve">
+    <value>Galerija "Lazar Vozarević", osnovana 1973. godine, posvećena je jednom od najznačajnijih posleratnih srpskih slikara. Sadrži memorijalnu zbirku i organizuje izložbe savremene umetnosti.</value>
+  </data>
+  <data name="Event_OpenForVisitors" xml:space="preserve">
+    <value>Otvorena za posetioce</value>
+  </data>
+  <data name="Event_OpenForVisitorsDesc" xml:space="preserve">
+    <value>Ustanova je otvorena za sve posetioce tokom festivala.</value>
+  </data>
+  <data name="Popup_MoscowTavern_Title" xml:space="preserve">
+    <value>Kafana Moskva</value>
+  </data>
+  <data name="Popup_MoscowTavern_Description" xml:space="preserve">
+    <value>Kafana Moskva nudi autentična jela ruske kuhinje pripremljena s ljubavlju i pažnjom, uz domaće likere koji savršeno zaokružuju doživljaj. Topla atmosfera, srdačni domaćini i više nego pristupačne cene čine ovo mesto pravim izborom za uživanje u ruskoj tradiciji i ukusu.</value>
+  </data>
+  <data name="Popup_HistoricalArchive_Title" xml:space="preserve">
+    <value>Istorijski arhiv Srema</value>
+  </data>
+  <data name="Popup_HistoricalArchive_Description" xml:space="preserve">
+    <value>Istorijski arhiv Srem u Sremskoj Mitrovici predstavlja centralnu arhivsku ustanovu za Sremski okrug, osnovanu 1946. godine.</value>
+  </data>
+  <data name="Popup_RomanCamp_Title" xml:space="preserve">
+    <value>Rimski Legionarski Kamp</value>
+  </data>
+  <data name="Popup_RomanCamp_Description" xml:space="preserve">
+    <value>Rimski vojni kamp u doba Sirmijuma bio je organizovan po strogoj hijerarhiji i disciplinovanoj strukturi, sa vojnicima raspoređenim u redove šatora koji su formirali ulice i trgove unutar utvrđenog logora.</value>
+  </data>
+  <data name="Popup_Basilica_Title" xml:space="preserve">
+    <value>Bazilika Svetog Dimitrija</value>
+  </data>
+  <data name="Popup_Basilica_Description" xml:space="preserve">
+    <value>Jedno od najznačajnijih ranohrišćanskih arheoloških nalazišta na prostoru antičkog Sirmijuma. Izgrađena između 426-441. godine, predstavlja trobrodnu građevinu grčkog tipa.</value>
+  </data>
+  <data name="Event_OpenForVisitorsDuring" xml:space="preserve">
+    <value>Ustanova je otvorena u toku festivala za sve posetioce</value>
+  </data>
+  <data name="Popup_KedarBar_Event" xml:space="preserve">
+    <value>Rimski pub kviz</value>
+  </data>
+  <data name="Popup_KedarBar_EventTime" xml:space="preserve">
+    <value>(01.08, 21h)</value>
+  </data>
+  <data name="Popup_Toilet_Title" xml:space="preserve">
+    <value>Javni Toalet</value>
+  </data>
+  <data name="Popup_Toilet_Description" xml:space="preserve">
+    <value>Objekti su na usluzi kako učesnicima tako i posetiocima festivala.</value>
+  </data>
+  <data name="Popup_Water_Title" xml:space="preserve">
+    <value>Voda za piće</value>
+  </data>
+  <data name="Popup_Water_Description" xml:space="preserve">
+    <value>Cisterna sa vodom za piće</value>
+  </data>
+  <data name="Popup_FirstAid_Title" xml:space="preserve">
+    <value>Prva Pomoć</value>
+  </data>
+  <data name="Popup_FirstAid_Description" xml:space="preserve">
+    <value>Kombi za pružanje prve pomoći u hitnim slučajevima.</value>
+  </data>
+  <data name="Popup_Food_Title" xml:space="preserve">
+    <value>Hrana</value>
+  </data>
+  <data name="Popup_Food_Description" xml:space="preserve">
+    <value>Mesto sa hranom za učesnike.</value>
+  </data>
+  <data name="Popup_Parking_Title" xml:space="preserve">
+    <value>Parking</value>
+  </data>
+  <data name="Popup_Parking_Description" xml:space="preserve">
+    <value>Javni parking za učesnike i posetioce festivala</value>
+  </data>
+  <data name="Popup_RomanBazaar_Title" xml:space="preserve">
+    <value>Rimski Bazar</value>
+  </data>
+  <data name="Popup_RomanBazaar_Description" xml:space="preserve">
+    <value>Rimski bazar oživljava duh carskog Sirmijuma kroz autentične prikaze starih zanata, kostima i mirisa antičkog doba.</value>
+  </data>
+  <data name="Popup_RomanBazaar_Event" xml:space="preserve">
+    <value>Prodaja unikatnih ručno rađenih proizvoda</value>
+  </data>
+  <data name="Popup_RomanBazaar_EventTime" xml:space="preserve">
+    <value>(02.08.2025, 10h-19h)</value>
+  </data>
+  <data name="Popup_Lampioni_Title" xml:space="preserve">
+    <value>Savski kej</value>
+  </data>
+  <data name="Popup_Lampioni_Description" xml:space="preserve">
+    <value>Nasip u Sremskoj Mitrovici, poznat i kao Savski kej, predstavlja ključnu odbrambenu strukturu uz reku Savu koja štiti grad od poplava.</value>
+  </data>
+  <data name="Popup_Lampioni_Event" xml:space="preserve">
+    <value>Program zatvaranja Festivala Lux Aurelius</value>
+  </data>
+  <data name="Popup_Lampioni_EventTime" xml:space="preserve">
+    <value>(21:30)</value>
+  </data>
+  <data name="Popup_Lampioni_EventDesc" xml:space="preserve">
+    <value>Na završnici festivala, simbolično puštamo lampione niz reku Savu</value>
+  </data>
+  <data name="Popup_KedarBar_Title" xml:space="preserve">
+    <value>Kedar Bar</value>
+  </data>
+  <data name="Popup_KedarBar_Description" xml:space="preserve">
+    <value>Ušuškani kafić koji se nalazi na obroncima starorimskih iskopina, na Žitnom trgu u Sremskoj Mitrovici</value>
+  </data>
+  <data name="Popup_TouristInfo_Title" xml:space="preserve">
+    <value>Turistički informativni centar</value>
+  </data>
+  <data name="Popup_TouristInfo_Description" xml:space="preserve">
+    <value>Turistički informativni centar Sremske Mitrovice nalazi se u Gradskom parku, na adresi Masarikova 2A, i predstavlja centralno mesto za sve posetioce koji žele da otkriju bogatu istoriju, kulturu i prirodne lepote ovog grada i okoline.</value>
+  </data>
+  <data name="Popup_TouristInfo_Event" xml:space="preserve">
+    <value>Terasa Turističke organizacije - izložba Fotografija "Mitrovica kroz objektiv"</value>
+  </data>
+  <data name="Popup_TouristInfo_EventTime" xml:space="preserve">
+    <value>(02.08.2025, 10-19h)</value>
+  </data>
+  <data name="Popup_GoogleMaps" xml:space="preserve">
+    <value>Otvori u Google mapama</value>
+  </data>
+  <data name="Details_AboutLocation" xml:space="preserve">
+    <value>O LOKACIJI</value>
+  </data>
+  <data name="Details_Events" xml:space="preserve">
+    <value>DEŠAVANJA</value>
+  </data>
+  <data name="Details_Location" xml:space="preserve">
+    <value>LOKACIJA</value>
+  </data>
+  <data name="Details_YourLocation" xml:space="preserve">
+    <value>Vaša lokacija</value>
+  </data>
+  <data name="Details_Accuracy" xml:space="preserve">
+    <value>Tačnost</value>
+  </data>
+  <data name="Details_Unknown" xml:space="preserve">
+    <value>Nepoznato</value>
+  </data>
+  <data name="Details_Back" xml:space="preserve">
+    <value>Nazad</value>
+  </data>
+  <data name="Details_ImperialPalace_FullDescription" xml:space="preserve">
+    <value>Carska palata u Sremskoj Mitrovici, poznata kao Imperijalna palata Sirmijuma, jedno je od najznačajnijih arheoloških nalazišta u Srbiji, simbol moci nekadasnjeg Rimskog carstva. Nalazi se na teritoriji nekadašnjeg rimskog grada Sirmijuma, koji je u kasnoj antici bio jedna od četiri prestonice Rimskog carstva. Sirmijum je bio sedište više careva, uključujući Galerija, Maksimijana i Konstantina I. Palata je izgrađena krajem III ili početkom IV veka, u jugoistočnom delu grada uz reku Savu. Arheološka istraživanja otkrila su luksuzne mozaike, freske i hipokaust – sistem podnog grejanja. Materijali korišćeni u gradnji potiču iz Egipta, Male Azije, Grčke i Italije, što govori o raskoši imperijalnog dvora. Lokalitet danas obuhvata Vizitorski centar sa panelima, maketama i konzerviranim ostacima palate. Palata se nalazi na adresi Pivarska 2, Sremska Mitrovica, a informacije se mogu dobiti na brojeve +381 22 618 817 i +381 22 621 568. Zvanični sajt je carskapalata.rs. Carska palata Sirmijuma nezaobilazno je mesto za sve ljubitelje rimske istorije i kulture.</value>
+  </data>
+  <data name="Details_CityPark_FullDescription" xml:space="preserve">
+    <value>Fontana "Kameni cvet" u Gradskom parku Sremske Mitrovice jedno je od najprepoznatljivijih obeležja grada, koje spaja umetnost, istoriju i duboku emotivnu simboliku. Izgrađena je 1948. godine prema projektu Irine Nepokojčicke, ruske emigrantkinje i prve žene arhitekte u Sremskoj Mitrovici. Fontana je smeštena na mestu nekadašnje "carske lipe", zasađene 1879. godine u čast cara Franje Josifa i carice Jelisavete. Ima oblik stilizovanog cveta sa povijenim laticama iz kojih neprekidno teče voda, simbolizujući večnu tugu. Prema legendi, Irina je sanjala cvet iz kojeg je izletela bela golubica koja joj je otkrila priču o princezi iz Sirmijuma – simbolu tuge i čežnje. Inspirisana tim snom, Irina je stvorila fontanu kao spoj lične i kolektivne tuge za domovinom i izgubljenim vremenima. Irina Nepokojčicka rođena je 1909. u Rusiji, studirala je arhitekturu u Zagrebu, a od 1937. živela i stvarala u Sremskoj Mitrovici. Pored fontane, radila je na izgradnji škola, puteva i rekonstrukciji crkve arhiđakona Stefana. Preminula je samo pet meseci nakon završetka fontane, a sahranjena je na Pravoslavnom groblju u Mitrovici. Fontana "Kameni cvet" danas je mesto okupljanja, odmora i sećanja – umetnički i duhovni simbol grada.</value>
+  </data>
+  <data name="Details_SremMuseum_FullDescription" xml:space="preserve">
+    <value>Muzej Srema u Sremskoj Mitrovici, smešten na adresi Trg Svetog Stefana 15, predstavlja jednu od najznačajnijih kulturnih institucija u regionu. Osnovan 1946. godine, muzej je nastao iz potrebe da se sačuvaju bogati arheološki nalazi antičkog Sirmijuma, rimskog grada koji je bio jedna od prestonica carstva. Muzej je smešten u dve zgrade iz 18. veka: nekadašnju zgradu vojne uprave i kuću porodice Bajić. Stalne postavke obuhvataju arheološku zbirku sa rimskim mozaicima, sarkofazima, žrtvenicima i skulpturama, uključujući i torzo boginje Minerve pronađen tokom iskopavanja carske palate. U lapidarijumu, dvorišnom prostoru muzeja, izloženi su kameni spomenici i ostaci rimskih građevina. Istorijska postavka "Srem kroz vekove" prikazuje razvoj regiona od srednjeg veka do 20. veka. Muzej takođe organizuje tematske izložbe, naučne skupove i izdaje godišnjak "Zbornik Muzeja Srema". Radno vreme muzeja je od ponedeljka do petka od 08:00 do 15:00, a vikendom od 09:00 do 17:00. Za više informacija posetite zvaničnu veb-stranicu muzeja: muzejsrema.com.</value>
+  </data>
+  <data name="Details_Gallery_FullDescription" xml:space="preserve">
+    <value>Galerija "Lazar Vozarević", osnovana 1973. godine u čast jednog od najznačajnijih posleratnih srpskih slikara, nalazi se u renoviranoj zgradi iz 19. veka u Gradskom parku. Galerija ima memorijalni deo sa više od 60 originalnih dela Vozarevića i savremeni deo za aktuelne izložbe. Organizovala je više od 160 izložbi u gradu i preko 20 u zemlji i inostranstvu. Vozarević je bio član "Grupe Jedanaestorice" i "Decembarske grupe", a njegova dela se nalaze u brojnim svetskim kolekcijama, uključujući i Rokfelerovu. Galerija je važan nosilac kulturnog života grada i domaćin manifestacija poput "Sremskomitrovačkog salona". Adresa: Gradski park 4. Više informacija na lazarvozarevic.com.</value>
+  </data>
+  <data name="Details_Theatre_FullDescription" xml:space="preserve">
+    <value>Pozorište "Dobrica Milutinović" u Sremskoj Mitrovici jedina je profesionalna pozorišna ustanova u Sremu, sa tradicijom koja seže u 19. vek. Smešteno je u zgradi Srpskog doma iz 1895. godine, koja je zaštićeno kulturno dobro sa elementima neorenesanse i neobaroka. Prvi pozorišni život u gradu zabeležen je još 1842. godine, dok profesionalno pozorište nastaje 1944, a današnji naziv nosi od 1974. godine, u čast glumca Dobrice Milutinovića. U poslednjim godinama pozorište je kompletno rekonstruisano i modernizovano, zadržavajući autentičan izgled, ali dobijajući savremenu tehničku opremu. Repertoar obuhvata predstave za decu i odrasle, a u okviru ustanove deluju Dramski i Omladinski studio. Povodom 80 godina rada 2025. godine, izvedene su brojne svečane predstave. Pozorište dodeljuje Plaketu "Dobrica Milutinović" za izuzetne umetničke doprinose. Adresa: Trg Ćire Milekića 2. Više informacija na Fejsbuk stranici ili na telefon +381 (0)22 615 115.</value>
+  </data>
+  <data name="Details_Library_FullDescription" xml:space="preserve">
+    <value>Biblioteka "Gligorije Vozarević" u Sremskoj Mitrovici jedna je od najstarijih i najznačajnijih kulturnih ustanova u Sremu, osnovana 4. februara 1866. godine kao Srpska građanska čitaonica. Danas nosi ime Gligorija Vozarevića, prvog srpskog knjižara i izdavača, rođenog u selu Ležimir. Biblioteka se od 1895. godine nalazi u zgradi Srpskog doma, a tokom istorije je pretrpela i požar 1914. godine koji je uništio veliki deo fonda. Nakon Drugog svetskog rata, obnovljena je 1946. kao Narodna knjižnica i čitaonica "Prosveta". Danas obavlja matičnu funkciju za čitav Sremski okrug i pokriva više od 50 školskih i narodnih biblioteka. Ukupni fond biblioteke prelazi 140.000 knjiga, raspoređenih u odeljenja za odrasle, decu, mlade, stručnu literaturu i zavičajnu zbirku. Organizuje brojne kulturne programe, književne večeri, radionice i izložbe. Svake godine, 4. februara, obeležava se Dan biblioteke uz dodelu priznanja najaktivnijim korisnicima. Adresa: Trg Ćire Milekića 3. Kontakt: +381 (0)22 621 130, direktor@bgvsm.org.rs. Više informacija: bgvsm.org.rs.</value>
+  </data>
+  <data name="Popup_Archive_Title" xml:space="preserve">
+    <value>Istorijski arhiv Srema</value>
+  </data>
+  <data name="Popup_Archive_Description" xml:space="preserve">
+    <value>Centralna arhivska ustanova za Sremski okrug, osnovana 1946. godine. Čuva oko 1.340 arhivskih fondova i zbirki od XVII veka do danas.</value>
+  </data>
+  <data name="Details_Archive_FullDescription" xml:space="preserve">
+    <value>Istorijski arhiv Srem u Sremskoj Mitrovici predstavlja centralnu arhivsku ustanovu za Sremski okrug, osnovanu 1946. godine. Smešten je u zgradi Glavne straže izgrađenoj krajem XVIII veka za potrebe Vojne granice, koja je danas zaštićena kao kulturno dobro. Arhiv čuva oko 1.340 arhivskih fondova i zbirki, što obuhvata približno 7.000 dužnih metara građe iz perioda od XVII veka do danas. Posebno su značajne crkvene matične knjige (rimokatoličke, pravoslavne, grkokatoličke i jevrejske) iz perioda 1732–1900, koje su čest predmet istraživanja genealoga. Arhiv ima nadležnost nad gradom Sremska Mitrovica i opštinama Stara Pazova, Inđija, Irig, Šid, Ruma i Pećinci. Vrši stručni nadzor nad 920 aktivnih registratura uključujući državne organe, lokalnu samoupravu, ustanove, zadruge i preduzeća. Organizovan je u odeljenja za opšte poslove, zaštitu građe, sređivanje, korišćenje i istraživanje. Radno vreme je od ponedeljka do petka od 07:00 do 15:00, dok se rad sa istraživačima odvija utorkom, sredom i četvrtkom od 08:00 do 11:00 uz prethodnu najavu. Adresa: Vuka Karadžića 4. Kontakt: info@arhivsrem.org.rs. Više informacija: www.arhivsrem.org.rs.</value>
+  </data>
+  <data name="Popup_SavaQuay_Title" xml:space="preserve">
+    <value>Savski kej</value>
+  </data>
+  <data name="Popup_SavaQuay_Description" xml:space="preserve">
+    <value>Ključna odbrambena struktura uz reku Savu koja štiti grad od poplava. Takođe je popularna šetališna zona sa klupama, zelenilom i biciklističkim stazama.</value>
+  </data>
+  <data name="Details_SavaQuay_FullDescription" xml:space="preserve">
+    <value>Nasip u Sremskoj Mitrovici, poznat i kao Savski kej, predstavlja ključnu odbrambenu strukturu uz reku Savu koja štiti grad od poplava. Izgrađen je duž obale Save i obezbeđuje siguran pojas između reke i centralnih gradskih zona. Pored svoje funkcije zaštite od poplava, nasip je i popularna šetališna zona koja privlači brojne građane i posetioce. Savski kej je uređen sa klupama, zelenilom i biciklističkim stazama, te često služi kao mesto okupljanja i rekreacije. U toku letnjih meseci, ovaj prostor postaje živahan zahvaljujući brojnim kulturnim i sportskim manifestacijama. Nasip je takođe deo sistema Dunav–Sava vodnog sliva i ima strateški značaj u očuvanju prirodne ravnoteže i bezbednosti u regiji. Ovaj deo grada pruža i izuzetan pogled na reku Savu, mostove i gradsku panoramu. Uz Savski kej često se organizuju i festivali, puštanje lampiona i umetnički performansi. Nasip je omiljeno mesto za šetače, trkače i porodice sa decom. Kao spoj funkcionalnosti i lepote, nasip u Sremskoj Mitrovici predstavlja simbol povezanosti grada sa rekom.</value>
+  </data>
+  <data name="Details_GrainSquare_FullDescription" xml:space="preserve">
+    <value>Žitni trg je bio deo zanatsko-trgovačke zone Sirmijuma. Iskopavanja su otkrila radionice, uključujući staklarske peći, što potvrđuje lokalnu proizvodnju stakla tokom kasne antike. Nađeni su i ostaci prodavnica i skladišta, kao i delovi ulica sa natkrivenim pešačkim stazama (porticima) i kanalizacionim sistemom. Arheološki nalazi svedoče o ekonomskoj vitalnosti i zanatskoj veštini rimskog Sirmijuma. Trg je bio centar trgovine i proizvodnje, gde su se izrađivali i razmenjivali razni proizvodi. Otkriće staklarskih peći je posebno značajno jer pokazuje da je Sirmijum imao sopstvenu proizvodnju stakla, što je bila luksuzna industrija u rimsko vreme. Ostaci prodavnica i skladišta ukazuju na dobro organizovan trgovački deo grada. Natkrivene pešačke staze (portici) su pružale zaštitu od vremenskih uslova i stvarale prijatno okruženje za kupovinu i druženje. Kanalizacioni sistem pokazuje visok nivo urbanog planiranja i infrastrukture u rimskom Sirmijumu. Danas je Žitni trg važno arheološko nalazište koje pruža uvid u svakodnevni život i ekonomiju antičkog grada.</value>
+  </data>
+  <data name="Details_Basilica_FullDescription" xml:space="preserve">
+    <value>Bazilika Svetog Dimitrija u Sremskoj Mitrovici jedno je od najznačajnijih ranohrišćanskih arheoloških nalazišta na prostoru antičkog Sirmijuma. Izgrađena između 426. i 441. godine, za vreme prefekta Leontija, bazilika je predstavljala trobrodnu građevinu grčkog tipa, sa centralnim brodom i bočnim lađama koje se završavaju transeptom. Njena arhitektura svedoči o visokom stepenu organizacije hrišćanske zajednice u Sirmijumu tokom 5. veka. Tokom iskopavanja pronađeno je 25 grobova unutar i oko bazilike, što potvrđuje njenu ulogu kao mesta bogosluženja i sahranjivanja. Otkiveni su i delovi podnih mozaika sa geometrijskim i floralnim motivima, karakterističnim za umetnost tog doba. Bazilika je podignuta u vreme kada je Sirmijum bio jedno od četiri glavna grada Rimskog carstva i važno biskupsko sedište. Prvi poznati biskup Sirmijuma, sveti Irenej, stradao je mučeničkom smrću 304. godine, što dodatno ističe značaj ovog lokaliteta. Ostaci bazilike konzervirani su i prikazani u podzemnom arheološkom prostoru, smeštenom u centru grada, u blizini današnje katoličke katedrale. Lokalitet je dostupan za posetioce, a više informacija moguće je dobiti u Muzeju Srema. Bazilika Svetog Dimitrija ostaje trajan spomen na ranu hrišćansku veru i duhovni život carske rezidencije Sirmijuma.</value>
+  </data>
+  <data name="Details_RomanCamp_FullDescription" xml:space="preserve">
+    <value>Rimski vojni kamp u doba Sirmijuma bio je organizovan po strogoj hijerarhiji i disciplinovanoj strukturi, sa vojnicima raspoređenim u redove šatora (tentorija) koji su formirali ulice i trgove unutar utvrđenog logora. Svaka jedinica imala je svoje mesto, a centurioni i višerangirani oficiri boravili su u većim i uređenijim šatorima bliže komandnom centru (principia). Vojnici su dan provodili u vežbama, održavanju opreme, kuvanju, pisanju pisama i zanatskim poslovima poput izrade strela, popravke oružja i izgradnje utvrđenja. Ostatak vremena koristili su za odmor, društvene igre poput tabulae ili igara sa kockicama, kao i za molitve bogovima ratnicima. Iako stalno spremni za bojeve, njihov svakodnevni život bio je mešavina stroge discipline, praktičnih dužnosti i trenutaka drušvene bliskosti u okviru legije. Kamp je bio mikrokosmos rimskog vojnog života, koji odražava organizaciju i efikasnost koja je učinila rimsku armiju jednom od najstrašnijih sila u istoriji.</value>
+  </data>
+  <data name="Details_RomanBazaar_FullDescription" xml:space="preserve">
+    <value>Rimski bazar oživljava duh carskog Sirmijuma kroz autentične prikaze starih zanata, kostima i mirisa antičkog doba. Zanatlije i umetnici predstavljaju veštine rimskih kovača, grnčara, tkača i staklara, vraćajući nas u vreme kada je Sirmijum bio prestonica carstva. Bazar je mesto susreta prošlosti i sadašnjosti, edukacije i zabave za sve generacije. Posetioci mogu doživeti istoriju na dohvat ruke, probati rimsku hranu i poneti uspomene izrađene tradicionalnim tehnikama. Pozivamo vas da posetite Rimski bazar i postanete deo ove jedinstvene priče koja povezuje kulturu, tradiciju i nasleđe. Bazar nudi jedinstvenu priliku da vidite kako su rimski zanatlije radili, koje su alate koristili i kako su stvarali svakodnevne predmete koji su bili i funkcionalni i lepi. Posetioci mogu da učestvuju u radionicama, gledaju demonstracije antičkih tehnika i kupe autentične replike rimskih artefakata. Atmosferu dopunjuju muzika iz tog perioda, tradicionalne nošnje i mirisi antičkih začina i biljaka.</value>
+  </data>
+  <data name="Popup_TouristCenter_Title" xml:space="preserve">
+    <value>Turistički informativni centar</value>
+  </data>
+  <data name="Popup_TouristCenter_Description" xml:space="preserve">
+    <value>Nalazi se u Gradskom parku na adresi Masarikova 2A, predstavlja centralno mesto za sve posetioce koji žele da otkriju bogatu istoriju, kulturu i prirodne lepote ovog grada i okoline.</value>
+  </data>
+  <data name="Details_TouristCenter_FullDescription" xml:space="preserve">
+    <value>Turistički informativni centar Sremske Mitrovice nalazi se u Gradskom parku, na adresi Masarikova 2A, i predstavlja centralno mesto za sve posetioce koji žele da otkriju bogatu istoriju, kulturu i prirodne lepote ovog grada i okoline. Otvoren je krajem 2021. godine kao zajednički projekat Grada Sremska Mitrovica i Ministarstva trgovine, turizma i telekomunikacija, sa ciljem da objedini turističku ponudu Sremske Mitrovice, Srema i Severne Mačve na jednom mestu. U Info centru posetioci mogu dobiti detaljne informacije o lokalnim atrakcijama, uključujući arheološke lokalitete antičkog Sirmijuma, Specijalni rezervat prirode Zasavica i prirodne lepote Fruške gore. Centar nudi promotivne materijale poput turističkih mapa, flajera i brošura, kao i kontakte licenciranih turističkih vodiča. Posebna atrakcija su VR naočare koje omogućavaju virtuelnu šetnju kroz istorijske lokalitete grada. Radno vreme Info centra je od ponedeljka do petka od 07:00 do 17:00 časova, a subotom od 09:00 do 15:00 časova. U sklopu objekta nalazi se i prodavnica suvenira sa lokalnim proizvodima, kao i obnovljeni javni toalet prilagođen osobama sa invaliditetom i roditeljima sa malom decom. Za dodatne informacije, možete posetiti zvaničnu stranicu Turističke organizacije Grada Sremska Mitrovica: tosmomi.rs.</value>
+  </data>
+  <data name="Event_TouristCenterExhibition" xml:space="preserve">
+    <value>Terasa Turističke organizacije - izložba fotografija 'Mitrovica kroz objektiv'</value>
+  </data>
+</root> 

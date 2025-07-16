@@ -714,16 +714,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- DODAVANJE POPUP-A ZA CARSKU PALATU ---
     newMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Carska Palata</h3>
-            <p style=\"margin-bottom:0.3em;\">Carska palata u Sremskoj Mitrovici, poznata kao Imperijalna palata Sirmijuma, jedno je od najznačajnijih arheoloških nalazišta u Srbiji, simbol moci nekadasnjeg Rimskog carstva.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_ImperialPalace_Title'] : 'Carska Palata'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_ImperialPalace_Description'] : 'Carska palata u Sremskoj Mitrovici, poznata kao Imperijalna palata Sirmijuma, jedno je od najznačajnijih arheoloških nalazišta u Srbiji, simbol moci nekadasnjeg Rimskog carstva.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Defile učesnika festivala</span> <span style=\"color:#8B6914;\">(01.08. i 02.08. 2025. u 20:00h)</span><br>
-                <span>Defile učesnika festivala kreće od Carske palate do Žitnog trga.</span>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_Parade'] : 'Defile učesnika festivala'}</span> <span style=\"color:#8B6914;\">(01.08. i 02.08. 2025. u 20:00h)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_ParadeDesc'] : 'Defile učesnika festivala kreće od Carske palate do Žitnog trga.'}</span>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.966733731689764,19.610175926337753\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/1\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.966733731689764,19.610175926337753\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/1\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -742,18 +742,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     parkMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Gradski Park - Kameni cvet</h3>
-            <p style=\"margin-bottom:0.3em;\">Fontana „Kameni cvet" u Gradskom parku Sremske Mitrovice jedno je od najprepoznatljivijih obeležja grada, koje spaja umetnost, istoriju i duboku emotivnu simboliku.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_CityPark_Title'] : 'Gradski Park - Kameni cvet'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_CityPark_Description'] : 'Fontana „Kameni cvet" u Gradskom parku Sremske Mitrovice jedno je od najprepoznatljivijih obeležja grada, koje spaja umetnost, istoriju i duboku emotivnu simboliku.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanja:</strong><br>
-                <span style=\"font-weight:bold;\">Radionice za decu</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-14:00)</span><br>
-                <span style=\"font-weight:bold;\">Eksperimentalna arheologija</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
-                <span style=\"font-weight:bold;\">Rimski bazar</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
-                <span style=\"font-weight:bold;\">Foto kutak</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
+                <strong>${window.localizationData ? window.localizationData['Popup_Events'] : 'Dešavanja:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshops'] : 'Radionice za decu'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-14:00)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ExperimentalArchaeology'] : 'Eksperimentalna arheologija'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_RomanBazaar'] : 'Rimski bazar'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_PhotoCorner'] : 'Foto kutak'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 12h-19h)</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96772509437982,19.608036819991597\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/2\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96772509437982,19.608036819991597\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/2\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -779,16 +779,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     muzejMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Muzej Srema</h3>
-            <p style=\"margin-bottom:0.3em;\">Muzej Srema u Sremskoj Mitrovici, smešten na adresi Trg Svetog Stefana 15, predstavlja jednu od najznačajnijih kulturnih institucija u regionu.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_SremMuseum_Title'] : 'Muzej Srema'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_SremMuseum_Description'] : 'Muzej Srema u Sremskoj Mitrovici, smešten na adresi Trg Svetog Stefana 15, predstavlja jednu od najznačajnijih kulturnih institucija u regionu.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Eksperimentalna arheologija</span> <span style=\"color:#8B6914;\">(02.08.2025 10h-19h)</span><br>
-                <span>Eksperimentalna arheologija</span>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ExperimentalArchaeology'] : 'Eksperimentalna arheologija'}</span> <span style=\"color:#8B6914;\">(02.08.2025 10h-19h)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_ExperimentalArchaeology'] : 'Eksperimentalna arheologija'}</span>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.9760,19.6120\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/3\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.9760,19.6120\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/3\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -814,16 +814,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lapidarijumMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Muzej Srema Lapidarijum</h3>
-            <p style=\"margin-bottom:0.3em;\">Lapidarijum Muzeja Srema u Sremskoj Mitrovici predstavlja jednu od najvrednijih arheoloških postavki u Srbiji, smešten u dvorištu muzeja na Trgu Svetog Stefana 15.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Lapidarium_Title'] : 'Muzej Srema Lapidarijum'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Lapidarium_Description'] : 'Lapidarijum Muzeja Srema u Sremskoj Mitrovici predstavlja jednu od najvrednijih arheoloških postavki u Srbiji, smešten u dvorištu muzeja na Trgu Svetog Stefana 15.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Eksperimentalna arheologija</span> <span style=\"color:#8B6914;\">(02.08.2025 10h-19h)</span><br>
-                <span>Eksperimentalna arheologija</span>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ExperimentalArchaeology'] : 'Eksperimentalna arheologija'}</span> <span style=\"color:#8B6914;\">(02.08.2025 10h-19h)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_ExperimentalArchaeology'] : 'Eksperimentalna arheologija'}</span>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96747443960462,19.60618380441317\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/4\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96747443960462,19.60618380441317\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/4\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -842,16 +842,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bibliotekaMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Biblioteka „Gligorije Vozarević"</h3>
-            <p style=\"margin-bottom:0.3em;\">Biblioteka „Gligorije Vozarević" u Sremskoj Mitrovici jedna je od najstarijih i najznačajnijih kulturnih ustanova u Sremu, osnovana 4. februara 1866. godine kao Srpska građanska čitaonica.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Library_Title'] : 'Biblioteka „Gligorije Vozarević"'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Library_Description'] : 'Biblioteka „Gligorije Vozarević" u Sremskoj Mitrovici jedna je od najstarijih i najznačajnijih kulturnih ustanova u Sremu, osnovana 4. februara 1866. godine kao Srpska građanska čitaonica.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanja:</strong><br>
-                <span style=\"font-weight:bold;\">Digitalna interakcija - Razgovor sa rimskim carevima Sirmiuma</span> <span style=\"color:#8B6914;\">(02.08.2025, 10h-19h)</span><br>
-                <span style=\"font-weight:bold;\">Decije radionice</span> <span style=\"color:#8B6914;\">(02.08.2025 - 10h-14h)</span><br>
+                <strong>${window.localizationData ? window.localizationData['Popup_Events'] : 'Dešavanja:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_DigitalInteraction'] : 'Digitalna interakcija - Razgovor sa rimskim carevima Sirmiuma'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10h-19h)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshopsShort'] : 'Decije radionice'}</span> <span style=\"color:#8B6914;\">(02.08.2025 - 10h-14h)</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96812210658803,19.607509922876687\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/6\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96812210658803,19.607509922876687\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/6\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -883,18 +883,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     zitniTrgMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Žitni Trg</h3>
-            <p style=\"margin-bottom:0.3em;\">Žitni trg je bio deo zanatsko-trgovačke zone Sirmijuma.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_GrainSquare_Title'] : 'Žitni Trg'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_GrainSquare_Description'] : 'Žitni trg je bio deo zanatsko-trgovačke zone Sirmijuma.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanja:</strong><br>
-                <span style=\"font-weight:bold;\">Defile učesnika Festivala Lux Aurelius</span> <span style=\"color:#8B6914;\">(01.08.2025 20:00h)</span><br>
-                <span style=\"font-weight:bold;\">Sirmium Lux Verbi - revija besednistva</span> <span style=\"color:#8B6914;\">(01.08.2025 20:30h)</span><br>
-                <span style=\"font-weight:bold;\">Program otvaranja festivala Lux Aurelius</span> <span style=\"color:#8B6914;\">(01.08.2025 21:00h)</span><br>
-                <span style=\"font-weight:bold;\">Program zatvaranja Festivala Lux Aurelius</span> <span style=\"color:#8B6914;\">(02.08.2025 21:30h)</span><br>
+                <strong>${window.localizationData ? window.localizationData['Popup_Events'] : 'Dešavanja:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_FestivalParade'] : 'Defile učesnika Festivala Lux Aurelius'}</span> <span style=\"color:#8B6914;\">(01.08.2025 20:00h)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_SirmiumLuxVerbi'] : 'Sirmium Lux Verbi - revija besednistva'}</span> <span style=\"color:#8B6914;\">(01.08.2025 20:30h)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_FestivalOpening'] : 'Program otvaranja festivala Lux Aurelius'}</span> <span style=\"color:#8B6914;\">(01.08.2025 21:00h)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_FestivalClosing'] : 'Program zatvaranja Festivala Lux Aurelius'}</span> <span style=\"color:#8B6914;\">(02.08.2025 21:30h)</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96793486346734,19.603518546856105\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/7\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96793486346734,19.603518546856105\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/7\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -913,11 +913,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     pozoristeMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Pozorište „Dobrica Milutinović"</h3>
-            <p style=\"margin-bottom:0.3em;\">Pozorište „Dobrica Milutinović" u Sremskoj Mitrovici jedina je profesionalna pozorišna ustanova u Sremu, sa tradicijom koja seže u 19. vek.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Theater_Title'] : 'Pozorište „Dobrica Milutinović"'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Theater_Description'] : 'Pozorište „Dobrica Milutinović" u Sremskoj Mitrovici jedina je profesionalna pozorišna ustanova u Sremu, sa tradicijom koja seže u 19. vek.'}</p>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.967912043904136,19.607416066846497\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/8\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.967912043904136,19.607416066846497\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/8\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -936,16 +936,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     galerijaMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Galerija „Lazar Vozarević"</h3>
-            <p style=\"margin-bottom:0.3em;\">Galerija „Lazar Vozarević" osnovana je 1973. godine u čast jednog od najznačajnijih posleratnih srpskih slikara, rođenog u Sremskoj Mitrovici.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Gallery_Title'] : 'Galerija „Lazar Vozarević"'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Gallery_Description'] : 'Galerija „Lazar Vozarević" osnovana je 1973. godine u čast jednog od najznačajnijih posleratnih srpskih slikara, rođenog u Sremskoj Mitrovici.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Otvorena za posetioce</span> <span style=\"color:#8B6914;\">(tokom festivala)</span><br>
-                <span>Ustanova je otvorena za sve posetioce tokom festivala.</span>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_OpenForVisitors'] : 'Otvorena za posetioce'}</span> <span style=\"color:#8B6914;\">(tokom festivala)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_OpenForVisitorsDesc'] : 'Ustanova je otvorena za sve posetioce tokom festivala.'}</span>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.9675542153864,19.607229753180945\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/9\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.9675542153864,19.607229753180945\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/9\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -964,14 +964,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     moskvaMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Kafana Moskva</h3>
-            <p style=\"margin-bottom:0.3em;\">Kafana Moskva nudi autentična jela ruske kuhinje pripremljena s ljubavlju i pažnjom, uz domaće likere koji savršeno zaokružuju doživljaj. Topla atmosfera, srdačni domaćini i više nego pristupačne cene čine ovo mesto pravim izborom za uživanje u ruskoj tradiciji i ukusu.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_MoscowTavern_Title'] : 'Kafana Moskva'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_MoscowTavern_Description'] : 'Kafana Moskva nudi autentična jela ruske kuhinje pripremljena s ljubavlju i pažnjom, uz domaće likere koji savršeno zaokružuju doživljaj. Topla atmosfera, srdačni domaćini i više nego pristupačne cene čine ovo mesto pravim izborom za uživanje u ruskoj tradiciji i ukusu.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Rimski pub kviz</span> <span style=\"color:#8B6914;\">(01.08. u 21:30)</span><br>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_RomanPubQuiz'] : 'Rimski pub kviz'}</span> <span style=\"color:#8B6914;\">(01.08. u 21:30)</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.967592000759105,19.60358034611363\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.967592000759105,19.60358034611363\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
             </div>
         </div>
     `);
@@ -1015,15 +1015,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     arhivSremaMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Istorijski arhiv Srema</h3>
-            <p style=\"margin-bottom:0.3em;\">Istorijski arhiv Srem u Sremskoj Mitrovici predstavlja centralnu arhivsku ustanovu za Sremski okrug, osnovanu 1946. godine.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_HistoricalArchive_Title'] : 'Istorijski arhiv Srema'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_HistoricalArchive_Description'] : 'Istorijski arhiv Srem u Sremskoj Mitrovici predstavlja centralnu arhivsku ustanovu za Sremski okrug, osnovanu 1946. godine.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Otvoreno za posetioce</span> <span style=\"color:#8B6914;\">(tokom festivala)</span><br>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_OpenForVisitors'] : 'Otvoreno za posetioce'}</span> <span style=\"color:#8B6914;\">(tokom festivala)</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96715616157948,19.607888312961947\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/11\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96715616157948,19.607888312961947\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/11\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -1049,16 +1049,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     kampMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Rimski Legionarski Kamp</h3>
-            <p style=\"margin-bottom:0.3em;\">Rimski vojni kamp u doba Sirmijuma bio je organizovan po strogoj hijerarhiji i disciplinovanoj strukturi, sa vojnicima raspoređenim u redove šatora (tentorija) koji su formirali ulice i trgove unutar utvrđenog logora.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_RomanCamp_Title'] : 'Rimski Legionarski Kamp'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_RomanCamp_Description'] : 'Rimski vojni kamp u doba Sirmijuma bio je organizovan po strogoj hijerarhiji i disciplinovanoj strukturi, sa vojnicima raspoređenim u redove šatora (tentorija) koji su formirali ulice i trgove unutar utvrđenog logora.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Rimske igre</span> <span style=\"color:#8B6914;\">(02.08.2025, 10h-14h)</span><br>
-                <span>Rimske igre i rekonstrukcija svakodnevnog života legionara</span>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_RomanGames'] : 'Rimske igre'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10h-14h)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_RomanGamesDesc'] : 'Rimske igre i rekonstrukcija svakodnevnog života legionara'}</span>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96635770210009,19.608090675161904\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/12\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.96635770210009,19.608090675161904\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/12\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -1084,16 +1084,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bazilikaMarker.bindPopup(`
         <div style=\"font-family:'Times New Roman',serif;\">
-            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">Bazilika Svetog Dimitrija</h3>
-            <p style=\"margin-bottom:0.3em;\">Bazilika Svetog Dimitrija u Sremskoj Mitrovici jedno je od najznačajnijih ranohrišćanskih arheoloških nalazišta na prostoru antičkog Sirmijuma.</p>
+            <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.3em;margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Basilica_Title'] : 'Bazilika Svetog Dimitrija'}</h3>
+            <p style=\"margin-bottom:0.3em;\">${window.localizationData ? window.localizationData['Popup_Basilica_Description'] : 'Bazilika Svetog Dimitrija u Sremskoj Mitrovici jedno je od najznačajnijih ranohrišćanskih arheoloških nalazišta na prostoru antičkog Sirmijuma.'}</p>
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
-                <strong>Dešavanje:</strong><br>
-                <span style=\"font-weight:bold;\">Otvorena za posetioce</span> <span style=\"color:#8B6914;\">(tokom festivala)</span><br>
-                <span>Ustanova je otvorena u toku festivala za sve posetioce</span>
+                <strong>${window.localizationData ? window.localizationData['Popup_Event'] : 'Dešavanje:'}</strong><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_OpenForVisitors'] : 'Otvorena za posetioce'}</span> <span style=\"color:#8B6914;\">(tokom festivala)</span><br>
+                <span>${window.localizationData ? window.localizationData['Event_OpenForVisitorsDuring'] : 'Ustanova je otvorena u toku festivala za sve posetioce'}</span>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
-                <a href=\"https://www.google.com/maps/search/?api=1&query=44.969564113652375,19.60932520307554\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>
-                <a href=\"/POI/Details/13\" class=\"popup-details-link\">Detalji</a>
+                <a href=\"https://www.google.com/maps/search/?api=1&query=44.969564113652375,19.60932520307554\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
+                <a href=\"/POI/Details/13\" class=\"popup-details-link\">${window.localizationData ? window.localizationData['Popup_Details'] : 'Detalji'}</a>
             </div>
         </div>
     `);
@@ -1110,15 +1110,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const turistickaMarker = L.marker([712, 1372], { icon: turistickaIcon });
     const turistickaPopup = `
         <img src='/images/turistickaorganizacija.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>
-        <h3 style="font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;">Turistički informativni centar</h3>
-        <div style='text-align:left;'>Turistički informativni centar Sremske Mitrovice nalazi se u Gradskom parku, na adresi Masarikova 2A, i predstavlja centralno mesto za sve posetioce koji žele da otkriju bogatu istoriju, kulturu i prirodne lepote ovog grada i okoline.</div>
+        <h3 style="font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;">${localizationData.Popup_TouristInfo_Title || 'Turistički informativni centar'}</h3>
+        <div style='text-align:left;'>${localizationData.Popup_TouristInfo_Description || 'Turistički informativni centar Sremske Mitrovice nalazi se u Gradskom parku, na adresi Masarikova 2A, i predstavlja centralno mesto za sve posetioce koji žele da otkriju bogatu istoriju, kulturu i prirodne lepote ovog grada i okoline.'}</div>
         <div style="font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;">
-            <strong>Dešavanje:</strong><br>
-            <span style="font-weight:bold;">Terasa Turističke organizacije - izložba Fotografija \"Mitrovica kroz objektiv\"</span> <span style="color:#8B6914;">(02.08.2025, 10-19h)</span><br>
+            <strong>${localizationData.Popup_Event || 'Dešavanje'}:</strong><br>
+            <span style="font-weight:bold;">${localizationData.Popup_TouristInfo_Event || 'Terasa Turističke organizacije - izložba Fotografija "Mitrovica kroz objektiv"'}</span> <span style="color:#8B6914;">${localizationData.Popup_TouristInfo_EventTime || '(02.08.2025, 10-19h)'}</span><br>
         </div>
         <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;">
-            <a href="https://www.google.com/maps/search/?api=1&query=44.96811551930968,19.60832829252163" target="_blank" class="popup-gmaps-btn">Otvori u Google mapama</a>
-            <a href="/POI/Details/17" class="popup-details-link">Detalji</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=44.96811551930968,19.60832829252163" target="_blank" class="popup-gmaps-btn">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>
+            <a href="/POI/Details/17" class="popup-details-link">${localizationData.Popup_Details || 'Detalji'}</a>
         </div>
     `;
     turistickaMarker.bindPopup(turistickaPopup);
@@ -1153,7 +1153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const marker = L.marker(data.pos, { icon: toaletIcon });
         
         // Kreiraj popup sa specifičnim Google Maps linkom za svaki marker
-        const toaletPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/wc.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Javni Toalet ${index + 1}</h3>\n    <div style='text-align:left;'>Objekti su na usluzi kako učesnicima tako i posetiocima festivala.</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=${data.lat},${data.lng}\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n    </div>\n</div>`;
+        const toaletPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/wc.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_Toilet_Title || 'Javni Toalet'} ${index + 1}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_Toilet_Description || 'Objekti su na usluzi kako učesnicima tako i posetiocima festivala.'}</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=${data.lat},${data.lng}\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n    </div>\n</div>`;
         
         marker.bindPopup(toaletPopup);
         marker.pointType = 'Servisi';
@@ -1195,10 +1195,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const parchmentBg = "https://www.transparenttextures.com/patterns/old-wall.png";
     const vodaPopup = `<div style="position:relative;display:block;background:#e5e4e2 url('${parchmentBg}');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;">
     <img src='/images/voda.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>
-    <h3 style="font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;">Voda za piće</h3>
-    <div style='text-align:left;'>Cisterna sa vodom za piće</div>
+    <h3 style="font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;">${localizationData.Popup_Water_Title || 'Voda za piće'}</h3>
+    <div style='text-align:left;'>${localizationData.Popup_Water_Description || 'Cisterna sa vodom za piće'}</div>
     <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;">
-        <a href="https://www.google.com/maps/search/?api=1&query=44.966995938758096,19.60858772722934" target="_blank" class="popup-gmaps-btn">Otvori u Google mapama</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=44.966995938758096,19.60858772722934" target="_blank" class="popup-gmaps-btn">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>
     </div>
 </div>`;
     vodaMarker.bindPopup(vodaPopup);
@@ -1214,7 +1214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- PRVA POMOC MARKER ---
     const pomocIcon = L.icon({ iconUrl: '/images/pomoc.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] });
     const pomocMarker = L.marker([482, 1352], { icon: pomocIcon });
-    const pomocPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/pomoc.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Prva Pomoć</h3>\n    <div style='text-align:left;'>Kombi za pružanje prve pomoći u hitnim slučajevima.</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96698512825069,19.608613296413235\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n    </div>\n</div>`;
+    const pomocPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/pomoc.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_FirstAid_Title || 'Prva Pomoć'}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_FirstAid_Description || 'Kombi za pružanje prve pomoći u hitnim slučajevima.'}</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96698512825069,19.608613296413235\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n    </div>\n</div>`;
     pomocMarker.bindPopup(pomocPopup);
     pomocMarker.pointType = 'Servisi';
     window.markers.push(pomocMarker);
@@ -1227,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- HRANA MARKER ---
     const hranaIcon = L.icon({ iconUrl: '/images/hrana.png', iconSize: [40, 40], iconAnchor: [20, 40], popupAnchor: [0, -40] });
     const hranaMarker = L.marker([568, 1056], { icon: hranaIcon });
-    const hranaPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/hrana.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Hrana</h3>\n    <div style='text-align:left;'>Mesto sa hranom za učesnike.</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96676755112274,19.607829282291533\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n    </div>\n</div>`;
+    const hranaPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/hrana.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_Food_Title || 'Hrana'}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_Food_Description || 'Mesto sa hranom za učesnike.'}</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96676755112274,19.607829282291533\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n    </div>\n</div>`;
     hranaMarker.bindPopup(hranaPopup);
     hranaMarker.pointType = 'Servisi';
     window.markers.push(hranaMarker);
@@ -1240,7 +1240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- RIMSKI BAZAR MARKER ---
     const bazarIcon = L.icon({ iconUrl: '/images/rimskibazar.png', iconSize: [60, 60], iconAnchor: [30, 60], popupAnchor: [0, -60] });
     const bazarMarker = L.marker([690, 1082], { icon: bazarIcon });
-    const bazarPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/rimskibazar.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Rimski Bazar</h3>\n    <div style='text-align:left;'>Rimski bazar oživljava duh carskog Sirmijuma kroz autentične prikaze starih zanata, kostima i mirisa antičkog doba.</div>\n    <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">\n        <strong>Dešavanje:</strong><br>\n        <span style=\"font-weight:bold;\">Prodaja unikatnih ručno rađenih proizvoda</span> <span style=\"color:#8B6914;\">(02.08.2025, 10h-19h)</span><br>\n    </div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96775968818096,19.608081420476406\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n        <a href=\"/POI/Details/16\" class=\"popup-details-link\">Detalji</a>\n    </div>\n</div>`;
+    const bazarPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/rimskibazar.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_RomanBazaar_Title || 'Rimski Bazar'}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_RomanBazaar_Description || 'Rimski bazar oživljava duh carskog Sirmijuma kroz autentične prikaze starih zanata, kostima i mirisa antičkog doba.'}</div>\n    <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">\n        <strong>${localizationData.Popup_Event || 'Dešavanje'}:</strong><br>\n        <span style=\"font-weight:bold;\">${localizationData.Popup_RomanBazaar_Event || 'Prodaja unikatnih ručno rađenih proizvoda'}</span> <span style=\"color:#8B6914;\">${localizationData.Popup_RomanBazaar_EventTime || '(02.08.2025, 10h-19h)'}</span><br>\n    </div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96775968818096,19.608081420476406\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n        <a href=\"/POI/Details/16\" class=\"popup-details-link\">${localizationData.Popup_Details || 'Detalji'}</a>\n    </div>\n</div>`;
     bazarMarker.bindPopup(bazarPopup);
     bazarMarker.pointType = 'Dešavanja';
     window.markers.push(bazarMarker);
@@ -1253,7 +1253,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- LAMPIONI MARKER ---
     const lampioniIcon = L.icon({ iconUrl: '/images/lampioni.png', iconSize: [60, 60], iconAnchor: [30, 60], popupAnchor: [0, -60] });
     const lampioniMarker = L.marker([490, 112], { icon: lampioniIcon });
-    const lampioniPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/lampioni.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Savski kej</h3>\n    <div style='text-align:left;'>Nasip u Sremskoj Mitrovici, poznat i kao Savski kej, predstavlja ključnu odbrambenu strukturu uz reku Savu koja štiti grad od poplava.</div>\n    <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">\n        <strong>Dešavanje:</strong><br>\n        <span style=\"font-weight:bold;\">Program zatvaranja Festivala Lux Aurelius</span> <span style=\"color:#8B6914;\">(21:30)</span><br>\n        <span>Na završnici festivala, simbolično puštamo lampione niz reku Savu</span>\n    </div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96847785895552,19.60156776496794\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n        <a href=\"/POI/Details/15\" class=\"popup-details-link\">Detalji</a>\n    </div>\n</div>`;
+    const lampioniPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/lampioni.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_Lampioni_Title || 'Savski kej'}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_Lampioni_Description || 'Nasip u Sremskoj Mitrovici, poznat i kao Savski kej, predstavlja ključnu odbrambenu strukturu uz reku Savu koja štiti grad od poplava.'}</div>\n    <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">\n        <strong>${localizationData.Popup_Event || 'Dešavanje'}:</strong><br>\n        <span style=\"font-weight:bold;\">${localizationData.Popup_Lampioni_Event || 'Program zatvaranja Festivala Lux Aurelius'}</span> <span style=\"color:#8B6914;\">${localizationData.Popup_Lampioni_EventTime || '(21:30)'}</span><br>\n        <span>${localizationData.Popup_Lampioni_EventDesc || 'Na završnici festivala, simbolično puštamo lampione niz reku Savu'}</span>\n    </div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96847785895552,19.60156776496794\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n        <a href=\"/POI/Details/15\" class=\"popup-details-link\">${localizationData.Popup_Details || 'Detalji'}</a>\n    </div>\n</div>`;
     lampioniMarker.bindPopup(lampioniPopup);
     lampioniMarker.pointType = 'Dešavanja';
     window.markers.push(lampioniMarker);
@@ -1266,7 +1266,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- KEDAR BAR MARKER ---
     const kedarbarIcon = L.icon({ iconUrl: '/images/kedarbar.png', iconSize: [50, 50], iconAnchor: [25, 50], popupAnchor: [0, -50] });
     const kedarbarMarker = L.marker([630, 100], { icon: kedarbarIcon });
-    const kedarbarPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/kedarbar.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Kedar Bar</h3>\n    <div style='text-align:left;'>Ušuškani kafić koji se nalazi na obroncima starorimskih iskopina, na Žitnom trgu u Sremskoj Mitrovici</div>\n    <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">\n        <strong>Dešavanje:</strong><br>\n        <span style=\"font-weight:bold;\">Rimski pub kviz</span> <span style=\"color:#8B6914;\">(01.08, 21h)</span><br>\n    </div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96752191535946,19.60316377179182\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n    </div>\n</div>`;
+    const kedarbarPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/kedarbar.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_KedarBar_Title || 'Kedar Bar'}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_KedarBar_Description || 'Ušuškani kafić koji se nalazi na obroncima starorimskih iskopina, na Žitnom trgu u Sremskoj Mitrovici'}</div>\n    <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">\n        <strong>${localizationData.Popup_Event || 'Dešavanje'}:</strong><br>\n        <span style=\"font-weight:bold;\">${localizationData.Popup_KedarBar_Event || 'Rimski pub kviz'}</span> <span style=\"color:#8B6914;\">${localizationData.Popup_KedarBar_EventTime || '(01.08, 21h)'}</span><br>\n    </div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=44.96752191535946,19.60316377179182\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n    </div>\n</div>`;
     kedarbarMarker.bindPopup(kedarbarPopup);
     kedarbarMarker.pointType = 'Dešavanja';
     window.markers.push(kedarbarMarker);
@@ -1289,7 +1289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const marker = L.marker(data.pos, { icon: parkingIcon });
         
         // Kreiraj popup sa specifičnim Google Maps linkom za svaki marker
-        const parkingPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/parking.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">Parking ${index + 1}</h3>\n    <div style='text-align:left;'>Javni parking za učesnike i posetioce festivala</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=${data.lat},${data.lng}\" target=\"_blank\" class=\"popup-gmaps-btn\">Otvori u Google mapama</a>\n    </div>\n</div>`;
+        const parkingPopup = `<div style=\"position:relative;display:block;background:#e5e4e2 url('https://www.transparenttextures.com/patterns/old-wall.png');background-size:cover;background-blend-mode:multiply;border:2px solid #b0a99f;box-shadow:0 4px 24px #bfa96a33,inset 0 0 40px #fff8e1; border-radius:16px;padding:18px 18px 12px 12px;min-width:260px;max-width:340px;font-family:'Times New Roman',serif;\">\n    <img src='/images/parking.png' alt='' style='width:70px;height:70px;object-fit:contain;margin-bottom:8px;border-radius:50%;box-shadow:0 2px 8px #aaa;background:#e5e4e2;'>\n    <h3 style=\"font-family:'Cinzel',serif;font-weight:700;font-size:1.15em;margin:0 0 0.3em 0;color:#211B0D;text-align:left;\">${localizationData.Popup_Parking_Title || 'Parking'} ${index + 1}</h3>\n    <div style='text-align:left;'>${localizationData.Popup_Parking_Description || 'Javni parking za učesnike i posetioce festivala'}</div>\n    <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">\n        <a href=\"https://www.google.com/maps/search/?api=1&query=${data.lat},${data.lng}\" target=\"_blank\" class=\"popup-gmaps-btn\">${localizationData.Popup_GoogleMaps || 'Otvori u Google mapama'}</a>\n    </div>\n</div>`;
         
         marker.bindPopup(parkingPopup);
         marker.pointType = 'Servisi';

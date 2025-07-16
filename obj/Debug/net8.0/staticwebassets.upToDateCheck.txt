@@ -4,6 +4,7 @@ wwwroot\favicon.ico
 wwwroot\images\22.png
 wwwroot\images\33.png
 wwwroot\images\arhivsrema.png
+wwwroot\images\atelje.png
 wwwroot\images\bazilika.png
 wwwroot\images\biblioteka.png
 wwwroot\images\biblioteka1.png

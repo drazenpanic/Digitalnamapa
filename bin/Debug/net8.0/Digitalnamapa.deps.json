@@ -9,6 +9,14 @@
       "Digitalnamapa/1.0.0": {
         "runtime": {
           "Digitalnamapa.dll": {}
+        },
+        "resources": {
+          "en/Digitalnamapa.resources.dll": {
+            "locale": "en"
+          },
+          "sr/Digitalnamapa.resources.dll": {
+            "locale": "sr"
+          }
         }
       }
     }
