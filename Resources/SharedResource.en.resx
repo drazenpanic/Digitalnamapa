@@ -150,11 +150,29 @@
   <data name="Event_PhotoCorner" xml:space="preserve">
     <value>Photo corner</value>
   </data>
+  <data name="Event_CaptureRomanMoment" xml:space="preserve">
+    <value>"Capture the Roman Moment"</value>
+  </data>
+  <data name="Event_CaptureRomanMomentOrganizer" xml:space="preserve">
+    <value>Organizer: Meerart creative center</value>
+  </data>
   <data name="Event_DigitalInteraction" xml:space="preserve">
     <value>Digital interaction - Conversation with Roman emperors of Sirmium</value>
   </data>
   <data name="Event_ChildrenWorkshopsShort" xml:space="preserve">
     <value>Children's workshops</value>
+  </data>
+  <data name="Event_ChildrenWorkshopWriting" xml:space="preserve">
+    <value>Children's workshop "Write like Romans"</value>
+  </data>
+  <data name="Event_ChildrenWorkshopWritingModerators" xml:space="preserve">
+    <value>Moderators: Milica Panić, Verica Karić - Meerart creative center</value>
+  </data>
+  <data name="Event_ChildrenWorkshopPattern" xml:space="preserve">
+    <value>Children's workshop "Explore Roman patterns"</value>
+  </data>
+  <data name="Event_ChildrenWorkshopPatternModerators" xml:space="preserve">
+    <value>Moderators: Anica Jelenković, Emilija Teodorović - Anana art</value>
   </data>
   <data name="Event_FestivalParade" xml:space="preserve">
     <value>Lux Aurelius Festival participants parade</value>
@@ -268,6 +286,9 @@
     <value>Roman bazaar</value>
   </data>
   <data name="Event_PhotoCorner" xml:space="preserve">
+    <value>Photo corner</value>
+  </data>
+  <data name="Event_PhotoCornerFull" xml:space="preserve">
     <value>Photo corner</value>
   </data>
   <data name="Popup_SremMuseum_Title" xml:space="preserve">

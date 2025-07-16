@@ -72,14 +72,6 @@ namespace Digitalnamapa.Controllers
                         new Event
                         {
                             Id = 1,
-                            Title = _localizer["Event_ChildrenWorkshops"],
-                            Date = new DateTime(2025, 8, 2),
-                            Time = "10:00-14:00",
-                            Description = _localizer["Event_ChildrenWorkshops"]
-                        },
-                        new Event
-                        {
-                            Id = 2,
                             Title = _localizer["Event_ExperimentalArchaeology"],
                             Date = new DateTime(2025, 8, 2),
                             Time = "10:00-19:00",
@@ -87,7 +79,7 @@ namespace Digitalnamapa.Controllers
                         },
                         new Event
                         {
-                            Id = 3,
+                            Id = 2,
                             Title = _localizer["Event_RomanBazaar"],
                             Date = new DateTime(2025, 8, 2),
                             Time = "10:00-19:00",
@@ -95,11 +87,11 @@ namespace Digitalnamapa.Controllers
                         },
                         new Event
                         {
-                            Id = 4,
-                            Title = _localizer["Event_PhotoCorner"],
+                            Id = 3,
+                            Title = _localizer["Event_CaptureRomanMoment"],
                             Date = new DateTime(2025, 8, 2),
                             Time = "12h-19h",
-                            Description = _localizer["Event_PhotoCorner"]
+                            Description = _localizer["Event_CaptureRomanMomentOrganizer"]
                         }
                     }
                 };
@@ -229,10 +221,18 @@ namespace Digitalnamapa.Controllers
                         new Event
                         {
                             Id = 2,
-                            Title = _localizer["Event_ChildrenWorkshops"],
+                            Title = _localizer["Event_ChildrenWorkshopWriting"],
                             Date = new DateTime(2025, 8, 2),
-                            Time = "10h-14h",
-                            Description = _localizer["Event_ChildrenWorkshops"]
+                            Time = "10:00-11:30",
+                            Description = _localizer["Event_ChildrenWorkshopWritingModerators"]
+                        },
+                        new Event
+                        {
+                            Id = 3,
+                            Title = _localizer["Event_ChildrenWorkshopPattern"],
+                            Date = new DateTime(2025, 8, 2),
+                            Time = "12:00-13:30",
+                            Description = _localizer["Event_ChildrenWorkshopPatternModerators"]
                         }
                     }
                 };

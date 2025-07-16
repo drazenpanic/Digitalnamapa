@@ -150,11 +150,32 @@
   <data name="Event_PhotoCorner" xml:space="preserve">
     <value>Foto kutak</value>
   </data>
+  <data name="Event_PhotoCornerFull" xml:space="preserve">
+    <value>Foto kutak</value>
+  </data>
+  <data name="Event_CaptureRomanMoment" xml:space="preserve">
+    <value>"Uhvati rimski trenutak"</value>
+  </data>
+  <data name="Event_CaptureRomanMomentOrganizer" xml:space="preserve">
+    <value>Organizator: Meerart kreativni centar</value>
+  </data>
   <data name="Event_DigitalInteraction" xml:space="preserve">
     <value>Digitalna interakcija - Razgovor sa rimskim carevima Sirmiuma</value>
   </data>
   <data name="Event_ChildrenWorkshopsShort" xml:space="preserve">
     <value>Decije radionice</value>
+  </data>
+  <data name="Event_ChildrenWorkshopWriting" xml:space="preserve">
+    <value>Dečija radionica "Piši kao rimljani"</value>
+  </data>
+  <data name="Event_ChildrenWorkshopWritingModerators" xml:space="preserve">
+    <value>Moderatori: Milica Panić, Verica Karić - Meerart kreativni centar</value>
+  </data>
+  <data name="Event_ChildrenWorkshopPattern" xml:space="preserve">
+    <value>Dečija radionica "Pustuj rimljansku šaru"</value>
+  </data>
+  <data name="Event_ChildrenWorkshopPatternModerators" xml:space="preserve">
+    <value>Moderatori: Anica Jelenković, Emilija Teodorović - Anana art</value>
   </data>
   <data name="Event_FestivalParade" xml:space="preserve">
     <value>Defile učesnika Festivala Lux Aurelius</value>

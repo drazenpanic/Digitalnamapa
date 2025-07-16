@@ -751,7 +751,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshops'] : 'Radionice za decu'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-14:00)</span><br>
                 <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ExperimentalArchaeology'] : 'Eksperimentalna arheologija'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
                 <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_RomanBazaar'] : 'Rimski bazar'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10:00-19:00)</span><br>
-                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_PhotoCorner'] : 'Foto kutak'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 12h-19h)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_PhotoCornerFull'] : 'Foto kutak'}</span><br>
+                <span style=\"font-style:italic;\">${window.localizationData ? window.localizationData['Event_CaptureRomanMoment'] : '"Uhvati rimski trenutak"'}</span><br>
+                <span style=\"font-size:0.9rem;\">${window.localizationData ? window.localizationData['Event_CaptureRomanMomentOrganizer'] : 'Organizator: Meerart kreativni centar'}</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
                 <a href=\"https://www.google.com/maps/search/?api=1&query=44.96772509437982,19.608036819991597\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
@@ -876,7 +878,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <div style=\"font-family:'Times New Roman',serif;font-size:1em;margin-top:0.5em;\">
                 <strong>${window.localizationData ? window.localizationData['Popup_Events'] : 'Dešavanja:'}</strong><br>
                 <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_DigitalInteraction'] : 'Digitalna interakcija - Razgovor sa rimskim carevima Sirmiuma'}</span> <span style=\"color:#8B6914;\">(02.08.2025, 10h-19h)</span><br>
-                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshopsShort'] : 'Decije radionice'}</span> <span style=\"color:#8B6914;\">(02.08.2025 - 10h-14h)</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshopWriting'] : 'Dečija radionica "Piši kao rimljani"'}</span> <span style=\"color:#8B6914;\">(02.08.2025 - 10:00-11:30)</span><br>
+                <span style=\"font-size:0.9rem;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshopWritingModerators'] : 'Moderatori: Milica Panić, Verica Karić - Meerart kreativni centar'}</span><br>
+                <span style=\"font-weight:bold;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshopPattern'] : 'Dečija radionica "Pustuj rimljansku šaru"'}</span> <span style=\"color:#8B6914;\">(02.08.2025 - 12:00-13:30)</span><br>
+                <span style=\"font-size:0.9rem;\">${window.localizationData ? window.localizationData['Event_ChildrenWorkshopPatternModerators'] : 'Moderatori: Anica Jelenković, Emilija Teodorović - Anana art'}</span><br>
             </div>
             <div style=\"display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:0.7em;\">
                 <a href=\"https://www.google.com/maps/search/?api=1&query=44.96812210658803,19.607509922876687\" target=\"_blank\" class=\"popup-gmaps-btn\">${window.localizationData ? window.localizationData['Popup_OpenInGoogleMaps'] : 'Otvori u Google mapama'}</a>
