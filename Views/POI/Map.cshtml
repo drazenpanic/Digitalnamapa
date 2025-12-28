@@ -6,13 +6,15 @@
     ViewData["Title"] = "Digitalna Mapa";
 }
 
-<div class="d-flex align-items-center mb-4" style="width: 100%; padding: 0 20px;">
-    <img src="/images/barjak.png" alt="Barjak" style="height: 210px; width: auto; object-fit: contain; flex-shrink: 0; margin-right: 20px;">
-    <h1 class="text-center mb-0 flex-grow-1" style="font-family: 'Amatic SC', cursive; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3); color: #D3B865;">
-        <span style="font-size: 1.5em;">@Localizer["Map_Welcome"]</span><br>
-        <span style="font-family: 'Open Sans', sans-serif; font-weight: 400;">@Localizer["Map_FestivalSubtitle"]</span><br>
-        @Localizer["Map_Year"]
-    </h1>
+<div class="d-flex align-items-center mb-4 header-container" style="width: 100%; padding: 0 20px;">
+    <img src="/images/barjak.png" alt="Barjak" class="header-banner" style="height: 250px; width: auto; object-fit: contain; flex-shrink: 0; margin-right: 20px;">
+    <div class="header-title-wrapper flex-grow-1">
+        <h1 class="text-center mb-0 header-title" style="font-family: 'Amatic SC', cursive; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3); color: #D3B865;">
+            <span style="font-size: 1.5em;">@Localizer["Map_Welcome"]</span><br>
+            <span style="font-family: 'Open Sans', sans-serif; font-weight: 400;">@Localizer["Map_FestivalSubtitle"]</span><br>
+            @Localizer["Map_Year"]
+        </h1>
+    </div>
 </div>
     
 <!-- Filter controls -->
@@ -164,7 +166,22 @@
         min-width: 70px !important;
     }
     
+    /* Header centriranje na desktop */
+    @@media (min-width: 993px) {
+        .header-title-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-left: calc(-1 * (250px + 20px) / 2) !important; /* kompenzacija za polovinu banera + margin */
+        }
+    }
+    
     /* Responsive optimizacije */
+    @@media (max-width: 992px) {
+        .header-title-wrapper {
+            margin-left: 0 !important;
+        }
+    }
+    
     @@media (max-width: 768px) {
         #map {
             height: calc(100vh - 300px);

@@ -77,6 +77,8 @@ h1 {
     background-color: #443c2c; /* Darker background for buttons */
     color: #D3B865; /* Imperial Gold text for buttons */
     border-color: #D3B865; /* Imperial Gold border */
+    font-family: 'Marcellus', serif; /* Classical elegance for filter buttons */
+    text-transform: uppercase; /* Always uppercase */
 }
 
 .filter-btn.active,
