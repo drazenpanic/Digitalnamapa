@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Digitalnamapa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffbfdd35a07312b7c16cf71d6aa9a0373feee662")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+310093f452687d4a3421ebaea09d990afe89ffa7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Digitalnamapa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Digitalnamapa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
