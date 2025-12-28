@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Workspaces\\Digitalnamapa\\",
+  "WorkspaceRootPath": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|f:\\workspaces\\digitalnamapa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|c:\\users\\drazendesktop\\source\\repos\\drazenpanic\\digitalnamapa\\views\\poi\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:views\\poi\\map.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|c:\\users\\drazendesktop\\source\\repos\\drazenpanic\\digitalnamapa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64ECD544-DAED-4DA5-BA7F-7B867253CB0E}|Digitalnamapa.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +30,32 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Map.cshtml",
+              "DocumentMoniker": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Views\\POI\\Map.cshtml",
+              "RelativeDocumentMoniker": "Views\\POI\\Map.cshtml",
+              "ToolTip": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Views\\POI\\Map.cshtml",
+              "RelativeToolTip": "Views\\POI\\Map.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAIwKYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-28T11:50:10.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Workspaces\\Digitalnamapa\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\Workspaces\\Digitalnamapa\\Program.cs",
+              "ToolTip": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

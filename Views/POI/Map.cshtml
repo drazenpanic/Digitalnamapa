@@ -6,11 +6,14 @@
     ViewData["Title"] = "Digitalna Mapa";
 }
 
-<h1 class="text-center mb-4" style="font-family: 'Cinzel', serif; font-weight: 700;">
-    @Localizer["Map_Welcome"]<br>
-    <span style="font-family: 'Times New Roman', serif; font-weight: 400;">@Localizer["Map_FestivalSubtitle"]</span><br>
-    @Localizer["Map_Year"]
-</h1>
+<div class="d-flex align-items-center mb-4" style="width: 100%; padding: 0 20px;">
+    <img src="/images/barjak.png" alt="Barjak" style="height: 210px; width: auto; object-fit: contain; flex-shrink: 0; margin-right: 20px;">
+    <h1 class="text-center mb-0 flex-grow-1" style="font-family: 'Amatic SC', cursive; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.3); color: #D3B865;">
+        <span style="font-size: 1.5em;">@Localizer["Map_Welcome"]</span><br>
+        <span style="font-family: 'Open Sans', sans-serif; font-weight: 400;">@Localizer["Map_FestivalSubtitle"]</span><br>
+        @Localizer["Map_Year"]
+    </h1>
+</div>
     
 <!-- Filter controls -->
 <div class="d-flex justify-content-center mb-3 flex-wrap">
@@ -118,17 +121,19 @@
 <style>
     #map {
         width: 100%;
-        height: 75vh;
-        min-height: 400px;
-        max-height: 800px;
+        height: calc(100vh - 350px);
+        min-height: 500px;
+        max-height: none;
         margin-bottom: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
         border-radius: 10px;
         border: 1px solid #444;
         box-shadow: 0 2px 8px #000a;
     }
     .legend-container {
         background: transparent;
-        color: #e0c97f;
+        color: #D3B865;
     }
     .legend-item {
         transition: transform 0.2s ease;
@@ -142,7 +147,7 @@
     }
     .legend-item div {
         font-size: 0.85rem;
-        color: #DAA520;
+        color: #D3B865;
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
@@ -162,17 +167,18 @@
     /* Responsive optimizacije */
     @@media (max-width: 768px) {
         #map {
-            height: 70vh;
-            min-height: 300px;
+            height: calc(100vh - 300px);
+            min-height: 400px;
         }
         
         h1 {
-            font-size: 1.4rem !important;
+            font-size: 2.0rem !important;
         }
         
         h1 span {
-            font-size: 1rem !important;
+            font-size: 1.6rem !important;
         }
+        
         
         .legend-title {
             font-size: 1rem !important;
@@ -190,8 +196,8 @@
     
     @@media (min-width: 1200px) {
         #map {
-            height: 78vh;
-            max-height: 900px;
+            height: calc(100vh - 320px);
+            min-height: 600px;
         }
     }
 </style>
