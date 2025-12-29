@@ -11,7 +11,7 @@
 
 /* Leaflet specific overrides to ensure map fills container */
 .leaflet-container {
-    background: none !important; /* Remove default leaflet background */
+    background: transparent !important; /* Remove default leaflet background */
     width: 100%; /* Promenjeno sa !important */
     height: 100%;
 }

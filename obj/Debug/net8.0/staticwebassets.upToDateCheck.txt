@@ -31,7 +31,8 @@ wwwroot\images\lapidarijum.png
 wwwroot\images\lapidarijum2.png
 wwwroot\images\letak.png
 wwwroot\images\mapa.jpg
-wwwroot\images\mapaold.jpg
+wwwroot\images\mapa.png
+wwwroot\images\mapa2.jpg
 wwwroot\images\marcus.png
 wwwroot\images\muzejsrema.png
 wwwroot\images\muzejsrema1.png
@@ -42,6 +43,7 @@ wwwroot\images\park.png
 wwwroot\images\parking.png
 wwwroot\images\parkold.png
 wwwroot\images\pomoc.png
+wwwroot\images\poz.png
 wwwroot\images\pozoriste.png
 wwwroot\images\rimskibazar.png
 wwwroot\images\TrgCireMilekica.png
