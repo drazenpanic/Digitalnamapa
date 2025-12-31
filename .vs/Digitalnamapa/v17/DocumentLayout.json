@@ -46,8 +46,7 @@
               "RelativeToolTip": "wwwroot\\css\\site.css",
               "ViewState": "AgIAACkAAAAAAAAAAAAYwD4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-29T21:41:58.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T21:41:58.183Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "wwwroot\\css\\map.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-29T21:41:23.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-29T21:41:23.452Z"
             },
             {
               "$type": "Document",
@@ -68,9 +66,9 @@
               "Title": "Map.cshtml",
               "DocumentMoniker": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Views\\POI\\Map.cshtml",
               "RelativeDocumentMoniker": "Views\\POI\\Map.cshtml",
-              "ToolTip": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Views\\POI\\Map.cshtml*",
-              "RelativeToolTip": "Views\\POI\\Map.cshtml*",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAtwJUAAAAZAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Views\\POI\\Map.cshtml",
+              "RelativeToolTip": "Views\\POI\\Map.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAtwIoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-28T11:50:10.703Z",
               "EditorCaption": ""
