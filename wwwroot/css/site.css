@@ -68,28 +68,47 @@ h1 {
     position: relative; /* Važno za pravilno pozicioniranje Leaflet slojeva */
 }
 
-/* Filter controls styling */
-.filter-btn {
+/* Filter controls styling - override Bootstrap */
+button.btn.filter-btn,
+.btn.filter-btn,
+button.filter-btn {
     margin: 5px; /* Spacing between buttons */
-    border-radius: 20px; /* Pill-shaped buttons */
+    border-radius: 20px !important; /* Pill-shaped buttons */
     padding: 8px 20px;
     transition: all 0.3s ease; /* Smooth transitions for hover/active states */
-    background-color: #443c2c; /* Darker background for buttons */
-    color: #D3B865; /* Imperial Gold text for buttons */
-    border-color: #D3B865; /* Imperial Gold border */
-    font-family: 'Marcellus', serif; /* Classical elegance for filter buttons */
+    background-color: transparent !important; /* Transparent background */
+    background: transparent !important; /* Transparent background */
+    color: #D3B865 !important; /* Imperial Gold text for buttons */
+    border: 2px solid #D3B865 !important; /* Imperial Gold border */
+    border-color: #D3B865 !important; /* Imperial Gold border */
+    font-family: 'Marcellus', serif !important; /* Classical elegance for filter buttons */
     text-transform: uppercase; /* Always uppercase */
 }
 
-.filter-btn.active,
-.filter-btn:hover {
+button.btn.filter-btn.active,
+button.btn.filter-btn:hover,
+button.btn.filter-btn:focus,
+button.btn.filter-btn:active,
+button.btn.filter-btn:focus-visible,
+.btn.filter-btn.active,
+.btn.filter-btn:hover,
+.btn.filter-btn:focus,
+.btn.filter-btn:active,
+.btn.filter-btn:focus-visible,
+button.filter-btn.active,
+button.filter-btn:hover,
+button.filter-btn:focus,
+button.filter-btn:active {
     background-color: #D3B865 !important; /* Imperial Gold background on hover/active */
+    background: #D3B865 !important; /* Imperial Gold background on hover/active */
     color: #211B0D !important; /* Dark text on golden background */
     border-color: #D3B865 !important; /* Imperial Gold border */
-    border-width: 3px; /* Zadebljan border */
-    border-style: solid; /* Osiguraj da je stil solidan */
+    border: 2px solid #D3B865 !important; /* Imperial Gold border */
+    border-width: 2px !important; /* Border width */
+    border-style: solid !important; /* Osiguraj da je stil solidan */
     transform: translateY(-2px); /* Slight lift on hover/active */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Stronger shadow on hover/active */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important; /* Stronger shadow on hover/active */
+    outline: none !important; /* Remove Bootstrap focus outline */
 }
 
 /* Main content area */

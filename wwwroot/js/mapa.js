@@ -110,9 +110,34 @@ document.addEventListener('DOMContentLoaded', () => {
     // Filter markers based on type
     function filterPoints(type) {
         console.log('Filtering by type:', type);
+        
+        // Lista iconKey-a za znamenitosti
+        const landmarkIconKeys = ['palata', 'park', 'muzejsrema', 'lapidarijum', 'biblioteka', 'zitnitrg', 'pozoriste', 'galerija', 'arhivsrema', 'bazilika', 'turistickaorganizacija'];
+        
         window.markers.forEach(marker => {
             console.log('Marker type:', marker.pointType);
-            if (type === 'All' || marker.pointType === type) {
+            
+            if (type === 'Landmarks') {
+                // Proveri da li marker ima iconKey u listi znamenitosti
+                const markerIcon = marker.options.icon;
+                let isLandmark = false;
+                
+                // Proveri da li je iconKey u landmark listi
+                if (markerIcon && markerIcon.options && markerIcon.options.iconUrl) {
+                    const iconUrl = markerIcon.options.iconUrl;
+                    landmarkIconKeys.forEach(key => {
+                        if (iconUrl.includes(`/${key}.png`)) {
+                            isLandmark = true;
+                        }
+                    });
+                }
+                
+                if (isLandmark) {
+                    marker.addTo(window.map);
+                } else {
+                    marker.remove();
+                }
+            } else if (type === 'All' || marker.pointType === type) {
                 marker.addTo(window.map);
             } else {
                 marker.remove();
@@ -126,12 +151,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add filter event listeners
     document.querySelectorAll('.filter-btn').forEach(button => {
         button.addEventListener('click', (e) => {
+            // Remove active class from all buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            // Add active class to clicked button
+            e.target.classList.add('active');
             filterPoints(e.target.dataset.type);
         });
     });
-
-    // Initialize with all markers
-    filterPoints('All');
 
     // --- KORISNIČKA LOKACIJA ---
     let userLocationMarker = null;
@@ -1343,4 +1371,15 @@ document.addEventListener('DOMContentLoaded', () => {
             window.map.setView(window.parkingMarkers[0].getLatLng(), window.map.getZoom(), { animate: true });
         }
     });
+
+    // Initialize with landmarks filter (default) - called after all markers are created
+    // Set active class on Landmarks button
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.dataset.type === 'Landmarks') {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+    filterPoints('Landmarks');
 }); 

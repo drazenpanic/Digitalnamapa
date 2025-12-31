@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
   <data name="SiteTitle" xml:space="preserve">
-    <value>Digital Festival Map</value>
+    <value>Digital Map of Sirmium</value>
   </data>
   <data name="Navigation_Map" xml:space="preserve">
     <value>Map</value>
@@ -21,6 +21,9 @@
   <data name="Map_FestivalSubtitle" xml:space="preserve">
     <value>festum culturae romanae</value>
   </data>
+  <data name="Map_SubtitleSirmium" xml:space="preserve">
+    <value>digital map of Sirmium</value>
+  </data>
   <data name="Map_Year" xml:space="preserve">
     <value>Sirmium MMXXV</value>
   </data>
@@ -32,6 +35,9 @@
   </data>
   <data name="Map_FilterServices" xml:space="preserve">
     <value>Services</value>
+  </data>
+  <data name="Map_FilterLandmarks" xml:space="preserve">
+    <value>Landmarks</value>
   </data>
   <data name="Map_Legend" xml:space="preserve">
     <value>LEGEND</value>

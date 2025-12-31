@@ -1,5 +1,4 @@
 wwwroot\css\map.css
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\arhivsrema.png
 wwwroot\images\atelje.png
@@ -38,7 +37,6 @@ wwwroot\images\Vaza.png
 wwwroot\images\voda.png
 wwwroot\images\wc.png
 wwwroot\images\zitnitrg.png
-wwwroot\js\mapa.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -97,3 +95,5 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\site.css
+wwwroot\js\mapa.js
