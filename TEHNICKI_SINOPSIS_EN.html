@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHNICAL SYNOPSIS - Digital Map of Sremska Mitrovica</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            page-break-after: avoid;
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ecf0f1;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+
+        h4 {
+            color: #666;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+            page-break-after: avoid;
+        }
+
+        .header-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+
+        .feature-list {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .checkmark {
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .stat-box {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .conclusion {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-info">
+        <h1>TECHNICAL SYNOPSIS - Digital Map of Sremska Mitrovica</h1>
+        <p style="margin: 0; color: #7f8c8d;"><strong>Report date:</strong> 2025 | <strong>Version:</strong> 1.0 | <strong>Status:</strong> Production ready</p>
+    </div>
+
+    <div class="section">
+        <h2>PROJECT OVERVIEW</h2>
+        <p><strong>Digital Map</strong> is a web application developed for the Lux Aurelius 2025 Festival in Sremska Mitrovica. The application provides an interactive digital city map with points of interest (POI), event information, and navigation features.</p>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>TECHNOLOGY STACK</h2>
+
+        <h3>Backend</h3>
+        <ul>
+            <li><strong>.NET 8.0</strong> - ASP.NET Core MVC application</li>
+            <li><strong>C#</strong> - main programming language</li>
+            <li><strong>MVC Pattern</strong> - Model-View-Controller architecture</li>
+        </ul>
+
+        <h3>Frontend</h3>
+        <ul>
+            <li><strong>Bootstrap 5</strong> - responsive UI framework</li>
+            <li><strong>Leaflet.js</strong> - interactive map library</li>
+            <li><strong>JavaScript (ES6+)</strong> - client-side logic</li>
+            <li><strong>HTML5/CSS3</strong> - markup and styling</li>
+        </ul>
+
+        <h3>Localization</h3>
+        <ul>
+            <li><strong>ASP.NET Core Localization</strong> - multi-language support</li>
+            <li><strong>RESX files</strong> - resources for Serbian (sr) and English (en)</li>
+        </ul>
+
+        <h3>Deployment</h3>
+        <ul>
+            <li><strong>Docker</strong> - application containerization</li>
+            <li><strong>Multi-stage Dockerfile</strong> - optimized production build</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>KEY FEATURES</h2>
+
+        <div class="feature-list">
+            <h3>1. Interactive Digital Map</h3>
+            <ul>
+                <li><strong>Custom map</strong> - hand-drawn city map used as an image overlay</li>
+                <li><strong>Leaflet.js integration</strong> - advanced map interaction (zoom, pan, click)</li>
+                <li><strong>Coordinate system</strong> - transformation between geographic coordinates (lat/lng) and map pixel coordinates</li>
+                <li><strong>Barycentric interpolation</strong> - precise transformation using reference points</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>2. Points of Interest (POI)</h3>
+            <ul>
+                <li><strong>20+ POI locations</strong> implemented:
+                    <ul>
+                        <li>Landmarks (Imperial Palace, City Park, Museum of Srem, Basilica, etc.)</li>
+                        <li>Services (WC, Parking, Water, First Aid, Food)</li>
+                        <li>Events (Roman Camp, Roman Bazaar, Žitni Square, etc.)</li>
+                    </ul>
+                </li>
+                <li><strong>Custom icons</strong> - each POI has its own unique icon</li>
+                <li><strong>Informational popups</strong> - display name, description, and events on click</li>
+                <li><strong>Detail pages</strong> - dedicated pages for key POIs with full information</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>3. Geolocation</h3>
+            <ul>
+                <li><strong>User position tracking</strong> - real-time display of user location on the map</li>
+                <li><strong>GPS integration</strong> - uses the HTML5 Geolocation API</li>
+                <li><strong>Visual indicators</strong> - blue marker with accuracy circle</li>
+                <li><strong>Corner marker</strong> - indicator when the user is outside the visible map area</li>
+                <li><strong>Toggle button</strong> - enable/disable location tracking</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>4. POI Filtering</h3>
+            <ul>
+                <li><strong>Categories</strong>:
+                    <ul>
+                        <li>Landmarks</li>
+                        <li>Events</li>
+                        <li>Services</li>
+                    </ul>
+                </li>
+                <li><strong>Dynamic filtering</strong> - show/hide markers based on category</li>
+                <li><strong>Active filter indicator</strong> - visual indicator of the active filter</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>5. Events and Schedule</h3>
+            <ul>
+                <li><strong>Events linked to POIs</strong> - each POI can have multiple events</li>
+                <li><strong>Event details</strong> - date, time, description</li>
+                <li><strong>Map display</strong> - events shown in map popups</li>
+                <li><strong>Schedule page</strong> - dedicated page for viewing the program (prepared)</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>6. Bilingual Support</h3>
+            <ul>
+                <li><strong>Serbian and English</strong> - full support for both languages</li>
+                <li><strong>Cookie-based localization</strong> - stores user language preference</li>
+                <li><strong>RESX resources</strong> - centralized translation management</li>
+                <li><strong>Dynamic switching</strong> - change language without reloading the page</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>7. Google Maps Integration</h3>
+            <ul>
+                <li><strong>Direct links</strong> - each POI has a link to Google Maps</li>
+                <li><strong>Coordinate precision</strong> - accurate geographic coordinates for navigation</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>8. Responsive Design</h3>
+            <ul>
+                <li><strong>Mobile-first approach</strong> - optimized for mobile devices</li>
+                <li><strong>Adaptive layout</strong> - adjusts to different screen sizes</li>
+                <li><strong>Touch-friendly</strong> - support for touch gestures on mobile devices</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>APPLICATION ARCHITECTURE</h2>
+
+        <h3>Models</h3>
+        <ul>
+            <li><strong>PointOfInterest</strong> - main model for points of interest
+                <ul>
+                    <li>Basic data (name, description, coordinates, type)</li>
+                    <li>Events - list of related events</li>
+                    <li>Status (IsActive) - activation/deactivation of POIs</li>
+                </ul>
+            </li>
+            <li><strong>Event</strong> - event model
+                <ul>
+                    <li>Title, date, time, description</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Controllers</h3>
+        <ul>
+            <li><strong>POIController</strong> - POI management
+                <ul>
+                    <li><code>Map()</code> - main page with the map</li>
+                    <li><code>Details(int id)</code> - detailed POI page</li>
+                    <li><code>Program()</code> - schedule page</li>
+                </ul>
+            </li>
+            <li><strong>HomeController</strong> - base controller
+                <ul>
+                    <li><code>SetLanguage()</code> - language switching</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Views</h3>
+        <ul>
+            <li><strong>Map.cshtml</strong> - main interactive map</li>
+            <li><strong>Details.cshtml</strong> - detailed POI page with:
+                <ul>
+                    <li>Full location description</li>
+                    <li>List of events</li>
+                    <li>Integrated Leaflet map</li>
+                    <li>Google Maps link</li>
+                </ul>
+            </li>
+            <li><strong>_Layout.cshtml</strong> - main layout with navigation and language switcher</li>
+        </ul>
+
+        <h3>JavaScript</h3>
+        <ul>
+            <li><strong>mapa.js</strong> - main map logic
+                <ul>
+                    <li>Leaflet map initialization</li>
+                    <li>Adding markers</li>
+                    <li>Geolocation</li>
+                    <li>Filtering</li>
+                    <li>Coordinate transformation</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>LOCALIZATION</h2>
+
+        <h3>Implementation</h3>
+        <ul>
+            <li><strong>IStringLocalizer&lt;SharedResource&gt;</strong> - dependency injection for localization</li>
+            <li><strong>RESX files</strong>:
+                <ul>
+                    <li><code>SharedResource.sr.resx</code> - Serbian translations</li>
+                    <li><code>SharedResource.en.resx</code> - English translations</li>
+                    <li><code>Views.Shared._Layout.sr.resx</code> - layout translations (Serbian)</li>
+                    <li><code>Views.Shared._Layout.en.resx</code> - layout translations (English)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Coverage</h3>
+        <ul>
+            <li>All UI elements are localized</li>
+            <li>Map popups</li>
+            <li>Navigation</li>
+            <li>Detail pages</li>
+            <li>Messages and labels</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>MAP FUNCTIONALITY</h2>
+
+        <h3>Coordinate System</h3>
+        <ul>
+            <li><strong>Image Overlay</strong> - custom map image is used</li>
+            <li><strong>Simple CRS</strong> - Leaflet Simple Coordinate Reference System</li>
+            <li><strong>Transformation</strong> - barycentric interpolation between 3 reference points:
+                <ul>
+                    <li>City Park</li>
+                    <li>Žitni Square</li>
+                    <li>City Library</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Marker Management</h3>
+        <ul>
+            <li><strong>Custom icons</strong> - each POI has its own PNG icon</li>
+            <li><strong>Layer groups</strong> - markers organized into groups</li>
+            <li><strong>Popup content</strong> - dynamically generated popups with localized text</li>
+            <li><strong>Legend</strong> - interactive legend with clickable elements</li>
+        </ul>
+
+        <h3>Interactivity</h3>
+        <ul>
+            <li><strong>Zoom controls</strong> - built-in Leaflet controls</li>
+            <li><strong>Pan</strong> - move the map with mouse/touch</li>
+            <li><strong>Click handlers</strong> - clicking a marker opens a popup</li>
+            <li><strong>Legend click</strong> - clicking the legend centers the map on the POI</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>POI DATA</h2>
+
+        <h3>Implemented POIs</h3>
+
+        <h4>Landmarks</h4>
+        <ol>
+            <li>Imperial Palace (id: 1)</li>
+            <li>City Park (id: 2)</li>
+            <li>Museum of Srem (id: 3)</li>
+            <li>Lapidarium (id: 4)</li>
+            <li>Library (id: 6)</li>
+            <li>Žitni Square (id: 7)</li>
+            <li>Theatre (id: 8)</li>
+            <li>Gallery (id: 9)</li>
+            <li>Archive of Srem (id: 11)</li>
+            <li>Basilica (id: 13)</li>
+            <li>Roman Camp (id: 12)</li>
+            <li>Roman Bazaar (id: 16)</li>
+            <li>Sava Quay (id: 15)</li>
+        </ol>
+
+        <h4>Services</h4>
+        <ul>
+            <li>WC (3 locations)</li>
+            <li>Parking (2 locations)</li>
+            <li>Water</li>
+            <li>First Aid</li>
+            <li>Food</li>
+            <li>Tourist Organization (id: 17)</li>
+        </ul>
+
+        <h4>Additional</h4>
+        <ul>
+            <li>Atelier</li>
+            <li>Café “Moskva”</li>
+            <li>Kedar Bar</li>
+        </ul>
+
+        <h3>Events</h3>
+        <p>Each POI can have multiple events with:</p>
+        <ul>
+            <li>Title</li>
+            <li>Date and time</li>
+            <li>Description</li>
+            <li>Organizer (where applicable)</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>DEPLOYMENT</h2>
+
+        <h3>Docker</h3>
+        <ul>
+            <li><strong>Multi-stage build</strong> - optimized production image</li>
+            <li><strong>.NET 8.0 runtime</strong> - minimal runtime image</li>
+            <li><strong>Port configuration</strong> - ready for deployment</li>
+        </ul>
+
+        <h3>Configuration</h3>
+        <ul>
+            <li><strong>appsettings.json</strong> - base configuration</li>
+            <li><strong>appsettings.Development.json</strong> - development configuration</li>
+            <li><strong>PublishProfiles</strong> - publishing profiles</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>TECHNICAL DETAILS</h2>
+
+        <h3>Performance</h3>
+        <ul>
+            <li><strong>Optimized map initialization</strong> - all markers are created once when the map loads</li>
+            <li><strong>Optimized images</strong> - PNG icons optimized for web</li>
+            <li><strong>Browser caching</strong> - static assets are served through the ASP.NET Core static files pipeline</li>
+            <li><strong>Responsive layout</strong> - map height and layout adapt to different screen sizes</li>
+        </ul>
+
+        <h3>Security</h3>
+        <ul>
+            <li><strong>HTTPS redirect</strong> - forced redirect to HTTPS in production</li>
+            <li><strong>Anti-forgery tokens</strong> - CSRF protection</li>
+            <li><strong>Input validation</strong> - user input validation</li>
+        </ul>
+
+        <h3>Browser Compatibility</h3>
+        <ul>
+            <li><strong>Modern browsers</strong> - Chrome, Firefox, Safari, Edge</li>
+            <li><strong>Mobile browsers</strong> - iOS Safari, Chrome Mobile</li>
+            <li><strong>Geolocation API</strong> - HTML5 Geolocation support</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>PROJECT STATISTICS</h2>
+        <div class="stat-box">
+            <ul style="list-style: none; margin: 0;">
+                <li><strong>Total POIs:</strong> 20+</li>
+                <li><strong>Events:</strong> 30+</li>
+                <li><strong>Languages:</strong> 2 (sr, en)</li>
+                <li><strong>Icons:</strong> 20+ custom PNG icons</li>
+                <li><strong>Controllers:</strong> 2</li>
+                <li><strong>Views:</strong> 5+</li>
+                <li><strong>JavaScript files:</strong> 1 (mapa.js ~1400 lines)</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>FUTURE DEVELOPMENT (PREPARED)</h2>
+
+        <h3>Ready for implementation / further development</h3>
+        <ul>
+            <li><strong>Program page</strong> - fully implemented, currently uses a static schedule and links to POI details; ready to be switched to dynamic data from a database later</li>
+            <li><strong>CRUD operations</strong> - Create, Edit, Delete actions exist in the controller with validation and anti-forgery protection, but without persistent storage yet (TODO logic and database integration)</li>
+            <li><strong>Database models</strong> - <code>PointOfInterest</code> and <code>Event</code> models are designed to be migrated to Entity Framework; currently hard-coded data is used in the controller and JavaScript without a real database</li>
+        </ul>
+
+        <h3>Possible extensions</h3>
+        <ul>
+            <li><strong>Admin panel</strong> - web interface for managing POIs and the program</li>
+            <li><strong>Database</strong> - migration from hard-coded data to a relational database (EF Core)</li>
+            <li><strong>API endpoints</strong> - RESTful API for mobile applications and external integrations</li>
+            <li><strong>Push notifications</strong> - event notifications</li>
+            <li><strong>Offline mode</strong> - Service Worker for offline functionality</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="conclusion">
+        <h2>CONCLUSION</h2>
+        <p>The <strong>Digital Map</strong> is a fully functional web application that provides:</p>
+        <ul style="list-style: none; margin-left: 0;">
+            <li><span class="checkmark">✓</span> An interactive digital city map</li>
+            <li><span class="checkmark">✓</span> Geolocation and navigation</li>
+            <li><span class="checkmark">✓</span> Information about points of interest</li>
+            <li><span class="checkmark">✓</span> Event program</li>
+            <li><span class="checkmark">✓</span> Bilingual support</li>
+            <li><span class="checkmark">✓</span> Responsive design</li>
+            <li><span class="checkmark">✓</span> Google Maps integration</li>
+        </ul>
+        <p style="margin-top: 15px;"><strong>The application is production ready</strong> and can be deployed to any hosting that supports .NET 8.0 or Docker containers.</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>Report date:</strong> 2025 | <strong>Version:</strong> 1.0 | <strong>Status:</strong> Production ready</p>
+    </div>
+
+    <script>
+        // Automatically open print dialog when the page loads (optional)
+        // window.onload = function() {
+        //     window.print();
+        // };
+    </script>
+</body>
+</html>
+

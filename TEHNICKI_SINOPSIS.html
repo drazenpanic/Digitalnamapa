@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="sr-RS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEHNIČKI SINOPSIS - Digitalna Mapa Sremske Mitrovice</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            page-break-after: avoid;
+        }
+        
+        h2 {
+            color: #34495e;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #ecf0f1;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            color: #666;
+            font-size: 16px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+            page-break-after: avoid;
+        }
+        
+        .header-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        
+        .feature-list {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .checkmark {
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .stat-box {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .conclusion {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-info">
+        <h1>TEHNIČKI SINOPSIS - Digitalna Mapa Sremske Mitrovice</h1>
+        <p style="margin: 0; color: #7f8c8d;"><strong>Datum izveštaja:</strong> 2025 | <strong>Verzija:</strong> 1.0 | <strong>Status:</strong> Produkcija spremna</p>
+    </div>
+
+    <div class="section">
+        <h2>PREGLED PROJEKTA</h2>
+        <p><strong>Digitalna Mapa</strong> je web aplikacija razvijena za Festival Lux Aurelius 2025 u Sremskoj Mitrovici. Aplikacija pruža interaktivnu digitalnu mapu grada sa tačkama od interesa (POI), informacijama o događajima i navigacionim funkcionalnostima.</p>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>TEHNOLOGIJSKI STEK</h2>
+        
+        <h3>Backend</h3>
+        <ul>
+            <li><strong>.NET 8.0</strong> - ASP.NET Core MVC aplikacija</li>
+            <li><strong>C#</strong> - glavni programski jezik</li>
+            <li><strong>MVC Pattern</strong> - Model-View-Controller arhitektura</li>
+        </ul>
+
+        <h3>Frontend</h3>
+        <ul>
+            <li><strong>Bootstrap 5</strong> - responsive UI framework</li>
+            <li><strong>Leaflet.js</strong> - interaktivna mapa biblioteka</li>
+            <li><strong>JavaScript (ES6+)</strong> - klijentska logika</li>
+            <li><strong>HTML5/CSS3</strong> - markup i stilizacija</li>
+        </ul>
+
+        <h3>Lokalizacija</h3>
+        <ul>
+            <li><strong>ASP.NET Core Localization</strong> - podrška za više jezika</li>
+            <li><strong>RESX fajlovi</strong> - resursi za srpski (sr) i engleski (en) jezik</li>
+        </ul>
+
+        <h3>Deployment</h3>
+        <ul>
+            <li><strong>Docker</strong> - containerizacija aplikacije</li>
+            <li><strong>Multi-stage Dockerfile</strong> - optimizovana produkcijska build</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>KLJUČNE FUNKCIONALNOSTI</h2>
+
+        <div class="feature-list">
+            <h3>1. Interaktivna Digitalna Mapa</h3>
+            <ul>
+                <li><strong>Custom mapa</strong> - koristi se ručno nacrtana mapa grada kao image overlay</li>
+                <li><strong>Leaflet.js integracija</strong> - napredna interakcija sa mapom (zoom, pan, click)</li>
+                <li><strong>Koordinatni sistem</strong> - transformacija između geografskih koordinata (lat/lng) i pikselnih koordinata mape</li>
+                <li><strong>Barycentric interpolation</strong> - precizna transformacija koristeći referentne tačke</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>2. Tačke Od Interesa (POI)</h3>
+            <ul>
+                <li><strong>20+ POI lokacija</strong> implementirano:
+                    <ul>
+                        <li>Znamenitosti (Carska palata, Gradski park, Muzej Srema, Bazilika, itd.)</li>
+                        <li>Servisi (WC, Parking, Voda, Prva pomoć, Hrana)</li>
+                        <li>Događaji (Rimski kamp, Rimski bazar, Žitni trg, itd.)</li>
+                    </ul>
+                </li>
+                <li><strong>Custom ikone</strong> - svaki POI ima svoju jedinstvenu ikonu</li>
+                <li><strong>Informativni popup-ovi</strong> - prikaz naziva, opisa i događaja na klik</li>
+            <li><strong>Detaljne stranice</strong> - posebne stranice za ključne POI lokacije sa kompletnim informacijama</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>3. Geolokacija</h3>
+            <ul>
+                <li><strong>Praćenje korisničke pozicije</strong> - real-time prikaz lokacije korisnika na mapi</li>
+                <li><strong>GPS integracija</strong> - koristi HTML5 Geolocation API</li>
+                <li><strong>Vizuelni indikatori</strong> - plavi marker sa krugom tačnosti</li>
+                <li><strong>Corner marker</strong> - prikaz kada je korisnik van vidljivog područja mape</li>
+                <li><strong>Toggle dugme</strong> - uključivanje/isključivanje praćenja lokacije</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>4. Filtriranje POI-jeva</h3>
+            <ul>
+                <li><strong>Kategorije</strong>:
+                    <ul>
+                        <li>Znamenitosti (Landmarks)</li>
+                        <li>Događaji (Dešavanja)</li>
+                        <li>Servisi (Servisi)</li>
+                    </ul>
+                </li>
+                <li><strong>Dinamičko filtriranje</strong> - prikaz/sakrivanje markera na osnovu kategorije</li>
+                <li><strong>Aktivni filter indikator</strong> - vizuelna indikacija aktivnog filtera</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>5. Događaji i Program</h3>
+            <ul>
+                <li><strong>Povezivanje događaja sa POI-jevima</strong> - svaki POI može imati više događaja</li>
+                <li><strong>Detalji događaja</strong> - datum, vreme, opis</li>
+                <li><strong>Prikaz na mapi</strong> - događaji se prikazuju u popup-ovima</li>
+                <li><strong>Stranica programa</strong> - posebna stranica za pregled programa (pripremljena)</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>6. Dvijezičnost</h3>
+            <ul>
+                <li><strong>Srpski i Engleski</strong> - potpuna podrška za oba jezika</li>
+                <li><strong>Cookie-based lokalizacija</strong> - čuva izbor jezika korisnika</li>
+                <li><strong>RESX resursi</strong> - centralizovano upravljanje prevodima</li>
+                <li><strong>Dinamičko prebacivanje</strong> - promena jezika bez osvežavanja stranice</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>7. Google Maps Integracija</h3>
+            <ul>
+                <li><strong>Direktni linkovi</strong> - svaki POI ima link ka Google Maps</li>
+                <li><strong>Koordinatna preciznost</strong> - tačne geografske koordinate za navigaciju</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>8. Responsive Dizajn</h3>
+            <ul>
+                <li><strong>Mobile-first pristup</strong> - optimizovano za mobilne uređaje</li>
+                <li><strong>Adaptivni layout</strong> - prilagođava se različitim veličinama ekrana</li>
+                <li><strong>Touch-friendly</strong> - podrška za touch gestove na mobilnim uređajima</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>ARHITEKTURA APLIKACIJE</h2>
+
+        <h3>Modeli</h3>
+        <ul>
+            <li><strong>PointOfInterest</strong> - glavni model za tačke od interesa
+                <ul>
+                    <li>Osnovni podaci (naziv, opis, koordinate, tip)</li>
+                    <li>Događaji (Events) - lista povezanih događaja</li>
+                    <li>Status (IsActive) - aktivacija/deaktivacija POI-ja</li>
+                </ul>
+            </li>
+            <li><strong>Event</strong> - model za događaje
+                <ul>
+                    <li>Naslov, datum, vreme, opis</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Kontroleri</h3>
+        <ul>
+            <li><strong>POIController</strong> - upravljanje POI-jevima
+                <ul>
+                    <li><code>Map()</code> - glavna stranica sa mapom</li>
+                    <li><code>Details(int id)</code> - detaljna stranica POI-ja</li>
+                    <li><code>Program()</code> - stranica programa</li>
+                </ul>
+            </li>
+            <li><strong>HomeController</strong> - osnovni kontroler
+                <ul>
+                    <li><code>SetLanguage()</code> - promena jezika</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>View-ovi</h3>
+        <ul>
+            <li><strong>Map.cshtml</strong> - glavna interaktivna mapa</li>
+            <li><strong>Details.cshtml</strong> - detaljna stranica POI-ja sa:
+                <ul>
+                    <li>Kompletnim opisom lokacije</li>
+                    <li>Listom događaja</li>
+                    <li>Integrisanom Leaflet mapom</li>
+                    <li>Google Maps linkom</li>
+                </ul>
+            </li>
+            <li><strong>_Layout.cshtml</strong> - glavni layout sa navigacijom i jezičkim prekidačem</li>
+        </ul>
+
+        <h3>JavaScript</h3>
+        <ul>
+            <li><strong>mapa.js</strong> - glavna logika mape
+                <ul>
+                    <li>Inicijalizacija Leaflet mape</li>
+                    <li>Dodavanje markera</li>
+                    <li>Geolokacija</li>
+                    <li>Filtriranje</li>
+                    <li>Transformacija koordinata</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>LOKALIZACIJA</h2>
+
+        <h3>Implementacija</h3>
+        <ul>
+            <li><strong>IStringLocalizer&lt;SharedResource&gt;</strong> - dependency injection za lokalizaciju</li>
+            <li><strong>RESX fajlovi</strong>:
+                <ul>
+                    <li><code>SharedResource.sr.resx</code> - srpski prevodi</li>
+                    <li><code>SharedResource.en.resx</code> - engleski prevodi</li>
+                    <li><code>Views.Shared._Layout.sr.resx</code> - layout prevodi</li>
+                    <li><code>Views.Shared._Layout.en.resx</code> - layout prevodi</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Pokrivenost</h3>
+        <ul>
+            <li>Svi UI elementi su lokalizovani</li>
+            <li>Popup-ovi na mapi</li>
+            <li>Navigacija</li>
+            <li>Detaljne stranice</li>
+            <li>Poruke i labele</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>MAPA FUNKCIONALNOSTI</h2>
+
+        <h3>Koordinatni Sistem</h3>
+        <ul>
+            <li><strong>Image Overlay</strong> - koristi se custom slika mape</li>
+            <li><strong>Simple CRS</strong> - Leaflet Simple Coordinate Reference System</li>
+            <li><strong>Transformacija</strong> - barycentric interpolation između 3 referentne tačke:
+                <ul>
+                    <li>Gradski park</li>
+                    <li>Žitni trg</li>
+                    <li>Gradska biblioteka</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Marker Management</h3>
+        <ul>
+            <li><strong>Custom ikone</strong> - svaki POI ima svoju PNG ikonu</li>
+            <li><strong>Layer grupe</strong> - organizacija markera u grupe</li>
+            <li><strong>Popup sadržaj</strong> - dinamički generisani popup-ovi sa lokalizovanim tekstom</li>
+            <li><strong>Legend</strong> - interaktivna legenda sa klikabilnim elementima</li>
+        </ul>
+
+        <h3>Interaktivnost</h3>
+        <ul>
+            <li><strong>Zoom kontrole</strong> - ugrađene Leaflet kontrole</li>
+            <li><strong>Pan</strong> - pomeranje mape mišem/touch-om</li>
+            <li><strong>Click handlers</strong> - klik na marker otvara popup</li>
+            <li><strong>Legend click</strong> - klik na legendu centrira mapu na POI</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>POI PODACI</h2>
+
+        <h3>Implementirani POI-jevi</h3>
+
+        <h4>Znamenitosti</h4>
+        <ol>
+            <li>Carska Palata (id: 1)</li>
+            <li>Gradski Park (id: 2)</li>
+            <li>Muzej Srema (id: 3)</li>
+            <li>Lapidarijum (id: 4)</li>
+            <li>Biblioteka (id: 6)</li>
+            <li>Žitni Trg (id: 7)</li>
+            <li>Pozorište (id: 8)</li>
+            <li>Galerija (id: 9)</li>
+            <li>Arhiv Srema (id: 11)</li>
+            <li>Bazilika (id: 13)</li>
+            <li>Rimski Kamp (id: 12)</li>
+            <li>Rimski Bazar (id: 16)</li>
+            <li>Savski Kej (id: 15)</li>
+        </ol>
+
+        <h4>Servisi</h4>
+        <ul>
+            <li>WC (3 lokacije)</li>
+            <li>Parking (2 lokacije)</li>
+            <li>Voda</li>
+            <li>Prva Pomoć</li>
+            <li>Hrana</li>
+            <li>Turistička Organizacija (id: 17)</li>
+        </ul>
+
+        <h4>Dodatno</h4>
+        <ul>
+            <li>Atelje</li>
+            <li>Kafana Moskva</li>
+            <li>Kedar Bar</li>
+        </ul>
+
+        <h3>Događaji</h3>
+        <p>Svaki POI može imati više događaja sa:</p>
+        <ul>
+            <li>Naslovom</li>
+            <li>Datumom i vremenom</li>
+            <li>Opisom</li>
+            <li>Organizatorom (gde je primenljivo)</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>DEPLOYMENT</h2>
+
+        <h3>Docker</h3>
+        <ul>
+            <li><strong>Multi-stage build</strong> - optimizovana produkcijska slika</li>
+            <li><strong>.NET 8.0 runtime</strong> - minimalna runtime slika</li>
+            <li><strong>Port konfiguracija</strong> - spremno za deployment</li>
+        </ul>
+
+        <h3>Konfiguracija</h3>
+        <ul>
+            <li><strong>appsettings.json</strong> - osnovna konfiguracija</li>
+            <li><strong>appsettings.Development.json</strong> - development konfiguracija</li>
+            <li><strong>PublishProfiles</strong> - profili za publikovanje</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>TEHNIČKI DETALJI</h2>
+
+        <h3>Performanse</h3>
+        <ul>
+            <li><strong>Optimizovana inicijalizacija mape</strong> - svi markeri se kreiraju jednom pri učitavanju</li>
+            <li><strong>Optimizovane slike</strong> - PNG ikone optimizovane za web</li>
+            <li><strong>Caching brauzera</strong> - statički resursi služe se preko ASP.NET Core static files pipeline-a</li>
+            <li><strong>Responsive prikaz</strong> - prilagođena visina mape i layout za različite ekrane</li>
+        </ul>
+
+        <h3>Sigurnost</h3>
+        <ul>
+            <li><strong>HTTPS redirect</strong> - prisilno preusmeravanje na HTTPS u produkciji</li>
+            <li><strong>Anti-forgery tokens</strong> - zaštita od CSRF napada</li>
+            <li><strong>Input validacija</strong> - validacija korisničkih unosa</li>
+        </ul>
+
+        <h3>Browser Kompatibilnost</h3>
+        <ul>
+            <li><strong>Modern browsers</strong> - Chrome, Firefox, Safari, Edge</li>
+            <li><strong>Mobile browsers</strong> - iOS Safari, Chrome Mobile</li>
+            <li><strong>Geolocation API</strong> - podrška za HTML5 Geolocation</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>STATISTIKA PROJEKTA</h2>
+        <div class="stat-box">
+            <ul style="list-style: none; margin: 0;">
+                <li><strong>Ukupno POI-jeva:</strong> 20+</li>
+                <li><strong>Događaja:</strong> 30+</li>
+                <li><strong>Jezici:</strong> 2 (sr, en)</li>
+                <li><strong>Ikone:</strong> 20+ custom PNG ikona</li>
+                <li><strong>Kontroleri:</strong> 2</li>
+                <li><strong>View-ovi:</strong> 5+</li>
+                <li><strong>JavaScript fajlovi:</strong> 1 (mapa.js ~1400 linija)</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>BUDUĆI RAZVOJ (PRIpremljeno)</h2>
+
+        <h3>Spremno za implementaciju / dalji razvoj</h3>
+        <ul>
+            <li><strong>Program stranica</strong> - potpuno implementirana, trenutno koristi statički program i linkove ka POI detaljima; spremna je za kasnije prebacivanje na dinamičke podatke iz baze</li>
+            <li><strong>CRUD operacije</strong> - Create, Edit, Delete akcije postoje u kontroleru sa validacijom i anti‑forgery zaštitom, ali bez trajnog skladištenja (TODO logika i povezivanje sa bazom)</li>
+            <li><strong>Modeli za bazu podataka</strong> - modeli <code>PointOfInterest</code> i <code>Event</code> su dizajnirani tako da se mogu migrirati na Entity Framework; trenutno se koriste hardkodirani podaci u kontroleru i JavaScript-u bez stvarne baze</li>
+        </ul>
+
+        <h3>Moguća proširenja</h3>
+        <ul>
+            <li><strong>Admin panel</strong> - upravljanje POI-jevima i programom kroz web interfejs</li>
+            <li><strong>Baza podataka</strong> - migracija sa hardkodiranih podataka na relacionu bazu (EF Core)</li>
+            <li><strong>API endpoints</strong> - RESTful API za mobilne aplikacije i eksterne integracije</li>
+            <li><strong>Push notifikacije</strong> - obaveštenja o događajima</li>
+            <li><strong>Offline mode</strong> - Service Worker za offline funkcionalnost</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="conclusion">
+        <h2>ZAKLJUČAK</h2>
+        <p>Aplikacija <strong>Digitalna Mapa</strong> je potpuno funkcionalna web aplikacija koja pruža:</p>
+        <ul style="list-style: none; margin-left: 0;">
+            <li><span class="checkmark">✓</span> Interaktivnu digitalnu mapu grada</li>
+            <li><span class="checkmark">✓</span> Geolokaciju i navigaciju</li>
+            <li><span class="checkmark">✓</span> Informacije o tačkama od interesa</li>
+            <li><span class="checkmark">✓</span> Program događaja</li>
+            <li><span class="checkmark">✓</span> Dvijezičnu podršku</li>
+            <li><span class="checkmark">✓</span> Responsive dizajn</li>
+            <li><span class="checkmark">✓</span> Google Maps integraciju</li>
+        </ul>
+        <p style="margin-top: 15px;"><strong>Aplikacija je spremna za produkciju</strong> i može se deploy-ovati na bilo koji hosting koji podržava .NET 8.0 ili Docker kontejnere.</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>Datum izveštaja:</strong> 2025 | <strong>Verzija:</strong> 1.0 | <strong>Status:</strong> Produkcija spremna</p>
+    </div>
+
+    <script>
+        // Automatski otvori print dijalog kada se stranica učita
+        // window.onload = function() {
+        //     window.print();
+        // };
+    </script>
+</body>
+</html>
+
