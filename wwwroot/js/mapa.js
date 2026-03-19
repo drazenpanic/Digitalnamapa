@@ -151,12 +151,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add filter event listeners
     document.querySelectorAll('.filter-btn').forEach(button => {
         button.addEventListener('click', (e) => {
-            // Remove active class from all buttons
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            // Add active class to clicked button
-            e.target.classList.add('active');
             filterPoints(e.target.dataset.type);
         });
     });
@@ -1373,13 +1367,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initialize with landmarks filter (default) - called after all markers are created
-    // Set active class on Landmarks button
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        if (btn.dataset.type === 'Landmarks') {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
-    });
     filterPoints('Landmarks');
 }); 

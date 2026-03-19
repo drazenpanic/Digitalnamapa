@@ -38,7 +38,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "Views\\POI\\Map.cshtml",
               "ToolTip": "C:\\Users\\DrazenDesktop\\source\\repos\\drazenpanic\\Digitalnamapa\\Views\\POI\\Map.cshtml",
               "RelativeToolTip": "Views\\POI\\Map.cshtml",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAtwJMAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAtwJcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-28T11:50:10.703Z",
               "EditorCaption": ""

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDLOG PROJEKTA - Digitalna Razglednica</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Marcellus&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: #211B0D;
+            background: #ffffff;
+            padding: 40px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            color: #D3B865;
+            font-size: 42px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #D3B865;
+            page-break-after: avoid;
+            letter-spacing: 1px;
+        }
+        
+        h2 {
+            font-family: 'Marcellus', serif;
+            color: #D3B865;
+            font-size: 28px;
+            font-weight: 400;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            page-break-after: avoid;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        h3 {
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            color: #D3B865;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            page-break-after: avoid;
+            letter-spacing: 0.5px;
+        }
+        
+        h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #211B0D;
+            font-size: 16px;
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 14px;
+            color: #211B0D;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #211B0D;
+        }
+        
+        strong {
+            color: #211B0D;
+            font-weight: 600;
+        }
+        
+        code {
+            font-family: 'Courier New', monospace;
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 13px;
+            color: #D3B865;
+        }
+        
+        pre {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #D3B865;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        pre code {
+            background: transparent;
+            padding: 0;
+            color: #211B0D;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+            margin: 40px 0;
+            page-break-after: avoid;
+        }
+        
+        .header-info {
+            background: transparent;
+            padding: 0;
+            margin-bottom: 40px;
+            border: none;
+        }
+        
+        .header-info h1 {
+            border-bottom: 2px solid #D3B865;
+            margin-bottom: 15px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+            page-break-inside: avoid;
+        }
+        
+        .feature-list {
+            background: transparent;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .tech-stack-item {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 3px solid #D3B865;
+        }
+        
+        .code-block {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 3px solid #D3B865;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .code-block code {
+            background: transparent;
+            padding: 0;
+            color: #211B0D;
+            font-size: 13px;
+        }
+        
+        .structure-tree {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 3px solid #D3B865;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        
+        .layout-diagram {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px solid #D3B865;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.6;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            vertical-align: middle;
+            margin-right: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .color-gold { background: #D3B865; }
+        .color-dark { background: #211B0D; }
+        .color-light { background: #ffffff; }
+        .color-red { background: #8B0000; }
+        
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .checklist li:before {
+            content: "☐ ";
+            color: #D3B865;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        .conclusion {
+            background: #fafafa;
+            padding: 30px;
+            border-radius: 0;
+            margin-top: 40px;
+            border-left: 3px solid #D3B865;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        
+        table th {
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            font-size: 20px;
+            color: #D3B865;
+            text-align: left;
+            padding: 12px;
+            border-bottom: 2px solid #D3B865;
+            background: #fafafa;
+        }
+        
+        table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        table tr:hover {
+            background: #fafafa;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-info">
+        <h1>PREDLOG PROJEKTA - Digitalna Razglednica</h1>
+    </div>
+
+    <div class="section">
+        <h2>PREGLED PROJEKTA</h2>
+        <p><strong>Digitalna Razglednica</strong> je web aplikacija koja omogućava posetiocima Festivala Lux Aurelius 2025 da kreiraju i šalju digitalne razglednice sa pozdravom iz Sremske Mitrovice. Aplikacija kombinuje rimsku estetiku sa modernom tehnologijom, omogućavajući korisnicima da pošalju personalizovane razglednice preko email-a.</p>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>FUNKCIONALNOSTI</h2>
+
+        <div class="feature-list">
+            <h3>1. Frontend - Razglednica Interface</h3>
+            <ul>
+                <li><strong>Vizuelni dizajn razglednice</strong> - ilustrovana razglednica sa rimskim motivima
+                    <ul>
+                        <li>Ilustracija Sremske Mitrovice sa rimskim elementima</li>
+                        <li>Zlatne boje (<span class="color-box color-gold"></span>#D3B865) i tamne pozadine (<span class="color-box color-dark"></span>#211B0D)</li>
+                        <li>Rimski fontovi (Marcellus, Amatic SC)</li>
+                        <li>Dekorativni elementi (banneri, simboli, itd.)</li>
+                    </ul>
+                </li>
+                <li><strong>Forma za unos podataka</strong> (desna strana):
+                    <ul>
+                        <li>Email input polje (validacija)</li>
+                        <li>Textarea za kratku poruku (maksimalno 200-300 karaktera)</li>
+                        <li>Dugme "Pošalji razglednicu"</li>
+                        <li>Loading indikator tokom slanja</li>
+                        <li>Success/Error poruke</li>
+                    </ul>
+                </li>
+                <li><strong>Preview razglednice</strong> (leva strana):
+                    <ul>
+                        <li>Real-time prikaz kako će razglednica izgledati</li>
+                        <li>Prikaz unetog teksta na razglednici</li>
+                        <li>Responsive dizajn</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>2. Backend - Email Slanje</h3>
+            <ul>
+                <li><strong>Email servis</strong> - slanje HTML email-a sa razglednicom</li>
+                <li><strong>Email template</strong> - HTML template sa stilizovanom razglednicom</li>
+                <li><strong>Validacija</strong> - validacija email adrese i teksta</li>
+                <li><strong>Rate limiting</strong> - zaštita od spam-a (npr. max 3 razglednice po IP-u u sat vremena)</li>
+                <li><strong>Logging</strong> - logovanje svih poslatih razglednica</li>
+            </ul>
+        </div>
+
+        <div class="feature-list">
+            <h3>3. Dizajn i UX</h3>
+            <ul>
+                <li><strong>Rimski estetika</strong> - konzistentna sa Digitalnom Mapom</li>
+                <li><strong>Animacije</strong> - smooth animacije pri slanju</li>
+                <li><strong>Responsive</strong> - optimizovano za mobile i desktop</li>
+                <li><strong>Dvijezičnost</strong> - srpski i engleski jezik</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>TEHNOLOGIJSKI STEK</h2>
+
+        <div class="tech-stack-item">
+            <h3>Backend</h3>
+            <ul>
+                <li><strong>.NET 8.0</strong> - ASP.NET Core MVC</li>
+                <li><strong>C#</strong> - glavni programski jezik</li>
+                <li><strong>MailKit</strong> ili <strong>SmtpClient</strong> - za slanje email-a</li>
+                <li><strong>FluentValidation</strong> (opciono) - za validaciju</li>
+            </ul>
+        </div>
+
+        <div class="tech-stack-item">
+            <h3>Frontend</h3>
+            <ul>
+                <li><strong>Bootstrap 5</strong> - responsive framework</li>
+                <li><strong>JavaScript (ES6+)</strong> - interakcija i validacija</li>
+                <li><strong>HTML5/CSS3</strong> - markup i stilizacija</li>
+                <li><strong>Google Fonts</strong> - Marcellus, Amatic SC, Open Sans</li>
+            </ul>
+        </div>
+
+        <div class="tech-stack-item">
+            <h3>Email</h3>
+            <ul>
+                <li><strong>SMTP Server</strong> - konfiguracija za slanje email-a
+                    <ul>
+                        <li>Opcije: Gmail SMTP, SendGrid, Mailgun, ili lokalni SMTP</li>
+                    </ul>
+                </li>
+                <li><strong>HTML Email Template</strong> - responsive email template</li>
+            </ul>
+        </div>
+
+        <div class="tech-stack-item">
+            <h3>Lokalizacija</h3>
+            <ul>
+                <li><strong>ASP.NET Core Localization</strong> - ista kao Digitalna Mapa</li>
+                <li><strong>RESX fajlovi</strong> - srpski i engleski prevodi</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>STRUKTURA PROJEKTA</h2>
+
+        <h3>Kontroleri</h3>
+        <div class="structure-tree">Controllers/
+  └── PostcardController.cs
+      - Index() - prikaz forme za kreiranje razglednice
+      - Send(PostcardViewModel) - POST akcija za slanje email-a
+      - Preview() - AJAX endpoint za preview razglednice</div>
+
+        <h3>Modeli</h3>
+        <div class="structure-tree">Models/
+  └── PostcardViewModel.cs
+      - Email (string, required, email format)
+      - Message (string, required, max 300 chars)
+      - Language (string, "sr" ili "en")</div>
+
+        <h3>View-ovi</h3>
+        <div class="structure-tree">Views/
+  └── Postcard/
+      └── Index.cshtml - glavna stranica sa formom i preview-om</div>
+
+        <h3>Servisi</h3>
+        <div class="structure-tree">Services/
+  └── EmailService.cs
+      - SendPostcardAsync(email, message, language)
+      - GeneratePostcardHtml(message, language)
+      - ValidateEmail(email)</div>
+
+        <h3>Email Templates</h3>
+        <div class="structure-tree">Templates/
+  └── Email/
+      ├── PostcardTemplate.cshtml - Razor email template
+      └── PostcardTemplate.en.cshtml - Engleska verzija</div>
+
+        <h3>Resursi</h3>
+        <div class="structure-tree">Resources/
+  └── PostcardResource.sr.resx - srpski prevodi
+  └── PostcardResource.en.resx - engleski prevodi</div>
+
+        <h3>CSS/JS</h3>
+        <div class="structure-tree">wwwroot/
+  ├── css/
+  │   └── postcard.css - stilovi za razglednicu
+  └── js/
+      └── postcard.js - JavaScript logika</div>
+
+        <h3>Slike</h3>
+        <div class="structure-tree">wwwroot/
+  └── images/
+      └── postcard/
+          ├── postcard-background.jpg - pozadina razglednice
+          ├── sirmium-illustration.png - ilustracija grada
+          └── decorative-elements/ - dekorativni elementi</div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>DIZAJN RAZGLEDNICE</h2>
+
+        <h3>Layout</h3>
+        <div class="layout-diagram">┌─────────────────────────────────────────┐
+│                                         │
+│  [Ilustracija Sremske Mitrovice]       │  ← Leva strana (60%)
+│  - Rimski elementi                     │     Preview razglednice
+│  - Znamenitosti                         │
+│  - Dekorativni elementi                 │
+│                                         │
+│  ┌─────────────────────┐              │
+│  │ HELLO from           │              │
+│  │ Sremska Mitrovica    │              │
+│  │                      │              │
+│  │ [Korisnički tekst]   │              │
+│  │                      │              │
+│  └─────────────────────┘              │
+│                                         │
+├─────────────────────────────────────────┤
+│                                         │
+│  Email adresa: [___________]            │  ← Desna strana (40%)
+│                                         │     Forma za unos
+│  Vaša poruka:                          │
+│  ┌─────────────────────┐              │
+│  │                     │              │
+│  │                     │              │
+│  │                     │              │
+│  └─────────────────────┘              │
+│                                         │
+│  [Pošalji razglednicu]                 │
+│                                         │
+└─────────────────────────────────────────┘</div>
+
+        <h3>Boje</h3>
+        <ul>
+            <li><strong>Zlatna</strong>: <span class="color-box color-gold"></span>#D3B865 (naslovi, akcenti)</li>
+            <li><strong>Tamna</strong>: <span class="color-box color-dark"></span>#211B0D (tekst, pozadina)</li>
+            <li><strong>Svetla pozadina</strong>: <span class="color-box color-light"></span>#ffffff ili #fafafa</li>
+            <li><strong>Banner crvena</strong>: <span class="color-box color-red"></span>#8B0000 ili #A52A2A (rimski banneri)</li>
+        </ul>
+
+        <h3>Fontovi</h3>
+        <ul>
+            <li><strong>Marcellus</strong> - za naslove razglednice</li>
+            <li><strong>Amatic SC</strong> - za dekorativne elemente</li>
+            <li><strong>Open Sans</strong> - za body tekst i formu</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>IMPLEMENTACIJA</h2>
+
+        <h3>1. NuGet Paketi</h3>
+        <div class="code-block">
+<code>&lt;ItemGroup&gt;
+  &lt;!-- Email slanje --&gt;
+  &lt;PackageReference Include="MailKit" Version="4.3.0" /&gt;
+  &lt;PackageReference Include="MimeKit" Version="4.3.0" /&gt;
+  
+  &lt;!-- Opciono: Validacija --&gt;
+  &lt;PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" /&gt;
+&lt;/ItemGroup&gt;</code>
+        </div>
+
+        <h3>2. Email Konfiguracija (appsettings.json)</h3>
+        <div class="code-block">
+<code>{
+  "EmailSettings": {
+    "SmtpServer": "smtp.gmail.com",
+    "SmtpPort": 587,
+    "SmtpUsername": "your-email@gmail.com",
+    "SmtpPassword": "your-app-password",
+    "FromEmail": "noreply@luxaurelius.rs",
+    "FromName": "Festival Lux Aurelius",
+    "EnableSsl": true
+  },
+  "PostcardSettings": {
+    "MaxMessageLength": 300,
+    "RateLimitPerHour": 3,
+    "RateLimitPerDay": 10
+  }
+}</code>
+        </div>
+
+        <h3>3. Email Service Interface</h3>
+        <div class="code-block">
+<code>public interface IEmailService
+{
+    Task&lt;bool&gt; SendPostcardAsync(string toEmail, string message, string language);
+    string GeneratePostcardHtml(string message, string language);
+}</code>
+        </div>
+
+        <h3>4. Postcard Controller</h3>
+        <div class="code-block">
+<code>public class PostcardController : Controller
+{
+    private readonly IEmailService _emailService;
+    private readonly IStringLocalizer&lt;PostcardResource&gt; _localizer;
+    private readonly IMemoryCache _cache;
+    
+    [HttpGet]
+    public IActionResult Index()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task&lt;IActionResult&gt; Send(PostcardViewModel model)
+    {
+        // Validacija
+        // Rate limiting
+        // Slanje email-a
+        // Return success/error
+    }
+    
+    [HttpPost]
+    public IActionResult Preview(string message, string language)
+    {
+        // AJAX endpoint za preview
+    }
+}</code>
+        </div>
+
+        <h3>5. Email Template (Razor)</h3>
+        <div class="code-block">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        /* Email-safe CSS */
+        body { font-family: Arial, sans-serif; }
+        .postcard-container { /* stilovi */ }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="postcard-container"&gt;
+        &lt;img src="[embedded image]" alt="Sremska Mitrovica"&gt;
+        &lt;h1&gt;HELLO from Sremska Mitrovica&lt;/h1&gt;
+        &lt;p&gt;[Korisnički tekst]&lt;/p&gt;
+        &lt;p&gt;Festival Lux Aurelius 2025&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>SIGURNOST</h2>
+
+        <h3>1. Validacija</h3>
+        <ul>
+            <li>Email format validacija</li>
+            <li>XSS zaštita (HTML encoding)</li>
+            <li>CSRF token zaštita</li>
+            <li>Input length ograničenja</li>
+        </ul>
+
+        <h3>2. Rate Limiting</h3>
+        <ul>
+            <li>Ograničenje broja razglednica po IP adresi</li>
+            <li>Implementacija pomoću IMemoryCache</li>
+            <li>Logovanje pokušaja</li>
+        </ul>
+
+        <h3>3. Email Validacija</h3>
+        <ul>
+            <li>Verifikacija email adrese pre slanja</li>
+            <li>Blacklist za spam email-ove (opciono)</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>RESPONSIVE DIZAJN</h2>
+
+        <h3>Desktop (>992px)</h3>
+        <ul>
+            <li>Razglednica levo (60%), forma desno (40%)</li>
+            <li>Side-by-side layout</li>
+        </ul>
+
+        <h3>Tablet (768px - 992px)</h3>
+        <ul>
+            <li>Stack layout - razglednica gore, forma dole</li>
+            <li>Smanjeni fontovi i padding</li>
+        </ul>
+
+        <h3>Mobile (<768px)</h3>
+        <ul>
+            <li>Full width stack</li>
+            <li>Optimizovane slike</li>
+            <li>Touch-friendly dugmad</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>LOKALIZACIJA</h2>
+
+        <h3>RESX Ključevi</h3>
+        <ul>
+            <li><code>Postcard_Title</code> - "Digitalna Razglednica"</li>
+            <li><code>Postcard_EmailLabel</code> - "Email adresa"</li>
+            <li><code>Postcard_MessageLabel</code> - "Vaša poruka"</li>
+            <li><code>Postcard_SendButton</code> - "Pošalji razglednicu"</li>
+            <li><code>Postcard_Success</code> - "Razglednica je uspešno poslata!"</li>
+            <li><code>Postcard_Error</code> - "Greška pri slanju razglednice"</li>
+            <li><code>Postcard_EmailPlaceholder</code> - "unesite@email.com"</li>
+            <li><code>Postcard_MessagePlaceholder</code> - "Vaša poruka ovde..."</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>DEPLOYMENT</h2>
+
+        <h3>Konfiguracija</h3>
+        <ul>
+            <li>Environment variables za SMTP credentials</li>
+            <li>Različite konfiguracije za Development/Production</li>
+        </ul>
+
+        <h3>Docker</h3>
+        <ul>
+            <li>Isti Dockerfile kao Digitalna Mapa</li>
+            <li>Environment variables za email</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>BUDUĆA PROŠIRENJA</h2>
+
+        <h3>Faza 2</h3>
+        <ul>
+            <li><strong>Galerija razglednica</strong> - prikaz poslatih razglednica (sa dozvolom)</li>
+            <li><strong>Različiti dizajni</strong> - izbor između nekoliko razglednica</li>
+            <li><strong>Dodavanje slika</strong> - upload slike korisnika na razglednicu</li>
+        </ul>
+
+        <h3>Faza 3</h3>
+        <ul>
+            <li><strong>Social sharing</strong> - deljenje na društvenim mrežama</li>
+            <li><strong>PDF download</strong> - preuzimanje razglednice kao PDF</li>
+            <li><strong>Analitika</strong> - statistika poslatih razglednica</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>TIMELINE</h2>
+
+        <h3>Faza 1 - Osnovna funkcionalnost (1-2 nedelje)</h3>
+        <ul class="checklist">
+            <li>Dizajn razglednice</li>
+            <li>Frontend forma</li>
+            <li>Email servis integracija</li>
+            <li>Osnovna validacija</li>
+        </ul>
+
+        <h3>Faza 2 - Poboljšanja (1 nedelja)</h3>
+        <ul class="checklist">
+            <li>Rate limiting</li>
+            <li>Bolje error handling</li>
+            <li>Responsive optimizacija</li>
+            <li>Lokalizacija</li>
+        </ul>
+
+        <h3>Faza 3 - Finalizacija (3-5 dana)</h3>
+        <ul class="checklist">
+            <li>Testiranje</li>
+            <li>Dokumentacija</li>
+            <li>Deployment</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h2>ESTIMACIJA</h2>
+        <ul>
+            <li><strong>Frontend Development</strong>: 3-5 dana</li>
+            <li><strong>Backend Development</strong>: 3-5 dana</li>
+            <li><strong>Email Integration</strong>: 2-3 dana</li>
+            <li><strong>Testing & Polish</strong>: 2-3 dana</li>
+            <li><strong>Ukupno</strong>: ~2 nedelje</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="conclusion">
+        <h2>ZAKLJUČAK</h2>
+        <p><strong>Digitalna Razglednica</strong> je prirodan dodatak projektu Digitalna Mapa, omogućavajući posetiocima da podeli svoje iskustvo sa Festivala Lux Aurelius 2025. Projekat koristi iste tehnologije i estetiku kao glavna aplikacija, osiguravajući konzistentno korisničko iskustvo.</p>
+        <p style="margin-top: 20px;"><strong>Status</strong>: Spreman za implementaciju<br>
+        <strong>Prioritet</strong>: Srednji<br>
+        <strong>Kompleksnost</strong>: Srednja</p>
+    </div>
+
+    <div class="footer">
+        <p><strong>Datum izveštaja</strong>: 2025 | <strong>Verzija</strong>: 1.0</p>
+    </div>
+</body>
+</html>
+
+
+
